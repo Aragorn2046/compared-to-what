@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compared to What? — Reframing AI Criticism With Data</title>
+  <meta name="description" content="Every AI criticism answered with one simple question: Compared to what? Data-backed reframing of energy use, safety, and the true cost of slowing technology." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-inner">
+    <div class="nav-logo">Compared to What?</div>
+    <ul class="nav-links">
+      <li><a href="#resources">Resources</a></li>
+      <li><a href="#nuclear">Nuclear Lesson</a></li>
+      <li><a href="#denominator">The Denominator</a></li>
+      <li><a href="#sources">Sources</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-content">
+    <div class="hero-eyebrow reveal">The question critics never answer</div>
+    <h1 class="hero-title reveal">
+      Compared<br /><span class="accent">to What?</span>
+    </h1>
+    <p class="hero-sub reveal">
+      Every AI criticism sounds reasonable until you ask one question.<br />
+      The data doesn't lie — but context does most of the work.
+    </p>
+    <a href="#resources" class="hero-cta reveal">See the numbers</a>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- FRAMEWORK CALLOUT -->
+<section id="framework">
+  <div class="container">
+    <div class="framework-grid reveal">
+      <div class="framework-item">
+        <div class="framework-num">01</div>
+        <div class="framework-text">A criticism is stated without a baseline. "AI uses enormous amounts of energy."</div>
+      </div>
+      <div class="framework-arrow">→</div>
+      <div class="framework-item">
+        <div class="framework-num">02</div>
+        <div class="framework-text">We ask the obvious follow-up. "Compared to what, exactly?"</div>
+      </div>
+      <div class="framework-arrow">→</div>
+      <div class="framework-item">
+        <div class="framework-num">03</div>
+        <div class="framework-text">The data provides context. The criticism either holds up — or it doesn't.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 1: RESOURCES -->
+<section id="resources">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Section 01</div>
+      <h2>Resource Criticism<br /><span class="accent">Reframed</span></h2>
+      <p class="section-intro">"AI uses too much energy." Sure. But so does everything else — and most of those things don't accelerate solutions to climate change, disease, or poverty.</p>
+    </div>
+
+    <!-- Energy Chart -->
+    <div class="chart-block reveal">
+      <div class="chart-header">
+        <div class="ctw-badge">Compared to What?</div>
+        <h3>Annual Energy Consumption by Industry</h3>
+        <p class="chart-note">Global AI training + inference vs. industries we don't question</p>
+      </div>
+      <div class="chart-wrap">
+        <canvas id="energyChart"></canvas>
+      </div>
+      <div class="chart-verdict">
+        <strong>Verdict:</strong> Global AI consumes roughly 300–400 TWh/year. Aviation burns 8× more. Cryptocurrency burns 2–3× more for no productivity gain. Air conditioning in the US alone uses 5×.
+      </div>
+      <div class="sources-inline">
+        Sources: IEA World Energy Outlook 2024 · IATA Aviation 2023 · Cambridge Bitcoin Electricity Index 2024 · US EIA Residential Energy 2023
+      </div>
+    </div>
+
+    <!-- Water Chart -->
+    <div class="chart-block reveal">
+      <div class="chart-header">
+        <div class="ctw-badge">Compared to What?</div>
+        <h3>Water Usage Comparison</h3>
+        <p class="chart-note">Liters of water per unit of output</p>
+      </div>
+      <div class="comparison-cards">
+        <div class="comp-card highlight">
+          <div class="comp-icon">🤖</div>
+          <div class="comp-label">1 ChatGPT conversation</div>
+          <div class="comp-value">~0.5L</div>
+          <div class="comp-sub">of water to cool data centers</div>
+        </div>
+        <div class="comp-card">
+          <div class="comp-icon">🍔</div>
+          <div class="comp-label">1 hamburger</div>
+          <div class="comp-value">~2,500L</div>
+          <div class="comp-sub">from farm to plate</div>
+        </div>
+        <div class="comp-card">
+          <div class="comp-icon">👖</div>
+          <div class="comp-label">1 pair of jeans</div>
+          <div class="comp-value">~10,000L</div>
+          <div class="comp-sub">cotton to finished product</div>
+        </div>
+        <div class="comp-card">
+          <div class="comp-icon">🥩</div>
+          <div class="comp-label">1 kg of beef</div>
+          <div class="comp-value">~15,400L</div>
+          <div class="comp-sub">full supply chain</div>
+        </div>
+        <div class="comp-card">
+          <div class="comp-icon">📱</div>
+          <div class="comp-label">1 smartphone</div>
+          <div class="comp-value">~12,760L</div>
+          <div class="comp-sub">manufacturing process</div>
+        </div>
+      </div>
+      <div class="chart-verdict">
+        <strong>Verdict:</strong> One hamburger uses the same water as approximately 5,000 ChatGPT conversations. Agriculture represents 70% of global freshwater withdrawals. AI data centers are under 1%.
+      </div>
+      <div class="sources-inline">
+        Sources: UNESCO Water Assessment 2023 · Goldman et al. "Making AI Less Thirsty" 2023 · Water Footprint Network · FAO AQUASTAT
+      </div>
+    </div>
+
+    <!-- ROI chart -->
+    <div class="chart-block reveal">
+      <div class="chart-header">
+        <div class="ctw-badge">Compared to What?</div>
+        <h3>What Does AI Energy Actually Buy?</h3>
+        <p class="chart-note">Energy cost vs. human researcher-hours equivalent</p>
+      </div>
+      <div class="chart-wrap">
+        <canvas id="roiChart"></canvas>
+      </div>
+      <div class="chart-verdict">
+        <strong>Verdict:</strong> AlphaFold solving the protein structure problem — estimated 10,000 researcher-years compressed into months — consumed less energy than a single transatlantic flight. The return on energy investment for AI is unlike anything in human history.
+      </div>
+      <div class="sources-inline">
+        Sources: DeepMind AlphaFold paper 2021 · Nature "The protein-folding revolution" 2022 · ICAO Carbon Calculator
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: NUCLEAR LESSON -->
+<section id="nuclear">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Section 02</div>
+      <h2>The Nuclear<br /><span class="accent">Lesson</span></h2>
+      <p class="section-intro">We've made this mistake before. In the 1970s and 80s, fear — not facts — froze nuclear energy at its most immature stage. We're still paying for it in lives and emissions.</p>
+    </div>
+
+    <div class="nuclear-timeline reveal">
+      <div class="timeline-item">
+        <div class="timeline-year">1979</div>
+        <div class="timeline-content">
+          <h4>Three Mile Island</h4>
+          <p>No direct deaths. Zero radiation casualties confirmed. Media coverage: apocalyptic. Public response: nuclear is finished.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">1980s</div>
+        <div class="timeline-content">
+          <h4>Construction halts across the West</h4>
+          <p>Dozens of planned nuclear plants cancelled. Gap filled by coal and natural gas. Emissions rise. Nobody notices the counterfactual.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2011</div>
+        <div class="timeline-content">
+          <h4>Fukushima</h4>
+          <p>Direct radiation deaths: 1. Evacuation-related deaths from panic: 2,202. Germany announces nuclear exit. Goes back to coal.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2023</div>
+        <div class="timeline-content">
+          <h4>Germany's Energiewende</h4>
+          <p>Last reactors closed. Germany's per-capita emissions: 2× France (nuclear-powered). The "green" decision increased carbon output measurably.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Deaths per TWh chart -->
+    <div class="chart-block reveal">
+      <div class="chart-header">
+        <div class="ctw-badge">Compared to What?</div>
+        <h3>Deaths per Terawatt-Hour of Energy Produced</h3>
+        <p class="chart-note">Including accidents, air pollution, and supply chain fatalities</p>
+      </div>
+      <div class="chart-wrap chart-wrap-tall">
+        <canvas id="nuclearDeathsChart"></canvas>
+      </div>
+      <div class="chart-verdict">
+        <strong>Verdict:</strong> Nuclear is the safest energy source ever deployed at scale — safer than solar (rooftop installation falls), wind, hydro, and orders of magnitude safer than fossil fuels. The fear was not proportional to the data.
+      </div>
+      <div class="sources-inline">
+        Sources: Ritchie & Roser "What are the safest and cleanest sources of energy?" Our World in Data 2024 · Markandya & Wilkinson, Lancet 2007 · WHO Air Quality Report 2022
+      </div>
+    </div>
+
+    <!-- Germany callout -->
+    <div class="callout-block reveal">
+      <div class="callout-left">
+        <div class="ctw-badge large">The Counterfactual Cost</div>
+        <h3>What did the anti-nuclear movement actually cost?</h3>
+        <p>Researchers at UC Berkeley estimated that if the US hadn't slowed nuclear expansion after 1970, the country would have avoided <strong>1.8 million premature deaths</strong> from air pollution — and prevented the emission of <strong>64 gigatons of CO₂.</strong></p>
+        <p>The anti-nuclear movement didn't save lives. It cost them. Measurably. In millions.</p>
+        <div class="callout-stat-row">
+          <div class="callout-stat">
+            <div class="callout-stat-num">1.8M</div>
+            <div class="callout-stat-label">premature deaths from air pollution that nuclear would have prevented (US alone)</div>
+          </div>
+          <div class="callout-stat">
+            <div class="callout-stat-num">64 Gt</div>
+            <div class="callout-stat-label">CO₂ that nuclear replacement energy emitted instead</div>
+          </div>
+        </div>
+        <div class="sources-inline">Source: Kharecha & Hansen, Environmental Science &amp; Technology, 2013</div>
+      </div>
+      <div class="callout-right">
+        <div class="parallel-box">
+          <div class="parallel-label">The AI Parallel</div>
+          <div class="parallel-items">
+            <div class="parallel-item">
+              <div class="parallel-then">Nuclear in 1979</div>
+              <div class="parallel-arrow">→</div>
+              <div class="parallel-now">AI in 2024</div>
+            </div>
+            <div class="parallel-item">
+              <div class="parallel-then">Expensive, inefficient early-stage tech</div>
+              <div class="parallel-arrow">→</div>
+              <div class="parallel-now">Expensive, high-energy early-stage tech</div>
+            </div>
+            <div class="parallel-item">
+              <div class="parallel-then">Fear-driven regulation halts development</div>
+              <div class="parallel-arrow">→</div>
+              <div class="parallel-now">Fear-driven regulation risks doing the same</div>
+            </div>
+            <div class="parallel-item">
+              <div class="parallel-then">Technology frozen at immature state</div>
+              <div class="parallel-arrow">→</div>
+              <div class="parallel-now">AI kept in high-energy, high-cost phase longer</div>
+            </div>
+            <div class="parallel-item">
+              <div class="parallel-then">Millions of deaths from fossil fuel gap</div>
+              <div class="parallel-arrow">→</div>
+              <div class="parallel-now">Millions of deaths from delayed AI-accelerated cures</div>
+            </div>
+          </div>
+          <div class="parallel-conclusion">Slowing technology doesn't eliminate risk. It locks in the costs while delaying the benefits.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Emissions comparison -->
+    <div class="chart-block reveal">
+      <div class="chart-header">
+        <div class="ctw-badge">Compared to What?</div>
+        <h3>CO₂ Emissions per kWh by Energy Source</h3>
+        <p class="chart-note">Lifecycle emissions including construction and fuel</p>
+      </div>
+      <div class="chart-wrap">
+        <canvas id="emissionsChart"></canvas>
+      </div>
+      <div class="chart-verdict">
+        <strong>Verdict:</strong> Nuclear emits 3–12 gCO₂/kWh over its full lifecycle — comparable to wind and solar. Coal emits 820 gCO₂/kWh. Gas emits 490 gCO₂/kWh. Every nuclear plant we closed was replaced by something 50–250× more polluting.
+      </div>
+      <div class="sources-inline">
+        Sources: IPCC AR6 Working Group III 2022 · UNECE Life Cycle Assessment of Electricity Generation Options 2021
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: THE DENOMINATOR -->
+<section id="denominator">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Section 03</div>
+      <h2>The Denominator<br /><span class="accent">Argument</span></h2>
+      <p class="section-intro">Critics fixate on AI failures. They never show you the denominator — the baseline failure rate of the human systems AI is replacing. When you add the denominator, the math changes completely.</p>
+    </div>
+
+    <!-- Self-driving comparison -->
+    <div class="chart-block reveal">
+      <div class="chart-header">
+        <div class="ctw-badge">Compared to What?</div>
+        <h3>Accidents per Million Miles Driven</h3>
+        <p class="chart-note">Autonomous vehicles vs. human drivers (US data)</p>
+      </div>
+      <div class="chart-wrap">
+        <canvas id="drivingChart"></canvas>
+      </div>
+      <div class="chart-verdict">
+        <strong>Verdict:</strong> Waymo's autonomous vehicles have demonstrated a 73% reduction in injury-causing crashes vs. human baseline. Every headline about an AV accident ignores that human drivers have 6.1M accidents per year in the US alone — roughly 1 every 5 seconds.
+      </div>
+      <div class="sources-inline">
+        Sources: Waymo Safety Report 2023 · NHTSA Traffic Safety Facts 2022 · Swiss Re "Autonomous Vehicle Liability" 2023
+      </div>
+    </div>
+
+    <!-- Medical diagnosis -->
+    <div class="chart-block reveal">
+      <div class="chart-header">
+        <div class="ctw-badge">Compared to What?</div>
+        <h3>Diagnostic Accuracy: AI vs. Human Physicians</h3>
+        <p class="chart-note">Error rates across specialties where AI has been deployed</p>
+      </div>
+      <div class="chart-wrap">
+        <canvas id="medicalChart"></canvas>
+      </div>
+      <div class="chart-verdict">
+        <strong>Verdict:</strong> Human physicians misdiagnose approximately 10–15% of serious conditions. Radiologists miss ~30% of cancers that are visible in retrospect. AI systems consistently match or outperform expert-level human accuracy — and never get tired.
+      </div>
+      <div class="sources-inline">
+        Sources: Singh et al. BMJ Quality &amp; Safety 2014 · McKinney et al. Nature 2020 · Topol "High-performance medicine" Nature 2019
+      </div>
+    </div>
+
+    <!-- Hiring bias comparison -->
+    <div class="chart-block reveal">
+      <div class="chart-header">
+        <div class="ctw-badge">Compared to What?</div>
+        <h3>Bias in Hiring: AI vs. Human Decision-Making</h3>
+        <p class="chart-note">Documented discrimination rates in recruitment studies</p>
+      </div>
+      <div class="comparison-cards triple">
+        <div class="comp-card">
+          <div class="comp-icon">👤</div>
+          <div class="comp-label">Human callbacks: identical CV, different name</div>
+          <div class="comp-value negative">50% fewer</div>
+          <div class="comp-sub">callbacks for Black-sounding names vs. White-sounding names (US, 2004 study replicated in 2021)</div>
+        </div>
+        <div class="comp-card">
+          <div class="comp-icon">👩</div>
+          <div class="comp-label">Gender bias in academic hiring</div>
+          <div class="comp-value negative">~30%</div>
+          <div class="comp-sub">lower evaluation scores for identical work attributed to female names in STEM fields</div>
+        </div>
+        <div class="comp-card highlight">
+          <div class="comp-icon">🤖</div>
+          <div class="comp-label">AI hiring tools (audited, post-regulation)</div>
+          <div class="comp-value">Documented &amp; fixable</div>
+          <div class="comp-sub">AI bias is measurable, auditable, and correctable. Human bias is intuitive, invisible, and deniable.</div>
+        </div>
+      </div>
+      <div class="chart-verdict">
+        <strong>Verdict:</strong> AI bias is real. But human bias is worse, less visible, and harder to correct. The question is never "is this system perfect?" — it's "is it better than what we have now?" The denominator matters.
+      </div>
+      <div class="sources-inline">
+        Sources: Bertrand &amp; Mullainathan AER 2004 · Kline et al. QJE 2021 · Moss-Racusin et al. PNAS 2012
+      </div>
+    </div>
+
+    <!-- Linear thinking callout -->
+    <div class="linear-callout reveal">
+      <div class="linear-content">
+        <h3>Why We Get This Wrong</h3>
+        <p class="linear-big">People evaluate technology at its <span class="accent">present state</span>, not its <span class="accent">trajectory.</span></p>
+        <p>When nuclear was young, critics judged it by its 1970s limitations — not by where passive safety, SMRs, and thorium would take it. When AI is young, critics judge it by its 2024 limitations — not by what fully mature AI will look like.</p>
+        <div class="linear-grid">
+          <div class="linear-item">
+            <div class="linear-item-num">1</div>
+            <div class="linear-item-text"><strong>Present-state evaluation</strong> — judging the technology only by what it does today</div>
+          </div>
+          <div class="linear-item">
+            <div class="linear-item-num">2</div>
+            <div class="linear-item-text"><strong>Risk asymmetry</strong> — imagining all the ways the technology can fail, none of the ways it succeeds</div>
+          </div>
+          <div class="linear-item">
+            <div class="linear-item-num">3</div>
+            <div class="linear-item-text"><strong>Invisible counterfactual</strong> — forgetting that NOT deploying the technology has costs too</div>
+          </div>
+          <div class="linear-item">
+            <div class="linear-item-num">4</div>
+            <div class="linear-item-text"><strong>Maturity trap</strong> — slowing technology freezes it in its immature, expensive, inefficient phase</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Going all in -->
+    <div class="allin-block reveal">
+      <div class="allin-inner">
+        <div class="allin-header">
+          <div class="ctw-badge large">The Going-All-In Thesis</div>
+        </div>
+        <div class="allin-content">
+          <div class="allin-text">
+            <p>Half-measures with exponential technologies produce the worst possible outcome: too much investment to abandon, too little to reach maturity. Stuck in the expensive, inefficient early phase indefinitely. All the costs. None of the benefits.</p>
+            <p>This is the current risk with AI regulation: <strong>enough restriction to slow progress, not enough to stop it,</strong> guaranteeing maximum cost for minimum benefit.</p>
+          </div>
+          <div class="allin-scale">
+            <div class="scale-item bad">
+              <div class="scale-label">Under-invest</div>
+              <div class="scale-bar" style="width: 30%"></div>
+              <div class="scale-outcome">Never reaches maturity. Low benefit, moderate cost.</div>
+            </div>
+            <div class="scale-item worst">
+              <div class="scale-label">Half-measure</div>
+              <div class="scale-bar" style="width: 50%"></div>
+              <div class="scale-outcome">Frozen at immature state. Maximum cost, minimum benefit. <strong>The nuclear outcome.</strong></div>
+            </div>
+            <div class="scale-item good">
+              <div class="scale-label">Go all in</div>
+              <div class="scale-bar" style="width: 100%"></div>
+              <div class="scale-outcome">Reaches maturity. Becomes efficient, clean, safe. Maximum benefit.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section id="closing">
+  <div class="container">
+    <div class="closing-content reveal">
+      <h2>The Question Hasn't Changed</h2>
+      <p class="closing-big">Every time someone makes a claim about AI — whether it's dangerous, wasteful, unreliable, or biased — ask the same question:</p>
+      <div class="ctw-final">Compared to what?</div>
+      <p class="closing-body">Not "compared to a perfect system." Not "compared to an imagined future where we don't need this technology." Compared to what we actually have: human systems, existing infrastructure, the alternatives on the table right now.</p>
+      <p class="closing-body">The data isn't always favorable to AI. Sometimes the criticism holds up. But you can't know that until you've asked the question — and most critics never do.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SOURCES -->
+<section id="sources">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Sources</div>
+      <h2>Data &amp; References</h2>
+    </div>
+    <div class="sources-grid reveal">
+      <div class="source-category">
+        <h4>Energy &amp; Resources</h4>
+        <ul>
+          <li>IEA, <em>World Energy Outlook 2024</em></li>
+          <li>IATA, <em>Aviation Climate Action Report 2023</em></li>
+          <li>Cambridge Centre for Alternative Finance, <em>Bitcoin Electricity Consumption Index 2024</em></li>
+          <li>US Energy Information Administration, <em>Residential Energy Consumption Survey 2023</em></li>
+          <li>Goldman, S. et al., <em>"Making AI Less Thirsty"</em>, 2023</li>
+          <li>UNESCO, <em>World Water Development Report 2023</em></li>
+          <li>Water Footprint Network, <em>Product Water Footprints</em></li>
+          <li>FAO AQUASTAT Database</li>
+        </ul>
+      </div>
+      <div class="source-category">
+        <h4>Nuclear Energy</h4>
+        <ul>
+          <li>Ritchie, H. &amp; Roser, M., <em>"What are the safest and cleanest sources of energy?"</em> Our World in Data, 2024</li>
+          <li>Markandya, A. &amp; Wilkinson, P., <em>Lancet</em>, 2007</li>
+          <li>IPCC, <em>AR6 Working Group III</em>, 2022</li>
+          <li>UNECE, <em>Life Cycle Assessment of Electricity Generation Options</em>, 2021</li>
+          <li>Kharecha, P.A. &amp; Hansen, J.E., <em>Environmental Science &amp; Technology</em>, 2013</li>
+          <li>WHO, <em>Air Quality Global Assessment 2022</em></li>
+        </ul>
+      </div>
+      <div class="source-category">
+        <h4>AI Safety &amp; Accuracy</h4>
+        <ul>
+          <li>Waymo, <em>Waymo Safety Report 2023</em></li>
+          <li>NHTSA, <em>Traffic Safety Facts 2022</em></li>
+          <li>Singh, H. et al., <em>BMJ Quality &amp; Safety</em>, 2014</li>
+          <li>McKinney, S.M. et al., <em>Nature</em>, 2020</li>
+          <li>Topol, E.J., <em>"High-performance medicine"</em>, Nature Medicine, 2019</li>
+          <li>DeepMind, <em>AlphaFold paper</em>, Nature, 2021</li>
+        </ul>
+      </div>
+      <div class="source-category">
+        <h4>Bias &amp; Fairness</h4>
+        <ul>
+          <li>Bertrand, M. &amp; Mullainathan, S., <em>American Economic Review</em>, 2004</li>
+          <li>Kline, P. et al., <em>Quarterly Journal of Economics</em>, 2021</li>
+          <li>Moss-Racusin, C.A. et al., <em>PNAS</em>, 2012</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <div class="footer-logo">Compared to What?</div>
+        <p>A data journalism project by <a href="https://itsmrmetaverse.com" target="_blank" rel="noopener">Aragorn Meulendijks</a></p>
+      </div>
+      <div class="footer-right">
+        <p>All data sourced and cited. Corrections welcome.</p>
+        <p class="footer-small">Built with Chart.js · Hosted on GitHub Pages · MIT License</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="charts.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

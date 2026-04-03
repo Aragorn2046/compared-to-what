@@ -1,0 +1,7 @@
+.DS_Store
+*.env
+config.json
+*credentials*
+*secret*
+*token*.json
+node_modules/
