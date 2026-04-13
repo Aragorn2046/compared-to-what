@@ -449,175 +449,750 @@
       <p class="section-intro">Fourteen of the most common AI criticisms. Each one answered the same way: with data, context, and the question nobody asks.</p>
     </div>
 
-    <div class="criticism-grid">
+    <div class="crit-stack">
 
-      <div class="criticism-card reveal">
-        <div class="criticism-icon">&#x1F4BC;</div>
-        <div class="criticism-topic">Job Displacement</div>
-        <div class="criticism-stat">2x</div>
-        <div class="criticism-stat-label">Bank tellers <em>doubled</em> after ATMs</div>
-        <details class="criticism-details">
-          <summary>Compared to what?</summary>
-          <p>Every automation panic in history. 60% of today's jobs didn't exist in 1940. Goldman Sachs estimates AI displaces 6-7% of jobs while creating net new roles. The US Bureau of Labor Statistics projects overall employment growth through 2033 despite AI adoption.</p>
-          <div class="sources-inline">Goldman Sachs 2023 &middot; McKinsey 2023 &middot; US BLS 2024</div>
-        </details>
-      </div>
+      <!-- ── 01 · Job Displacement ── -->
+      <details class="crit-block reveal" open>
+        <summary class="crit-summary">
+          <span class="crit-number">01</span>
+          <span class="crit-topic">Job Displacement</span>
+          <span class="crit-key-stat">2x <span class="crit-key-label">more bank tellers after ATMs</span></span>
+          <span class="crit-toggle"></span>
+        </summary>
+        <div class="crit-body">
+          <div class="ctw-badge">Compared to what?</div>
+          <p class="crit-context">Every automation panic in history. The pattern is always the same: new technology eliminates specific tasks, creates entirely new categories of work, and increases overall employment.</p>
 
-      <div class="criticism-card reveal">
-        <div class="criticism-icon">&#x1F30D;</div>
-        <div class="criticism-topic">Existential Risk</div>
-        <div class="criticism-stat">95%</div>
-        <div class="criticism-stat-label">of AI researchers say: no extinction</div>
-        <details class="criticism-details">
-          <summary>Compared to what?</summary>
-          <p>The expert consensus. 2,778 AI researchers surveyed: median probability of AI causing human extinction was <strong>5%</strong>. The people who understand AI best believe there's a 95% chance this works out. Worth managing, not worth panicking.</p>
-          <div class="sources-inline">Grace et al. 2024 &middot; Toby Ord, The Precipice 2020</div>
-        </details>
-      </div>
+          <div class="comparison-cards">
+            <div class="comp-card highlight">
+              <div class="comp-label">ATMs introduced (1970s-80s)</div>
+              <div class="comp-value">2x</div>
+              <div class="comp-sub">Bank tellers <em>doubled</em> as branches became cheaper to open</div>
+            </div>
+            <div class="comp-card">
+              <div class="comp-label">Today's jobs that didn't exist in 1940</div>
+              <div class="comp-value">60%</div>
+              <div class="comp-sub">Most of the modern economy was unimaginable 80 years ago</div>
+            </div>
+            <div class="comp-card">
+              <div class="comp-label">Goldman Sachs AI job impact</div>
+              <div class="comp-value">6-7%</div>
+              <div class="comp-sub">Displaced, while creating net new roles across sectors</div>
+            </div>
+            <div class="comp-card highlight">
+              <div class="comp-label">BLS employment projection through 2033</div>
+              <div class="comp-value" style="color: var(--positive);">Growth</div>
+              <div class="comp-sub">Overall employment growth projected despite AI adoption</div>
+            </div>
+          </div>
 
-      <div class="criticism-card reveal">
-        <div class="criticism-icon">&#x1F3AD;</div>
-        <div class="criticism-topic">Deepfakes</div>
-        <div class="criticism-stat">96%</div>
-        <div class="criticism-stat-label">of deepfakes are porn, not politics</div>
-        <details class="criticism-details">
-          <summary>Compared to what?</summary>
-          <p>The pre-AI misinformation crisis. False news was 70% more likely to be shared than true news <em>before AI existed</em>. Cambridge Analytica manipulated 50M profiles with zero deepfakes. Detection systems now achieve 99.9% accuracy.</p>
-          <div class="sources-inline">Vosoughi et al., Science 2018 &middot; Sensity AI 2024 &middot; iProov 2025</div>
-        </details>
-      </div>
+          <div class="parallel-box">
+            <div class="parallel-label">The automation panic pattern</div>
+            <div class="parallel-items">
+              <div class="parallel-item">
+                <div class="parallel-then">1810: Luddites smash looms</div>
+                <div class="parallel-arrow">&rarr;</div>
+                <div class="parallel-now">Textile industry employs millions more</div>
+              </div>
+              <div class="parallel-item">
+                <div class="parallel-then">1950s: Computers will end office work</div>
+                <div class="parallel-arrow">&rarr;</div>
+                <div class="parallel-now">Office jobs multiply by 4x</div>
+              </div>
+              <div class="parallel-item">
+                <div class="parallel-then">1990s: Internet will kill retail jobs</div>
+                <div class="parallel-arrow">&rarr;</div>
+                <div class="parallel-now">E-commerce creates 16M+ jobs globally</div>
+              </div>
+              <div class="parallel-item">
+                <div class="parallel-then">2020s: AI will replace all knowledge workers</div>
+                <div class="parallel-arrow">&rarr;</div>
+                <div class="parallel-now">BLS projects employment growth through 2033</div>
+              </div>
+            </div>
+          </div>
 
-      <div class="criticism-card reveal">
-        <div class="criticism-icon">&#x1F441;</div>
-        <div class="criticism-topic">Privacy &amp; Surveillance</div>
-        <div class="criticism-stat">1,500</div>
-        <div class="criticism-stat-label">data points per person, <em>before</em> AI</div>
-        <details class="criticism-details">
-          <summary>Compared to what?</summary>
-          <p>The surveillance that already existed. Over 99% of CCTV footage goes unwatched. Data broker Acxiom tracked 1,500 data points per person on 700M consumers, all before AI. AI makes surveillance more capable but also more auditable. Algorithmic decisions can be logged and challenged. Human judgment calls never could.</p>
-          <div class="sources-inline">Carnegie Endowment 2019 &middot; FTC 2014 &middot; EU GDPR 2018-2025</div>
-        </details>
-      </div>
+          <div class="chart-verdict">Every major automation technology in history created more jobs than it displaced. AI is following the same pattern: specific tasks disappear, entire new industries emerge.</div>
+          <div class="sources-inline">Goldman Sachs 2023 &middot; McKinsey 2023 &middot; US BLS 2024 &middot; Autor, Journal of Economic Perspectives 2015</div>
+        </div>
+      </details>
 
-      <div class="criticism-card reveal">
-        <div class="criticism-icon">&#x267B;</div>
-        <div class="criticism-topic">E-Waste</div>
-        <div class="criticism-stat">18x</div>
-        <div class="criticism-stat-label">more waste from fashion than AI</div>
-        <details class="criticism-details">
-          <summary>Compared to what?</summary>
-          <p>Everything else we throw away. AI e-waste is projected at ~5M metric tons by 2030, roughly 8% of global total. Fashion produces <strong>92M metric tons</strong> of textile waste per year, 18x more. Rare earth mining concerns apply equally to phones, EVs, and wind turbines.</p>
-          <div class="sources-inline">UN E-Waste Monitor 2024 &middot; Ellen MacArthur Foundation 2017</div>
-        </details>
-      </div>
+      <!-- ── 02 · Existential Risk ── -->
+      <details class="crit-block reveal" open>
+        <summary class="crit-summary">
+          <span class="crit-number">02</span>
+          <span class="crit-topic">Existential Risk</span>
+          <span class="crit-key-stat">95% <span class="crit-key-label">of AI researchers: no extinction</span></span>
+          <span class="crit-toggle"></span>
+        </summary>
+        <div class="crit-body">
+          <div class="ctw-badge">Compared to what?</div>
+          <p class="crit-context">The expert consensus. 2,778 AI researchers were surveyed about the probability of AI causing human extinction. The people who understand AI best gave a clear answer.</p>
 
-      <div class="criticism-card reveal">
-        <div class="criticism-icon">&#x1F3A8;</div>
-        <div class="criticism-topic">Art &amp; Creativity</div>
-        <div class="criticism-stat">1884</div>
-        <div class="criticism-stat-label">Photography won its copyright fight</div>
-        <details class="criticism-details">
-          <summary>Compared to what?</summary>
-          <p>Every artistic tradition in history. Picasso studied African masks. Warhol repurposed commercial images. Hip-hop sampling transformed recordings. Photography was denied copyright in the 1860s as "mere mechanical reproduction." Every new medium faces this. Legal frameworks adapt, as they did for photography, VCRs, and sampling.</p>
-          <div class="sources-inline">Burrow-Giles v. Sarony 1884 &middot; US Copyright Office 2023-2025</div>
-        </details>
-      </div>
+          <div class="crit-big-stat-row">
+            <div class="crit-big-stat">
+              <div class="crit-big-num" style="color: var(--positive);">95%</div>
+              <div class="crit-big-label">say AI will NOT cause human extinction</div>
+            </div>
+            <div class="crit-big-stat">
+              <div class="crit-big-num" style="color: var(--negative);">5%</div>
+              <div class="crit-big-label">median estimated probability of extinction</div>
+            </div>
+          </div>
 
-      <div class="criticism-card reveal">
-        <div class="criticism-icon">&#x1F393;</div>
-        <div class="criticism-topic">Education &amp; Cheating</div>
-        <div class="criticism-stat">60-70%</div>
-        <div class="criticism-stat-label">cheated before AND after ChatGPT</div>
-        <details class="criticism-details">
-          <summary>Compared to what?</summary>
-          <p>The academic dishonesty that already existed. Stanford: cheating rates were 60-70% before ChatGPT and remained 60-70% after. Same rate, different tool. Institutions that integrated AI saw up to 45% fewer violations. AI tutoring correlates with ~30% better course completion.</p>
-          <div class="sources-inline">Stanford/McCabe 2023-24 &middot; Turnitin 2024 &middot; Khan Academy 2024</div>
-        </details>
-      </div>
+          <div class="allin-scale" style="max-width: 600px; margin: 28px 0;">
+            <div class="scale-item good">
+              <div class="scale-label">AI researchers: no extinction (95%)</div>
+              <div class="scale-bar" style="width: 95%;"></div>
+            </div>
+            <div class="scale-item bad">
+              <div class="scale-label">Median extinction probability (5%)</div>
+              <div class="scale-bar" style="width: 5%;"></div>
+            </div>
+          </div>
 
-      <div class="criticism-card reveal">
-        <div class="criticism-icon">&#x1F4B0;</div>
-        <div class="criticism-topic">Wealth Concentration</div>
-        <div class="criticism-stat">$50T</div>
-        <div class="criticism-stat-label">shifted to the top 1% <em>before</em> AI</div>
-        <details class="criticism-details">
-          <summary>Compared to what?</summary>
-          <p>The concentration that happened without AI. RAND Corporation: <strong>$50 trillion</strong> shifted from the bottom 90% to the top 1% between 1975-2018, entirely before generative AI. Driven by tax policy, globalization, and financialization, not technology.</p>
-          <div class="sources-inline">RAND Corporation 2020 &middot; Federal Reserve SCF &middot; World Inequality Lab 2022</div>
-        </details>
-      </div>
+          <div class="comparison-cards">
+            <div class="comp-card">
+              <div class="comp-label">Researchers surveyed</div>
+              <div class="comp-value">2,778</div>
+              <div class="comp-sub">Largest survey of AI researchers ever conducted</div>
+            </div>
+            <div class="comp-card">
+              <div class="comp-label">For comparison: asteroid extinction risk</div>
+              <div class="comp-value">0.00001%</div>
+              <div class="comp-sub">Per century (NASA estimate)</div>
+            </div>
+            <div class="comp-card highlight">
+              <div class="comp-label">Expert consensus</div>
+              <div class="comp-value">Manage</div>
+              <div class="comp-sub">Worth taking seriously and managing, not panicking about</div>
+            </div>
+          </div>
 
-      <div class="criticism-card reveal">
-        <div class="criticism-icon">&#x2696;</div>
-        <div class="criticism-topic">Algorithmic Bias</div>
-        <div class="criticism-stat">65%</div>
-        <div class="criticism-stat-label">harsher sentences before lunch (human judges)</div>
-        <details class="criticism-details">
-          <summary>Compared to what?</summary>
-          <p>The human systems they replace. Loan officers redlined entire neighborhoods for decades. AI bias is real, but it is the first decision-making system in history that can be <em>tested</em> for discrimination and corrected at scale. Human bias is intuitive, invisible, and deniable.</p>
-          <div class="sources-inline">Danziger et al., PNAS 2011 &middot; ProPublica/COMPAS 2016 &middot; Obermeyer, Science 2019</div>
-        </details>
-      </div>
+          <div class="chart-verdict">A 5% risk is worth managing carefully. But "5% of experts think it's possible" is very different from "AI will destroy humanity." Worth watching, not worth panic.</div>
+          <div class="sources-inline">Grace et al. 2024 &middot; Toby Ord, The Precipice 2020 &middot; AI Impacts Survey 2024</div>
+        </div>
+      </details>
 
-      <div class="criticism-card reveal">
-        <div class="criticism-icon">&#x1F4AD;</div>
-        <div class="criticism-topic">Hallucinations</div>
-        <div class="criticism-stat">&lt; 2%</div>
-        <div class="criticism-stat-label">AI error rate (down from 40% in 2023)</div>
-        <details class="criticism-details">
-          <summary>Compared to what?</summary>
-          <p>Human professional error rates. Physicians misdiagnose 5-11% of encounters. 61% of newspaper articles contain factual errors. Eyewitnesses give false IDs 30% of the time. Lawyers 86% confident won only 70% of cases. AI hallucination: 40% → under 2% in two years.</p>
-          <div class="sources-inline">Vectara 2025 &middot; Newman-Toker 2023 &middot; Maier 2005 &middot; Liebman 2000</div>
-        </details>
-      </div>
+      <!-- ── 03 · Deepfakes ── -->
+      <details class="crit-block reveal" open>
+        <summary class="crit-summary">
+          <span class="crit-number">03</span>
+          <span class="crit-topic">Deepfakes</span>
+          <span class="crit-key-stat">96% <span class="crit-key-label">are porn, not politics</span></span>
+          <span class="crit-toggle"></span>
+        </summary>
+        <div class="crit-body">
+          <div class="ctw-badge">Compared to what?</div>
+          <p class="crit-context">The media narrative focuses on political deepfakes. The data tells a very different story about what deepfakes actually are, and how misinformation worked long before AI.</p>
 
-      <div class="criticism-card reveal">
-        <div class="criticism-icon">&#x1F9E0;</div>
-        <div class="criticism-topic">Dependency &amp; Deskilling</div>
-        <div class="criticism-stat">370 BC</div>
-        <div class="criticism-stat-label">Socrates warned writing would destroy memory</div>
-        <details class="criticism-details">
-          <summary>Compared to what?</summary>
-          <p>Every cognitive tool in history. Calculators were supposed to destroy math. GPS was supposed to kill navigation. In every case, humans developed higher-order skills instead. The US math teachers' council reversed its anti-calculator position in 1989 after research showed calculators <em>improved</em> problem-solving.</p>
-          <div class="sources-inline">Plato, Phaedrus &middot; Sparrow et al., Science 2011 &middot; NCTM 1989</div>
-        </details>
-      </div>
+          <div class="chart-block" style="margin-bottom: 24px;">
+            <div class="chart-header">
+              <h3>What Deepfakes Actually Are</h3>
+              <p class="chart-note">Breakdown of detected deepfake content by category (Sensity AI, 2024)</p>
+            </div>
+            <div class="chart-wrap">
+              <canvas id="deepfakeChart"></canvas>
+            </div>
+          </div>
 
-      <div class="criticism-card reveal">
-        <div class="criticism-icon">&#x1F49A;</div>
-        <div class="criticism-topic">Mental Health</div>
-        <div class="criticism-stat">137M</div>
-        <div class="criticism-stat-label">Americans in mental health deserts</div>
-        <details class="criticism-details">
-          <summary>Compared to what?</summary>
-          <p>Getting no help at all. 48% of people with mental illness receive no treatment. Average wait: 48 days. A Dartmouth RCT (NEJM AI, 2025) found AI therapy produced a 51% reduction in depression symptoms with zero adverse events.</p>
-          <div class="sources-inline">HRSA 2025 &middot; NAMI/SAMHSA &middot; Dartmouth/NEJM AI 2025</div>
-        </details>
-      </div>
+          <div class="comparison-cards">
+            <div class="comp-card">
+              <div class="comp-label">Pre-AI: false news sharing rate</div>
+              <div class="comp-value negative">70%</div>
+              <div class="comp-sub">More likely to be shared than true news, before AI existed</div>
+            </div>
+            <div class="comp-card">
+              <div class="comp-label">Cambridge Analytica profiles manipulated</div>
+              <div class="comp-value negative">50M</div>
+              <div class="comp-sub">Zero deepfakes needed</div>
+            </div>
+            <div class="comp-card highlight">
+              <div class="comp-label">AI detection accuracy (2025)</div>
+              <div class="comp-value" style="color: var(--positive);">99.9%</div>
+              <div class="comp-sub">iProov biometric detection systems</div>
+            </div>
+          </div>
 
-      <div class="criticism-card reveal">
-        <div class="criticism-icon">&#x00A9;</div>
-        <div class="criticism-topic">Copyright &amp; IP</div>
-        <div class="criticism-stat">Fair Use</div>
-        <div class="criticism-stat-label">Ruled "exceedingly transformative" (2025)</div>
-        <details class="criticism-details">
-          <summary>Compared to what?</summary>
-          <p>Every previous media technology. Google Books scanned 20M copyrighted books: fair use. VCRs accused of enabling piracy: ruled legal. Photography, sampling, collage: identical challenges. All resolved with new frameworks, as AI will be.</p>
-          <div class="sources-inline">Bartz v. Anthropic 2025 &middot; Authors Guild v. Google 2015 &middot; Sony v. Universal 1984</div>
-        </details>
-      </div>
+          <div class="chart-verdict">Deepfakes are overwhelmingly a consent and exploitation problem, not a political misinformation problem. And the same AI that creates them detects them at 99.9% accuracy.</div>
+          <div class="sources-inline">Vosoughi et al., Science 2018 &middot; Sensity AI 2024 &middot; iProov 2025 &middot; MIT Media Lab 2018</div>
+        </div>
+      </details>
 
-      <div class="criticism-card reveal">
-        <div class="criticism-icon">&#x1F6E1;</div>
-        <div class="criticism-topic">Military &amp; Weapons</div>
-        <div class="criticism-stat">95%</div>
-        <div class="criticism-stat-label">of explosive weapon casualties are already civilian</div>
-        <details class="criticism-details">
-          <summary>Compared to what?</summary>
-          <p>Conventional, human-directed weapons. 61,353 civilian fatalities in 2024 from armed conflict, with minimal accountability. An AI targeting system at least creates an auditable record, something conventional operations typically do not produce.</p>
-          <div class="sources-inline">ACLED 2024 &middot; AOAV 2024 &middot; ICRC 2024</div>
-        </details>
-      </div>
+      <!-- ── 04 · Privacy & Surveillance ── -->
+      <details class="crit-block reveal">
+        <summary class="crit-summary">
+          <span class="crit-number">04</span>
+          <span class="crit-topic">Privacy &amp; Surveillance</span>
+          <span class="crit-key-stat">1,500 <span class="crit-key-label">data points per person before AI</span></span>
+          <span class="crit-toggle"></span>
+        </summary>
+        <div class="crit-body">
+          <div class="ctw-badge">Compared to what?</div>
+          <p class="crit-context">The surveillance infrastructure that already existed long before AI. The uncomfortable truth: you were already being tracked at scale.</p>
+
+          <div class="comparison-cards">
+            <div class="comp-card">
+              <div class="comp-label">Data points per person (Acxiom, pre-AI)</div>
+              <div class="comp-value negative">1,500</div>
+              <div class="comp-sub">On 700M consumers worldwide</div>
+            </div>
+            <div class="comp-card">
+              <div class="comp-label">CCTV footage that goes unwatched</div>
+              <div class="comp-value">99%+</div>
+              <div class="comp-sub">Cameras existed, nobody was watching</div>
+            </div>
+            <div class="comp-card highlight">
+              <div class="comp-label">Key difference with AI</div>
+              <div class="comp-value" style="color: var(--positive);">Auditable</div>
+              <div class="comp-sub">Algorithmic decisions can be logged and challenged</div>
+            </div>
+            <div class="comp-card">
+              <div class="comp-label">Human surveillance decisions</div>
+              <div class="comp-value negative">Invisible</div>
+              <div class="comp-sub">Intuitive, undocumented, and deniable</div>
+            </div>
+          </div>
+
+          <div class="parallel-box">
+            <div class="parallel-label">Surveillance: then vs. now</div>
+            <div class="parallel-items">
+              <div class="parallel-item">
+                <div class="parallel-then">Data brokers: no consent, no audit trail</div>
+                <div class="parallel-arrow">&rarr;</div>
+                <div class="parallel-now">GDPR: right to access, delete, and challenge</div>
+              </div>
+              <div class="parallel-item">
+                <div class="parallel-then">HR decisions: gut feeling, no documentation</div>
+                <div class="parallel-arrow">&rarr;</div>
+                <div class="parallel-now">AI decisions: logged, testable, appealable</div>
+              </div>
+              <div class="parallel-item">
+                <div class="parallel-then">Credit scoring: opaque bureau models</div>
+                <div class="parallel-arrow">&rarr;</div>
+                <div class="parallel-now">AI models: explainability requirements</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="chart-verdict">AI makes surveillance more capable but also, for the first time, auditable. That's not a step backward; it's the first chance we've had to actually regulate it.</div>
+          <div class="sources-inline">Carnegie Endowment 2019 &middot; FTC 2014 &middot; EU GDPR 2018-2025 &middot; Acxiom/LiveRamp data</div>
+        </div>
+      </details>
+
+      <!-- ── 05 · E-Waste ── -->
+      <details class="crit-block reveal">
+        <summary class="crit-summary">
+          <span class="crit-number">05</span>
+          <span class="crit-topic">E-Waste</span>
+          <span class="crit-key-stat">18x <span class="crit-key-label">more waste from fashion than AI</span></span>
+          <span class="crit-toggle"></span>
+        </summary>
+        <div class="crit-body">
+          <div class="ctw-badge">Compared to what?</div>
+          <p class="crit-context">AI hardware waste is real. But singling out AI while ignoring vastly larger waste streams is not a serious environmental position.</p>
+
+          <div class="chart-block" style="margin-bottom: 24px;">
+            <div class="chart-header">
+              <h3>Annual Waste by Sector (Million Metric Tons)</h3>
+              <p class="chart-note">AI e-waste in context of global waste streams</p>
+            </div>
+            <div class="chart-wrap">
+              <canvas id="ewasteChart"></canvas>
+            </div>
+          </div>
+
+          <div class="comparison-cards">
+            <div class="comp-card">
+              <div class="comp-label">Fashion textile waste per year</div>
+              <div class="comp-value negative">92M tons</div>
+              <div class="comp-sub">The real environmental crisis nobody protests</div>
+            </div>
+            <div class="comp-card">
+              <div class="comp-label">AI e-waste (projected 2030)</div>
+              <div class="comp-value">5M tons</div>
+              <div class="comp-sub">~8% of global e-waste total</div>
+            </div>
+            <div class="comp-card highlight">
+              <div class="comp-label">Rare earth mining concern</div>
+              <div class="comp-value">Shared</div>
+              <div class="comp-sub">Same minerals in phones, EVs, wind turbines, and AI chips</div>
+            </div>
+          </div>
+
+          <div class="chart-verdict">If e-waste concerns you, fashion and consumer electronics deserve 18x more of your attention than AI. The materials concern applies equally to every technology in the green transition.</div>
+          <div class="sources-inline">UN E-Waste Monitor 2024 &middot; Ellen MacArthur Foundation 2017 &middot; Global E-waste Statistics Partnership</div>
+        </div>
+      </details>
+
+      <!-- ── 06 · Art & Creativity ── -->
+      <details class="crit-block reveal">
+        <summary class="crit-summary">
+          <span class="crit-number">06</span>
+          <span class="crit-topic">Art &amp; Creativity</span>
+          <span class="crit-key-stat">1884 <span class="crit-key-label">photography won its copyright fight</span></span>
+          <span class="crit-toggle"></span>
+        </summary>
+        <div class="crit-body">
+          <div class="ctw-badge">Compared to what?</div>
+          <p class="crit-context">Every new creative medium in history was accused of not being "real art." The pattern is remarkably consistent across centuries.</p>
+
+          <div class="mini-timeline">
+            <div class="mini-timeline-item">
+              <div class="mini-timeline-year">1860s</div>
+              <div class="mini-timeline-label">Photography</div>
+              <div class="mini-timeline-desc">Denied copyright as "mere mechanical reproduction." Painters said it wasn't art.</div>
+            </div>
+            <div class="mini-timeline-item">
+              <div class="mini-timeline-year">1910s</div>
+              <div class="mini-timeline-label">Cinema</div>
+              <div class="mini-timeline-desc">Dismissed as fairground novelty. Theater critics said it lacked artistic merit.</div>
+            </div>
+            <div class="mini-timeline-item">
+              <div class="mini-timeline-year">1980s</div>
+              <div class="mini-timeline-label">Sampling</div>
+              <div class="mini-timeline-desc">Hip-hop producers sued for "stealing" music. Now a fundamental art form.</div>
+            </div>
+            <div class="mini-timeline-item">
+              <div class="mini-timeline-year">2000s</div>
+              <div class="mini-timeline-label">Digital Art</div>
+              <div class="mini-timeline-desc">"Real artists use paint." Photoshop and Wacom now standard creative tools.</div>
+            </div>
+            <div class="mini-timeline-item highlight">
+              <div class="mini-timeline-year">2020s</div>
+              <div class="mini-timeline-label">AI Generation</div>
+              <div class="mini-timeline-desc">"Not real creativity." Identical argument, same resolution trajectory.</div>
+            </div>
+          </div>
+
+          <div class="comparison-cards" style="margin-top: 24px;">
+            <div class="comp-card">
+              <div class="comp-label">Picasso on African masks</div>
+              <div class="comp-value">Studied</div>
+              <div class="comp-sub">Transformed others' visual language into new work</div>
+            </div>
+            <div class="comp-card">
+              <div class="comp-label">Warhol on commercial images</div>
+              <div class="comp-value">Repurposed</div>
+              <div class="comp-sub">Literal reproduction celebrated as high art</div>
+            </div>
+            <div class="comp-card highlight">
+              <div class="comp-label">Pattern across all media</div>
+              <div class="comp-value">Adapt</div>
+              <div class="comp-sub">Legal frameworks always catch up</div>
+            </div>
+          </div>
+
+          <div class="chart-verdict">Every new creative tool was called "not real art." Photography. Cinema. Sampling. Digital art. The accusation is always the same. The outcome is always the same.</div>
+          <div class="sources-inline">Burrow-Giles v. Sarony 1884 &middot; US Copyright Office 2023-2025 &middot; Campbell v. Acuff-Rose 1994</div>
+        </div>
+      </details>
+
+      <!-- ── 07 · Education & Cheating ── -->
+      <details class="crit-block reveal">
+        <summary class="crit-summary">
+          <span class="crit-number">07</span>
+          <span class="crit-topic">Education &amp; Cheating</span>
+          <span class="crit-key-stat">60-70% <span class="crit-key-label">cheated before AND after ChatGPT</span></span>
+          <span class="crit-toggle"></span>
+        </summary>
+        <div class="crit-body">
+          <div class="ctw-badge">Compared to what?</div>
+          <p class="crit-context">Stanford research shows academic dishonesty rates were virtually identical before and after ChatGPT. The tool changed; the behavior didn't.</p>
+
+          <div class="crit-big-stat-row">
+            <div class="crit-big-stat">
+              <div class="crit-big-num" style="color: var(--negative);">60-70%</div>
+              <div class="crit-big-label">Cheating rate BEFORE ChatGPT</div>
+            </div>
+            <div class="crit-big-stat">
+              <div class="crit-big-num" style="color: var(--negative);">60-70%</div>
+              <div class="crit-big-label">Cheating rate AFTER ChatGPT</div>
+            </div>
+          </div>
+
+          <div class="comparison-cards" style="margin-top: 24px;">
+            <div class="comp-card">
+              <div class="comp-label">Same rate, different tool</div>
+              <div class="comp-value">0%</div>
+              <div class="comp-sub">Net change in cheating rate</div>
+            </div>
+            <div class="comp-card highlight">
+              <div class="comp-label">Schools that integrated AI</div>
+              <div class="comp-value" style="color: var(--positive);">-45%</div>
+              <div class="comp-sub">Fewer academic integrity violations</div>
+            </div>
+            <div class="comp-card highlight">
+              <div class="comp-label">AI tutoring (Khan Academy)</div>
+              <div class="comp-value" style="color: var(--positive);">+30%</div>
+              <div class="comp-sub">Better course completion rates</div>
+            </div>
+          </div>
+
+          <div class="chart-verdict">Students who cheat with AI were already cheating with Google, essay mills, and older students' papers. Institutions that embrace AI as a learning tool see fewer violations and better outcomes.</div>
+          <div class="sources-inline">Stanford/McCabe 2023-24 &middot; Turnitin 2024 &middot; Khan Academy 2024 &middot; ICAI 2023</div>
+        </div>
+      </details>
+
+      <!-- ── 08 · Wealth Concentration ── -->
+      <details class="crit-block reveal">
+        <summary class="crit-summary">
+          <span class="crit-number">08</span>
+          <span class="crit-topic">Wealth Concentration</span>
+          <span class="crit-key-stat">$50T <span class="crit-key-label">shifted to top 1% before AI</span></span>
+          <span class="crit-toggle"></span>
+        </summary>
+        <div class="crit-body">
+          <div class="ctw-badge">Compared to what?</div>
+          <p class="crit-context">Wealth inequality is a real crisis. But blaming AI for it requires ignoring $50 trillion of evidence pointing elsewhere.</p>
+
+          <div class="crit-big-stat-row">
+            <div class="crit-big-stat">
+              <div class="crit-big-num">$50T</div>
+              <div class="crit-big-label">Shifted from bottom 90% to top 1% (1975-2018)</div>
+            </div>
+            <div class="crit-big-stat">
+              <div class="crit-big-num" style="color: var(--negative);">0%</div>
+              <div class="crit-big-label">Of that shift caused by generative AI</div>
+            </div>
+          </div>
+
+          <div class="allin-scale" style="max-width: 600px; margin: 28px 0;">
+            <div class="scale-item worst">
+              <div class="scale-label">Tax policy changes (Reagan-era onward)</div>
+              <div class="scale-bar" style="width: 85%;"></div>
+            </div>
+            <div class="scale-item bad">
+              <div class="scale-label">Globalization &amp; labor arbitrage</div>
+              <div class="scale-bar" style="width: 65%;"></div>
+            </div>
+            <div class="scale-item bad">
+              <div class="scale-label">Financialization of the economy</div>
+              <div class="scale-bar" style="width: 55%;"></div>
+            </div>
+            <div class="scale-item good">
+              <div class="scale-label">Technology (including AI)</div>
+              <div class="scale-bar" style="width: 15%;"></div>
+              <div class="scale-outcome">Technology is a <strong>minor factor</strong> compared to policy choices</div>
+            </div>
+          </div>
+
+          <div class="chart-verdict">If you care about wealth inequality, focus on tax policy, labor law, and financial regulation. Those are the actual mechanisms. Blaming AI is a distraction from policy solutions that could actually work.</div>
+          <div class="sources-inline">RAND Corporation 2020 &middot; Federal Reserve SCF &middot; World Inequality Lab 2022 &middot; Piketty, Capital in the 21st Century</div>
+        </div>
+      </details>
+
+      <!-- ── 09 · Algorithmic Bias ── -->
+      <details class="crit-block reveal">
+        <summary class="crit-summary">
+          <span class="crit-number">09</span>
+          <span class="crit-topic">Algorithmic Bias</span>
+          <span class="crit-key-stat">65% <span class="crit-key-label">harsher sentences before lunch</span></span>
+          <span class="crit-toggle"></span>
+        </summary>
+        <div class="crit-body">
+          <div class="ctw-badge">Compared to what?</div>
+          <p class="crit-context">AI bias is real and documented. But it replaced a system where bias was invisible, untestable, and deniable.</p>
+
+          <div class="parallel-box">
+            <div class="parallel-label">Human bias vs. AI bias</div>
+            <div class="parallel-items">
+              <div class="parallel-item">
+                <div class="parallel-then">Judges: 65% harsher before lunch</div>
+                <div class="parallel-arrow">&rarr;</div>
+                <div class="parallel-now">AI: consistent regardless of time of day</div>
+              </div>
+              <div class="parallel-item">
+                <div class="parallel-then">Loan officers: redlined entire neighborhoods</div>
+                <div class="parallel-arrow">&rarr;</div>
+                <div class="parallel-now">AI: can be tested for discrimination at scale</div>
+              </div>
+              <div class="parallel-item">
+                <div class="parallel-then">HR screening: "cultural fit" = invisible bias</div>
+                <div class="parallel-arrow">&rarr;</div>
+                <div class="parallel-now">AI: bias patterns detectable and correctable</div>
+              </div>
+              <div class="parallel-item">
+                <div class="parallel-then">Medical: women's symptoms dismissed for decades</div>
+                <div class="parallel-arrow">&rarr;</div>
+                <div class="parallel-now">AI: can be audited for diagnostic equity</div>
+              </div>
+            </div>
+            <div class="parallel-conclusion">Human bias is intuitive, invisible, and deniable. AI bias is the first kind we can actually measure, test, and fix.</div>
+          </div>
+
+          <div class="comparison-cards" style="margin-top: 24px;">
+            <div class="comp-card">
+              <div class="comp-label">Human bias</div>
+              <div class="comp-value negative">Invisible</div>
+              <div class="comp-sub">Cannot be tested, logged, or systematically corrected</div>
+            </div>
+            <div class="comp-card highlight">
+              <div class="comp-label">AI bias</div>
+              <div class="comp-value" style="color: var(--positive);">Testable</div>
+              <div class="comp-sub">First decision system that can be audited for discrimination</div>
+            </div>
+          </div>
+
+          <div class="chart-verdict">The question isn't whether AI has bias. It does. The question is whether you prefer a biased system you can test and fix, or a biased system you can't even detect.</div>
+          <div class="sources-inline">Danziger et al., PNAS 2011 &middot; ProPublica/COMPAS 2016 &middot; Obermeyer, Science 2019 &middot; NIST AI Bias Report 2022</div>
+        </div>
+      </details>
+
+      <!-- ── 10 · Hallucinations ── -->
+      <details class="crit-block reveal">
+        <summary class="crit-summary">
+          <span class="crit-number">10</span>
+          <span class="crit-topic">Hallucinations</span>
+          <span class="crit-key-stat">&lt; 2% <span class="crit-key-label">error rate, down from 40%</span></span>
+          <span class="crit-toggle"></span>
+        </summary>
+        <div class="crit-body">
+          <div class="ctw-badge">Compared to what?</div>
+          <p class="crit-context">AI hallucination dropped from 40% to under 2% in two years. Meanwhile, human professionals have error rates that nobody talks about.</p>
+
+          <div class="chart-block" style="margin-bottom: 24px;">
+            <div class="chart-header">
+              <h3>Error Rates: AI vs. Human Professionals</h3>
+              <p class="chart-note">AI hallucination rate in context of established human error rates</p>
+            </div>
+            <div class="chart-wrap">
+              <canvas id="hallucinationChart"></canvas>
+            </div>
+          </div>
+
+          <div class="comparison-cards">
+            <div class="comp-card">
+              <div class="comp-label">AI hallucination (2023)</div>
+              <div class="comp-value negative">40%</div>
+              <div class="comp-sub">Early models, no guardrails</div>
+            </div>
+            <div class="comp-card highlight">
+              <div class="comp-label">AI hallucination (2025)</div>
+              <div class="comp-value" style="color: var(--positive);">&lt; 2%</div>
+              <div class="comp-sub">95% reduction in two years</div>
+            </div>
+            <div class="comp-card">
+              <div class="comp-label">Improvement trajectory</div>
+              <div class="comp-value" style="color: var(--positive);">20x</div>
+              <div class="comp-sub">Better in 24 months. No human profession improved this fast, ever.</div>
+            </div>
+          </div>
+
+          <div class="chart-verdict">Physicians misdiagnose 5-11%. Newspapers publish 61% articles with errors. Eyewitnesses give false IDs 30% of the time. AI went from 40% to under 2% in two years. Name one human profession that improved 20x in 24 months.</div>
+          <div class="sources-inline">Vectara 2025 &middot; Newman-Toker 2023 &middot; Maier, Journalism Quarterly 2005 &middot; Innocence Project/Liebman 2000</div>
+        </div>
+      </details>
+
+      <!-- ── 11 · Dependency & Deskilling ── -->
+      <details class="crit-block reveal">
+        <summary class="crit-summary">
+          <span class="crit-number">11</span>
+          <span class="crit-topic">Dependency &amp; Deskilling</span>
+          <span class="crit-key-stat">370 BC <span class="crit-key-label">Socrates warned about writing</span></span>
+          <span class="crit-toggle"></span>
+        </summary>
+        <div class="crit-body">
+          <div class="ctw-badge">Compared to what?</div>
+          <p class="crit-context">Every cognitive tool in history triggered the same fear: this will make us dependent and destroy our skills. Every time, humans developed higher-order skills instead.</p>
+
+          <div class="mini-timeline">
+            <div class="mini-timeline-item">
+              <div class="mini-timeline-year">370 BC</div>
+              <div class="mini-timeline-label">Writing</div>
+              <div class="mini-timeline-desc">Socrates warned it would "create forgetfulness in learners' souls." It created civilization instead.</div>
+            </div>
+            <div class="mini-timeline-item">
+              <div class="mini-timeline-year">1440</div>
+              <div class="mini-timeline-label">Printing Press</div>
+              <div class="mini-timeline-desc">Monks said it would devalue knowledge. It sparked the Renaissance and Scientific Revolution.</div>
+            </div>
+            <div class="mini-timeline-item">
+              <div class="mini-timeline-year">1970s</div>
+              <div class="mini-timeline-label">Calculators</div>
+              <div class="mini-timeline-desc">Teachers said they'd destroy math skills. NCTM reversed position in 1989: calculators <em>improved</em> problem-solving.</div>
+            </div>
+            <div class="mini-timeline-item">
+              <div class="mini-timeline-year">2000s</div>
+              <div class="mini-timeline-label">GPS Navigation</div>
+              <div class="mini-timeline-desc">Critics said it would kill spatial awareness. Freed cognitive load for higher-order decision making.</div>
+            </div>
+            <div class="mini-timeline-item highlight">
+              <div class="mini-timeline-year">2020s</div>
+              <div class="mini-timeline-label">AI Assistants</div>
+              <div class="mini-timeline-desc">"It will make us dependent." Same argument, 2,400 years running.</div>
+            </div>
+          </div>
+
+          <div class="chart-verdict">Socrates was wrong about writing. Teachers were wrong about calculators. Critics were wrong about GPS. The pattern is 2,400 years old: offloading routine cognition frees humans for higher-order thinking.</div>
+          <div class="sources-inline">Plato, Phaedrus c. 370 BC &middot; Sparrow et al., Science 2011 &middot; NCTM 1989 &middot; Risko &amp; Gilbert 2016</div>
+        </div>
+      </details>
+
+      <!-- ── 12 · Mental Health ── -->
+      <details class="crit-block reveal">
+        <summary class="crit-summary">
+          <span class="crit-number">12</span>
+          <span class="crit-topic">Mental Health</span>
+          <span class="crit-key-stat">137M <span class="crit-key-label">Americans in mental health deserts</span></span>
+          <span class="crit-toggle"></span>
+        </summary>
+        <div class="crit-body">
+          <div class="ctw-badge">Compared to what?</div>
+          <p class="crit-context">The alternative to AI mental health support isn't perfect human therapy. For 137 million Americans, the alternative is no help at all.</p>
+
+          <div class="crit-big-stat-row">
+            <div class="crit-big-stat">
+              <div class="crit-big-num" style="color: var(--negative);">137M</div>
+              <div class="crit-big-label">Americans in mental health professional shortage areas</div>
+            </div>
+            <div class="crit-big-stat">
+              <div class="crit-big-num" style="color: var(--negative);">48%</div>
+              <div class="crit-big-label">Of people with mental illness receive NO treatment</div>
+            </div>
+          </div>
+
+          <div class="comparison-cards" style="margin-top: 24px;">
+            <div class="comp-card">
+              <div class="comp-label">Average wait for first appointment</div>
+              <div class="comp-value negative">48 days</div>
+              <div class="comp-sub">Nearly 7 weeks in crisis before seeing anyone</div>
+            </div>
+            <div class="comp-card highlight">
+              <div class="comp-label">AI therapy (Dartmouth RCT, NEJM AI 2025)</div>
+              <div class="comp-value" style="color: var(--positive);">-51%</div>
+              <div class="comp-sub">Reduction in depression symptoms</div>
+            </div>
+            <div class="comp-card highlight">
+              <div class="comp-label">Adverse events in AI therapy trial</div>
+              <div class="comp-value" style="color: var(--positive);">Zero</div>
+              <div class="comp-sub">Randomized controlled trial, gold standard evidence</div>
+            </div>
+          </div>
+
+          <div class="allin-scale" style="max-width: 600px; margin: 28px 0;">
+            <div class="scale-item worst">
+              <div class="scale-label">Americans with no access to mental health care</div>
+              <div class="scale-bar" style="width: 42%;"></div>
+              <div class="scale-outcome">137M people, <strong>42% of the US population</strong></div>
+            </div>
+            <div class="scale-item bad">
+              <div class="scale-label">Diagnosed but untreated</div>
+              <div class="scale-bar" style="width: 48%;"></div>
+              <div class="scale-outcome"><strong>48%</strong> of those diagnosed receive zero treatment</div>
+            </div>
+            <div class="scale-item good">
+              <div class="scale-label">AI therapy symptom reduction (RCT)</div>
+              <div class="scale-bar" style="width: 51%;"></div>
+              <div class="scale-outcome"><strong>51%</strong> improvement, zero adverse events</div>
+            </div>
+          </div>
+
+          <div class="chart-verdict">The debate isn't "AI therapy vs. human therapy." For 137 million Americans, it's "AI therapy vs. nothing." A 51% improvement with zero adverse events isn't a risk; it's a lifeline.</div>
+          <div class="sources-inline">HRSA 2025 &middot; NAMI/SAMHSA 2024 &middot; Dartmouth/NEJM AI 2025 &middot; APA Workforce Report 2023</div>
+        </div>
+      </details>
+
+      <!-- ── 13 · Copyright & IP ── -->
+      <details class="crit-block reveal">
+        <summary class="crit-summary">
+          <span class="crit-number">13</span>
+          <span class="crit-topic">Copyright &amp; IP</span>
+          <span class="crit-key-stat">Fair Use <span class="crit-key-label">ruled transformative (2025)</span></span>
+          <span class="crit-toggle"></span>
+        </summary>
+        <div class="crit-body">
+          <div class="ctw-badge">Compared to what?</div>
+          <p class="crit-context">Every transformative media technology faced identical copyright challenges. Every one was resolved with new frameworks that balanced creator rights with progress.</p>
+
+          <div class="mini-timeline">
+            <div class="mini-timeline-item">
+              <div class="mini-timeline-year">1884</div>
+              <div class="mini-timeline-label">Photography</div>
+              <div class="mini-timeline-desc">Burrow-Giles v. Sarony: Supreme Court rules photographs are copyrightable creative works.</div>
+            </div>
+            <div class="mini-timeline-item">
+              <div class="mini-timeline-year">1984</div>
+              <div class="mini-timeline-label">VCRs</div>
+              <div class="mini-timeline-desc">Sony v. Universal: Recording TV shows is fair use. Hollywood predicted the death of cinema.</div>
+            </div>
+            <div class="mini-timeline-item">
+              <div class="mini-timeline-year">2015</div>
+              <div class="mini-timeline-label">Book Scanning</div>
+              <div class="mini-timeline-desc">Authors Guild v. Google: Scanning 20M copyrighted books for search index is fair use.</div>
+            </div>
+            <div class="mini-timeline-item highlight">
+              <div class="mini-timeline-year">2025</div>
+              <div class="mini-timeline-label">AI Training</div>
+              <div class="mini-timeline-desc">Bartz v. Anthropic: AI training data use ruled "exceedingly transformative" fair use.</div>
+            </div>
+          </div>
+
+          <div class="chart-verdict">The legal system has resolved every "this technology will destroy copyright" panic since 1884. AI is not an exception; it's the latest chapter in a 140-year pattern of adaptation.</div>
+          <div class="sources-inline">Bartz v. Anthropic 2025 &middot; Authors Guild v. Google 2015 &middot; Sony v. Universal 1984 &middot; Burrow-Giles v. Sarony 1884</div>
+        </div>
+      </details>
+
+      <!-- ── 14 · Military & Weapons ── -->
+      <details class="crit-block reveal">
+        <summary class="crit-summary">
+          <span class="crit-number">14</span>
+          <span class="crit-topic">Military &amp; Weapons</span>
+          <span class="crit-key-stat">95% <span class="crit-key-label">of explosive casualties already civilian</span></span>
+          <span class="crit-toggle"></span>
+        </summary>
+        <div class="crit-body">
+          <div class="ctw-badge">Compared to what?</div>
+          <p class="crit-context">The weapons systems AI would replace. Current military operations already produce devastating civilian casualties with minimal accountability.</p>
+
+          <div class="crit-big-stat-row">
+            <div class="crit-big-stat">
+              <div class="crit-big-num" style="color: var(--negative);">95%</div>
+              <div class="crit-big-label">Of explosive weapon casualties are already civilians</div>
+            </div>
+            <div class="crit-big-stat">
+              <div class="crit-big-num" style="color: var(--negative);">61,353</div>
+              <div class="crit-big-label">Civilian fatalities from armed conflict in 2024</div>
+            </div>
+          </div>
+
+          <div class="comparison-cards" style="margin-top: 24px;">
+            <div class="comp-card">
+              <div class="comp-label">Human-directed operations</div>
+              <div class="comp-value negative">Minimal</div>
+              <div class="comp-sub">Accountability for targeting decisions</div>
+            </div>
+            <div class="comp-card highlight">
+              <div class="comp-label">AI targeting systems</div>
+              <div class="comp-value" style="color: var(--positive);">Auditable</div>
+              <div class="comp-sub">Every decision logged, reviewable, challengeable</div>
+            </div>
+            <div class="comp-card">
+              <div class="comp-label">The actual question</div>
+              <div class="comp-value">Which</div>
+              <div class="comp-sub">system produces fewer civilian casualties?</div>
+            </div>
+          </div>
+
+          <div class="allin-scale" style="max-width: 600px; margin: 28px 0;">
+            <div class="scale-item worst">
+              <div class="scale-label">Conventional weapons: civilian casualty rate</div>
+              <div class="scale-bar" style="width: 95%;"></div>
+            </div>
+            <div class="scale-item bad">
+              <div class="scale-label">Conventional: accountability for targeting</div>
+              <div class="scale-bar" style="width: 10%;"></div>
+            </div>
+            <div class="scale-item good">
+              <div class="scale-label">AI systems: audit trail for every decision</div>
+              <div class="scale-bar" style="width: 90%;"></div>
+            </div>
+          </div>
+
+          <div class="chart-verdict">This is the hardest criticism to discuss. But the comparison isn't AI weapons vs. no weapons. It's AI-assisted targeting with an audit trail vs. human-directed operations that killed 61,353 civilians in 2024 with minimal accountability.</div>
+          <div class="sources-inline">ACLED 2024 &middot; AOAV 2024 &middot; ICRC 2024 &middot; UN OCHA Civilian Impact Monitoring 2024</div>
+        </div>
+      </details>
 
     </div>
   </div>

@@ -642,6 +642,205 @@ function initWaterTechChart() {
 }
 
 /* ============================================================
+   CHART 8: Deepfake Content Breakdown
+   ============================================================ */
+function initDeepfakeChart() {
+  const ctx = document.getElementById('deepfakeChart');
+  if (!ctx) return;
+
+  new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ['Non-consensual pornography', 'Fraud / scams', 'Political manipulation', 'Other'],
+      datasets: [{
+        data: [96, 2, 1, 1],
+        backgroundColor: [NEGATIVE_BG, 'rgba(136, 136, 160, 0.45)', ACCENT_BG, 'rgba(136, 136, 160, 0.25)'],
+        borderColor: [NEGATIVE, MUTED, ACCENT, 'rgba(136, 136, 160, 0.4)'],
+        borderWidth: 1.5,
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      cutout: '55%',
+      plugins: {
+        legend: {
+          display: true,
+          position: 'right',
+          labels: {
+            color: MUTED,
+            padding: 12,
+            font: { size: 12 },
+            usePointStyle: true,
+            pointStyle: 'circle',
+          }
+        },
+        tooltip: {
+          backgroundColor: CARD_BG,
+          borderColor: 'rgba(255,255,255,0.1)',
+          borderWidth: 1,
+          padding: 12,
+          callbacks: {
+            label: (ctx) => ` ${ctx.label}: ${ctx.parsed}%`
+          }
+        }
+      }
+    }
+  });
+}
+
+/* ============================================================
+   CHART 9: E-Waste by Sector (Million Tonnes/year)
+   ============================================================ */
+function initEwasteChart() {
+  const ctx = document.getElementById('ewasteChart');
+  if (!ctx) return;
+
+  const sectors = ['Fashion\n(textiles)', 'Food\nPackaging', 'Consumer\nElectronics', 'Construction\nWaste', 'AI\nHardware'];
+  const tonnes = [92, 80, 62, 35, 5];
+
+  const colors = sectors.map((s, i) =>
+    i === 4 ? ACCENT_BG : 'rgba(136, 136, 160, 0.4)'
+  );
+  const borders = sectors.map((s, i) =>
+    i === 4 ? ACCENT : 'rgba(136, 136, 160, 0.6)'
+  );
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: sectors,
+      datasets: [{
+        data: tonnes,
+        backgroundColor: colors,
+        borderColor: borders,
+        borderWidth: 1.5,
+        borderRadius: 6,
+        borderSkipped: false,
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: CARD_BG,
+          borderColor: 'rgba(255,255,255,0.1)',
+          borderWidth: 1,
+          padding: 12,
+          callbacks: {
+            label: (ctx) => ` ${ctx.parsed.y}M tonnes/year`
+          }
+        }
+      },
+      scales: {
+        x: {
+          grid: { display: false },
+          ticks: { ...sharedTickOptions, maxRotation: 0, font: { size: 11 } },
+          border: { display: false }
+        },
+        y: {
+          grid: sharedGridOptions,
+          ticks: {
+            ...sharedTickOptions,
+            callback: (v) => `${v}M t`
+          },
+          border: { display: false },
+          title: {
+            display: true,
+            text: 'Million Tonnes / Year',
+            color: MUTED,
+            font: { size: 11 }
+          }
+        }
+      }
+    }
+  });
+}
+
+/* ============================================================
+   CHART 10: Hallucination / Error Rates Comparison
+   ============================================================ */
+function initHallucinationChart() {
+  const ctx = document.getElementById('hallucinationChart');
+  if (!ctx) return;
+
+  const categories = [
+    'Newspaper\narticle errors',
+    'Eyewitness\nID errors',
+    'Physician\nmisdiagnosis',
+    'Lawyer\nconfidence gap',
+    'AI hallucination\n(2023)',
+    'AI hallucination\n(2025)',
+  ];
+  const rates = [61, 30, 8, 16, 40, 2];
+
+  const colors = categories.map((c, i) =>
+    i === 5 ? ACCENT_BG :
+    i === 4 ? 'rgba(255, 170, 68, 0.7)' :
+    NEGATIVE_BG
+  );
+  const borders = categories.map((c, i) =>
+    i === 5 ? ACCENT :
+    i === 4 ? '#ffaa44' :
+    NEGATIVE
+  );
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: categories,
+      datasets: [{
+        data: rates,
+        backgroundColor: colors,
+        borderColor: borders,
+        borderWidth: 1.5,
+        borderRadius: 6,
+        borderSkipped: false,
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: CARD_BG,
+          borderColor: 'rgba(255,255,255,0.1)',
+          borderWidth: 1,
+          padding: 12,
+          callbacks: {
+            label: (ctx) => ` ${ctx.parsed.y}% error rate`
+          }
+        }
+      },
+      scales: {
+        x: {
+          grid: { display: false },
+          ticks: { ...sharedTickOptions, maxRotation: 0, font: { size: 11 } },
+          border: { display: false }
+        },
+        y: {
+          grid: sharedGridOptions,
+          ticks: {
+            ...sharedTickOptions,
+            callback: (v) => `${v}%`
+          },
+          border: { display: false },
+          title: {
+            display: true,
+            text: 'Error / Inaccuracy Rate (%)',
+            color: MUTED,
+            font: { size: 11 }
+          }
+        }
+      }
+    }
+  });
+}
+
+/* ============================================================
    INIT ALL CHARTS
    ============================================================ */
 function initAllCharts() {
@@ -652,6 +851,9 @@ function initAllCharts() {
   initDrivingChart();
   initMedicalChart();
   initWaterTechChart();
+  initDeepfakeChart();
+  initEwasteChart();
+  initHallucinationChart();
 }
 
 // Run when DOM is ready

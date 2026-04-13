@@ -862,114 +862,260 @@ section { padding: 100px 0; }
 
 .footer-small { opacity: 0.6; font-size: 0.72rem !important; margin-top: 4px; }
 
-/* ============================================================ CRITICISM CARDS */
-.criticism-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 20px;
+/* ============================================================ CRITICISM BLOCKS (expandable) */
+.crit-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.criticism-card {
+.crit-block {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 32px 28px;
-  text-align: center;
-  transition: border-color 0.3s, transform 0.2s;
+  transition: border-color 0.3s;
 }
 
-.criticism-card:hover {
+.crit-block:hover,
+.crit-block[open] {
   border-color: rgba(88, 166, 255, 0.2);
-  transform: translateY(-3px);
 }
 
-.criticism-icon {
-  font-size: 2.4rem;
-  margin-bottom: 16px;
-  line-height: 1;
+.crit-summary {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 28px;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
 }
 
-.criticism-topic {
+.crit-summary::-webkit-details-marker { display: none; }
+
+.crit-number {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--accent);
+  opacity: 0.5;
+  min-width: 32px;
+}
+
+.crit-topic {
   font-family: var(--font-display);
   font-size: 1.05rem;
   font-weight: 700;
-  color: var(--text-muted);
+  color: var(--text);
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  margin-bottom: 16px;
+  flex: 1;
+  min-width: 0;
 }
 
-.criticism-stat {
+.crit-key-stat {
   font-family: var(--font-display);
-  font-size: clamp(2.4rem, 4vw, 3.2rem);
+  font-size: 1.6rem;
   font-weight: 800;
   color: var(--accent);
+  letter-spacing: -0.03em;
+  white-space: nowrap;
+  margin-left: auto;
+}
+
+.crit-key-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0;
+  margin-left: 6px;
+}
+
+.crit-toggle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.3s, border-color 0.2s;
+  position: relative;
+}
+
+.crit-toggle::before,
+.crit-toggle::after {
+  content: '';
+  position: absolute;
+  background: var(--text-muted);
+  border-radius: 1px;
+  transition: transform 0.3s;
+}
+
+.crit-toggle::before {
+  width: 12px;
+  height: 2px;
+}
+
+.crit-toggle::after {
+  width: 2px;
+  height: 12px;
+}
+
+.crit-block[open] .crit-toggle::after {
+  transform: rotate(90deg);
+  opacity: 0;
+}
+
+.crit-block[open] .crit-toggle {
+  border-color: var(--accent);
+}
+
+.crit-body {
+  padding: 0 28px 28px;
+  border-top: 1px solid var(--border);
+  margin: 0 28px;
+  padding-top: 24px;
+}
+
+.crit-context {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.crit-context strong { color: var(--text); }
+
+/* Big stat row inside criticism body */
+.crit-big-stat-row {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.crit-big-stat {
+  text-align: center;
+  flex: 1;
+  min-width: 120px;
+}
+
+.crit-big-num {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 800;
   letter-spacing: -0.04em;
   line-height: 1;
   margin-bottom: 8px;
 }
 
-.criticism-stat-label {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
+.crit-big-num.accent { color: var(--accent); }
+.crit-big-num.positive { color: var(--positive); }
+.crit-big-num.negative { color: var(--negative); }
 
-.criticism-stat-label em {
-  color: var(--text);
-  font-style: normal;
-  font-weight: 600;
-}
-
-.criticism-details {
-  text-align: left;
-  border-top: 1px solid var(--border);
-  padding-top: 16px;
-}
-
-.criticism-details summary {
+.crit-big-label {
   font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--accent);
-  cursor: pointer;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: color 0.2s;
-}
-
-.criticism-details summary::-webkit-details-marker { display: none; }
-
-.criticism-details summary::after {
-  content: '+';
-  font-size: 1.1rem;
-  font-weight: 400;
-  margin-left: auto;
-  transition: transform 0.2s;
-}
-
-.criticism-details[open] summary::after {
-  content: '-';
-}
-
-.criticism-details summary:hover { color: var(--text); }
-
-.criticism-details p {
-  font-size: 0.88rem;
   color: var(--text-muted);
-  line-height: 1.7;
-  margin-top: 14px;
-  margin-bottom: 10px;
+  line-height: 1.4;
 }
 
-.criticism-details p strong { color: var(--text); }
-.criticism-details p em { color: var(--text); font-style: normal; font-weight: 600; }
+/* Mini timeline (vertical, compact) */
+.mini-timeline {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 24px;
+}
 
-.criticism-details .sources-inline {
+.mini-timeline::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--border), var(--accent));
+}
+
+.mini-timeline-item {
+  position: relative;
+  padding: 10px 0;
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.mini-timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -24px;
+  top: 16px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  border: 2px solid var(--bg-card);
+}
+
+.mini-timeline-item.highlight::before {
+  background: var(--accent);
+  box-shadow: 0 0 8px rgba(88, 166, 255, 0.4);
+}
+
+.mini-timeline-item.highlight {
+  padding: 12px 16px;
+  background: var(--accent-glow);
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius);
+  margin-left: -8px;
+}
+
+.mini-timeline-year {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--accent);
+  min-width: 50px;
+  letter-spacing: -0.02em;
+}
+
+.mini-timeline-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.mini-timeline-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-left: 4px;
+}
+
+/* Scale bars inside crit-body reuse .allin-scale */
+.crit-body .allin-scale {
+  margin-bottom: 24px;
+}
+
+/* Chart blocks inside crit-body */
+.crit-body .chart-block {
+  margin-bottom: 24px;
+  background: var(--bg-3);
+}
+
+.crit-body .comparison-cards {
+  margin-bottom: 24px;
+}
+
+.crit-body .parallel-box {
+  margin-bottom: 24px;
+}
+
+.crit-body .chart-verdict {
+  margin-bottom: 12px;
+}
+
+.crit-body .sources-inline {
   margin-top: 8px;
 }
 
@@ -1179,8 +1325,8 @@ section { padding: 100px 0; }
   .nav-links {
     display: none;
   }
-  .criticism-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .crit-key-stat {
+    font-size: 1.3rem;
   }
   .dc-feature-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1232,7 +1378,22 @@ section { padding: 100px 0; }
   .nuclear-ai-callout {
     padding: 24px;
   }
-  .criticism-card {
-    padding: 24px 20px;
+  .crit-summary {
+    padding: 20px;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .crit-body {
+    padding: 0 20px 20px;
+    margin: 0 20px;
+  }
+  .crit-big-stat-row {
+    gap: 16px;
+  }
+  .crit-big-num {
+    font-size: 2rem;
+  }
+  .mini-timeline-item.highlight {
+    margin-left: 0;
   }
 }
