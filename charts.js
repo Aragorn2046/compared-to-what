@@ -2,17 +2,17 @@
    COMPARED TO WHAT? — Chart Configurations (Chart.js)
    ============================================================ */
 
-const ACCENT = '#58a6ff';
-const ACCENT_DIM = 'rgba(88, 166, 255, 0.2)';
-const ACCENT_BG = 'rgba(88, 166, 255, 0.75)';
+const ACCENT = '#d4a056';
+const ACCENT_DIM = 'rgba(212, 160, 86, 0.2)';
+const ACCENT_BG = 'rgba(212, 160, 86, 0.75)';
 const NEGATIVE = '#ff4444';
 const NEGATIVE_DIM = 'rgba(255, 68, 68, 0.2)';
 const NEGATIVE_BG = 'rgba(255, 68, 68, 0.8)';
 const POSITIVE = '#44cc88';
-const MUTED = '#8888a0';
-const TEXT = '#e8e8f0';
-const GRID = 'rgba(255, 255, 255, 0.06)';
-const CARD_BG = '#1a1a22';
+const MUTED = '#8b949e';
+const TEXT = '#e6edf3';
+const GRID = 'rgba(212, 160, 86, 0.06)';
+const CARD_BG = '#0a0c10';
 
 // Shared chart defaults
 Chart.defaults.color = MUTED;

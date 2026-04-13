@@ -52,9 +52,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const nav = document.getElementById('nav');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 80) {
-      nav.style.background = 'rgba(10, 10, 12, 0.97)';
+      nav.style.background = 'rgba(4, 6, 10, 0.97)';
     } else {
-      nav.style.background = 'rgba(10, 10, 12, 0.85)';
+      nav.style.background = 'rgba(4, 6, 10, 0.85)';
     }
   }, { passive: true });
 
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinks.forEach(link => {
           link.style.color = '';
           if (link.getAttribute('href') === `#${id}`) {
-            link.style.color = '#58a6ff';
+            link.style.color = '#d4a056';
           }
         });
       }
