@@ -862,6 +862,253 @@ section { padding: 100px 0; }
 
 .footer-small { opacity: 0.6; font-size: 0.72rem !important; margin-top: 4px; }
 
+/* ============================================================ CRITICISM CARDS */
+.criticism-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.criticism-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  transition: border-color 0.3s, transform 0.2s;
+}
+
+.criticism-card:hover {
+  border-color: rgba(88, 166, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.criticism-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.criticism-num {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--accent);
+  opacity: 0.5;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.criticism-topic {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+.criticism-claim {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  padding-left: 14px;
+  border-left: 2px solid var(--border);
+}
+
+.criticism-reframe {
+  font-size: 0.9rem;
+  color: var(--text);
+  line-height: 1.7;
+  padding: 16px;
+  background: var(--accent-glow);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 12px;
+}
+
+.criticism-reframe strong {
+  color: var(--accent);
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.criticism-card .sources-inline {
+  margin-top: 0;
+}
+
+/* ============================================================ DATA CENTER FEATURES */
+.dc-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.dc-feature {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  transition: border-color 0.3s;
+}
+
+.dc-feature:hover {
+  border-color: rgba(88, 166, 255, 0.2);
+}
+
+.dc-feature-label {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+.dc-feature-stat {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 10px;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.dc-feature-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ============================================================ SPACE SECTION */
+.space-section {
+  margin-top: 60px;
+}
+
+.space-benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.space-benefit {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 20px;
+  text-align: center;
+  transition: border-color 0.2s;
+}
+
+.space-benefit:hover {
+  border-color: rgba(88, 166, 255, 0.2);
+}
+
+.space-benefit .comp-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.space-benefit h4 {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.space-benefit p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* NIMBY callout */
+.nimby-callout {
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 68, 68, 0.2);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  margin-bottom: 48px;
+}
+
+.nimby-callout h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--negative);
+  letter-spacing: -0.02em;
+}
+
+.nimby-callout p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.nimby-callout p:last-child { margin-bottom: 0; }
+.nimby-callout strong { color: var(--text); }
+
+/* Nuclear-powered AI callout */
+.nuclear-ai-callout {
+  background: var(--bg-card);
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  margin: 40px 0;
+}
+
+.nuclear-ai-callout h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.nuclear-ai-callout p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.nuclear-ai-callout p:last-child { margin-bottom: 0; }
+.nuclear-ai-callout strong { color: var(--text); }
+
+/* Space timeline */
+.space-timeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.space-timeline-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+.space-timeline-item .timeline-year {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.space-timeline-item p {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
 /* ============================================================ SCROLL REVEAL ANIMATIONS */
 .reveal {
   opacity: 0;
@@ -900,6 +1147,18 @@ section { padding: 100px 0; }
   .nav-links {
     display: none;
   }
+  .criticism-grid {
+    grid-template-columns: 1fr;
+  }
+  .dc-feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .space-benefits {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .space-timeline {
+    grid-template-columns: repeat(2, 1fr);
+  }
   section { padding: 72px 0; }
 }
 
@@ -927,5 +1186,21 @@ section { padding: 100px 0; }
   }
   .comparison-cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .dc-feature-grid {
+    grid-template-columns: 1fr;
+  }
+  .space-benefits {
+    grid-template-columns: 1fr 1fr;
+  }
+  .space-timeline {
+    grid-template-columns: 1fr;
+  }
+  .nimby-callout,
+  .nuclear-ai-callout {
+    padding: 24px;
+  }
+  .criticism-card {
+    padding: 24px 20px;
   }
 }

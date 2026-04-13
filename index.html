@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Compared to What? — Reframing AI Criticism With Data</title>
-  <meta name="description" content="Every AI criticism answered with one simple question: Compared to what? Data-backed reframing of energy use, safety, and the true cost of slowing technology." />
+  <title>Compared to What? — Every AI Criticism Answered With Data</title>
+  <meta name="description" content="Every AI criticism answered with one question: Compared to what? Data-backed counterarguments on energy, water, jobs, safety, bias, deepfakes, and more. Including the future of data centers and space computing." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -19,8 +19,10 @@
     <div class="nav-logo">Compared to What?</div>
     <ul class="nav-links">
       <li><a href="#resources">Resources</a></li>
-      <li><a href="#nuclear">Nuclear Lesson</a></li>
-      <li><a href="#denominator">The Denominator</a></li>
+      <li><a href="#nuclear">Nuclear</a></li>
+      <li><a href="#denominator">Denominator</a></li>
+      <li><a href="#criticisms">Criticisms</a></li>
+      <li><a href="#datacenters">Data Centers</a></li>
       <li><a href="#sources">Sources</a></li>
     </ul>
   </div>
@@ -52,27 +54,29 @@
         <div class="framework-num">01</div>
         <div class="framework-text">A criticism is stated without a baseline. "AI uses enormous amounts of energy."</div>
       </div>
-      <div class="framework-arrow">→</div>
+      <div class="framework-arrow">&rarr;</div>
       <div class="framework-item">
         <div class="framework-num">02</div>
         <div class="framework-text">We ask the obvious follow-up. "Compared to what, exactly?"</div>
       </div>
-      <div class="framework-arrow">→</div>
+      <div class="framework-arrow">&rarr;</div>
       <div class="framework-item">
         <div class="framework-num">03</div>
-        <div class="framework-text">The data provides context. The criticism either holds up — or it doesn't.</div>
+        <div class="framework-text">The data provides context. The criticism either holds up or it doesn't.</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SECTION 1: RESOURCES -->
+<!-- ============================================================
+     SECTION 1: RESOURCES
+     ============================================================ -->
 <section id="resources">
   <div class="container">
     <div class="section-header reveal">
       <div class="section-label">Section 01</div>
       <h2>Resource Criticism<br /><span class="accent">Reframed</span></h2>
-      <p class="section-intro">"AI uses too much energy." Sure. But so does everything else — and most of those things don't accelerate solutions to climate change, disease, or poverty.</p>
+      <p class="section-intro">"AI uses too much energy." Sure. But so does everything else, and most of those things don't accelerate solutions to climate change, disease, or poverty.</p>
     </div>
 
     <!-- Energy Chart -->
@@ -86,14 +90,14 @@
         <canvas id="energyChart"></canvas>
       </div>
       <div class="chart-verdict">
-        <strong>Verdict:</strong> Global AI consumes roughly 300–400 TWh/year. Aviation burns 8× more. Cryptocurrency burns 2–3× more for no productivity gain. Air conditioning in the US alone uses 5×.
+        <strong>Verdict:</strong> Global AI consumes roughly 300-400 TWh/year. Aviation burns 8x more. Cryptocurrency burns 2-3x more for no productivity gain. Air conditioning in the US alone uses 5x.
       </div>
       <div class="sources-inline">
-        Sources: IEA World Energy Outlook 2024 · IATA Aviation 2023 · Cambridge Bitcoin Electricity Index 2024 · US EIA Residential Energy 2023
+        Sources: IEA World Energy Outlook 2024 &middot; IATA Aviation 2023 &middot; Cambridge Bitcoin Electricity Index 2024 &middot; US EIA Residential Energy 2023
       </div>
     </div>
 
-    <!-- Water Chart -->
+    <!-- Water Comparison Cards -->
     <div class="chart-block reveal">
       <div class="chart-header">
         <div class="ctw-badge">Compared to What?</div>
@@ -102,31 +106,31 @@
       </div>
       <div class="comparison-cards">
         <div class="comp-card highlight">
-          <div class="comp-icon">🤖</div>
+          <div class="comp-icon">&nbsp;</div>
           <div class="comp-label">1 ChatGPT conversation</div>
           <div class="comp-value">~0.5L</div>
           <div class="comp-sub">of water to cool data centers</div>
         </div>
         <div class="comp-card">
-          <div class="comp-icon">🍔</div>
+          <div class="comp-icon">&nbsp;</div>
           <div class="comp-label">1 hamburger</div>
           <div class="comp-value">~2,500L</div>
           <div class="comp-sub">from farm to plate</div>
         </div>
         <div class="comp-card">
-          <div class="comp-icon">👖</div>
+          <div class="comp-icon">&nbsp;</div>
           <div class="comp-label">1 pair of jeans</div>
           <div class="comp-value">~10,000L</div>
           <div class="comp-sub">cotton to finished product</div>
         </div>
         <div class="comp-card">
-          <div class="comp-icon">🥩</div>
+          <div class="comp-icon">&nbsp;</div>
           <div class="comp-label">1 kg of beef</div>
           <div class="comp-value">~15,400L</div>
           <div class="comp-sub">full supply chain</div>
         </div>
         <div class="comp-card">
-          <div class="comp-icon">📱</div>
+          <div class="comp-icon">&nbsp;</div>
           <div class="comp-label">1 smartphone</div>
           <div class="comp-value">~12,760L</div>
           <div class="comp-sub">manufacturing process</div>
@@ -136,7 +140,7 @@
         <strong>Verdict:</strong> One hamburger uses the same water as approximately 5,000 ChatGPT conversations. Agriculture represents 70% of global freshwater withdrawals. AI data centers are under 1%.
       </div>
       <div class="sources-inline">
-        Sources: UNESCO Water Assessment 2023 · Goldman et al. "Making AI Less Thirsty" 2023 · Water Footprint Network · FAO AQUASTAT
+        Sources: UNESCO Water Assessment 2023 &middot; Goldman et al. "Making AI Less Thirsty" 2023 &middot; Water Footprint Network &middot; FAO AQUASTAT
       </div>
     </div>
 
@@ -151,22 +155,24 @@
         <canvas id="roiChart"></canvas>
       </div>
       <div class="chart-verdict">
-        <strong>Verdict:</strong> AlphaFold solving the protein structure problem — estimated 10,000 researcher-years compressed into months — consumed less energy than a single transatlantic flight. The return on energy investment for AI is unlike anything in human history.
+        <strong>Verdict:</strong> AlphaFold solving the protein structure problem, estimated 10,000 researcher-years compressed into months, consumed less energy than a single transatlantic flight. The return on energy investment for AI is unlike anything in human history.
       </div>
       <div class="sources-inline">
-        Sources: DeepMind AlphaFold paper 2021 · Nature "The protein-folding revolution" 2022 · ICAO Carbon Calculator
+        Sources: DeepMind AlphaFold paper 2021 &middot; Nature "The protein-folding revolution" 2022 &middot; ICAO Carbon Calculator
       </div>
     </div>
   </div>
 </section>
 
-<!-- SECTION 2: NUCLEAR LESSON -->
+<!-- ============================================================
+     SECTION 2: NUCLEAR LESSON
+     ============================================================ -->
 <section id="nuclear">
   <div class="container">
     <div class="section-header reveal">
       <div class="section-label">Section 02</div>
       <h2>The Nuclear<br /><span class="accent">Lesson</span></h2>
-      <p class="section-intro">We've made this mistake before. In the 1970s and 80s, fear — not facts — froze nuclear energy at its most immature stage. We're still paying for it in lives and emissions.</p>
+      <p class="section-intro">We've made this mistake before. In the 1970s and 80s, fear, not facts, froze nuclear energy at its most immature stage. We're still paying for it in lives and emissions.</p>
     </div>
 
     <div class="nuclear-timeline reveal">
@@ -195,7 +201,7 @@
         <div class="timeline-year">2023</div>
         <div class="timeline-content">
           <h4>Germany's Energiewende</h4>
-          <p>Last reactors closed. Germany's per-capita emissions: 2× France (nuclear-powered). The "green" decision increased carbon output measurably.</p>
+          <p>Last reactors closed. Germany's per-capita emissions: 2x France (nuclear-powered). The "green" decision increased carbon output measurably.</p>
         </div>
       </div>
     </div>
@@ -211,19 +217,19 @@
         <canvas id="nuclearDeathsChart"></canvas>
       </div>
       <div class="chart-verdict">
-        <strong>Verdict:</strong> Nuclear is the safest energy source ever deployed at scale — safer than solar (rooftop installation falls), wind, hydro, and orders of magnitude safer than fossil fuels. The fear was not proportional to the data.
+        <strong>Verdict:</strong> Nuclear is the safest energy source ever deployed at scale, safer than solar (rooftop installation falls), wind, hydro, and orders of magnitude safer than fossil fuels. The fear was not proportional to the data.
       </div>
       <div class="sources-inline">
-        Sources: Ritchie & Roser "What are the safest and cleanest sources of energy?" Our World in Data 2024 · Markandya & Wilkinson, Lancet 2007 · WHO Air Quality Report 2022
+        Sources: Ritchie &amp; Roser "What are the safest and cleanest sources of energy?" Our World in Data 2024 &middot; Markandya &amp; Wilkinson, Lancet 2007 &middot; WHO Air Quality Report 2022
       </div>
     </div>
 
-    <!-- Germany callout -->
+    <!-- Counterfactual callout -->
     <div class="callout-block reveal">
       <div class="callout-left">
         <div class="ctw-badge large">The Counterfactual Cost</div>
         <h3>What did the anti-nuclear movement actually cost?</h3>
-        <p>Researchers at UC Berkeley estimated that if the US hadn't slowed nuclear expansion after 1970, the country would have avoided <strong>1.8 million premature deaths</strong> from air pollution — and prevented the emission of <strong>64 gigatons of CO₂.</strong></p>
+        <p>Researchers at UC Berkeley estimated that if the US hadn't slowed nuclear expansion after 1970, the country would have avoided <strong>1.8 million premature deaths</strong> from air pollution and prevented the emission of <strong>64 gigatons of CO2.</strong></p>
         <p>The anti-nuclear movement didn't save lives. It cost them. Measurably. In millions.</p>
         <div class="callout-stat-row">
           <div class="callout-stat">
@@ -232,10 +238,10 @@
           </div>
           <div class="callout-stat">
             <div class="callout-stat-num">64 Gt</div>
-            <div class="callout-stat-label">CO₂ that nuclear replacement energy emitted instead</div>
+            <div class="callout-stat-label">CO2 that nuclear replacement energy emitted instead</div>
           </div>
         </div>
-        <div class="sources-inline">Source: Kharecha & Hansen, Environmental Science &amp; Technology, 2013</div>
+        <div class="sources-inline">Source: Kharecha &amp; Hansen, Environmental Science &amp; Technology, 2013</div>
       </div>
       <div class="callout-right">
         <div class="parallel-box">
@@ -243,27 +249,27 @@
           <div class="parallel-items">
             <div class="parallel-item">
               <div class="parallel-then">Nuclear in 1979</div>
-              <div class="parallel-arrow">→</div>
+              <div class="parallel-arrow">&rarr;</div>
               <div class="parallel-now">AI in 2024</div>
             </div>
             <div class="parallel-item">
               <div class="parallel-then">Expensive, inefficient early-stage tech</div>
-              <div class="parallel-arrow">→</div>
+              <div class="parallel-arrow">&rarr;</div>
               <div class="parallel-now">Expensive, high-energy early-stage tech</div>
             </div>
             <div class="parallel-item">
               <div class="parallel-then">Fear-driven regulation halts development</div>
-              <div class="parallel-arrow">→</div>
+              <div class="parallel-arrow">&rarr;</div>
               <div class="parallel-now">Fear-driven regulation risks doing the same</div>
             </div>
             <div class="parallel-item">
               <div class="parallel-then">Technology frozen at immature state</div>
-              <div class="parallel-arrow">→</div>
+              <div class="parallel-arrow">&rarr;</div>
               <div class="parallel-now">AI kept in high-energy, high-cost phase longer</div>
             </div>
             <div class="parallel-item">
               <div class="parallel-then">Millions of deaths from fossil fuel gap</div>
-              <div class="parallel-arrow">→</div>
+              <div class="parallel-arrow">&rarr;</div>
               <div class="parallel-now">Millions of deaths from delayed AI-accelerated cures</div>
             </div>
           </div>
@@ -276,29 +282,31 @@
     <div class="chart-block reveal">
       <div class="chart-header">
         <div class="ctw-badge">Compared to What?</div>
-        <h3>CO₂ Emissions per kWh by Energy Source</h3>
+        <h3>CO2 Emissions per kWh by Energy Source</h3>
         <p class="chart-note">Lifecycle emissions including construction and fuel</p>
       </div>
       <div class="chart-wrap">
         <canvas id="emissionsChart"></canvas>
       </div>
       <div class="chart-verdict">
-        <strong>Verdict:</strong> Nuclear emits 3–12 gCO₂/kWh over its full lifecycle — comparable to wind and solar. Coal emits 820 gCO₂/kWh. Gas emits 490 gCO₂/kWh. Every nuclear plant we closed was replaced by something 50–250× more polluting.
+        <strong>Verdict:</strong> Nuclear emits 3-12 gCO2/kWh over its full lifecycle, comparable to wind and solar. Coal emits 820 gCO2/kWh. Gas emits 490. Every nuclear plant we closed was replaced by something 50-250x more polluting.
       </div>
       <div class="sources-inline">
-        Sources: IPCC AR6 Working Group III 2022 · UNECE Life Cycle Assessment of Electricity Generation Options 2021
+        Sources: IPCC AR6 Working Group III 2022 &middot; UNECE Life Cycle Assessment of Electricity Generation Options 2021
       </div>
     </div>
   </div>
 </section>
 
-<!-- SECTION 3: THE DENOMINATOR -->
+<!-- ============================================================
+     SECTION 3: THE DENOMINATOR
+     ============================================================ -->
 <section id="denominator">
   <div class="container">
     <div class="section-header reveal">
       <div class="section-label">Section 03</div>
       <h2>The Denominator<br /><span class="accent">Argument</span></h2>
-      <p class="section-intro">Critics fixate on AI failures. They never show you the denominator — the baseline failure rate of the human systems AI is replacing. When you add the denominator, the math changes completely.</p>
+      <p class="section-intro">Critics fixate on AI failures. They never show you the denominator: the baseline failure rate of the human systems AI is replacing. When you add the denominator, the math changes completely.</p>
     </div>
 
     <!-- Self-driving comparison -->
@@ -312,10 +320,10 @@
         <canvas id="drivingChart"></canvas>
       </div>
       <div class="chart-verdict">
-        <strong>Verdict:</strong> Waymo's autonomous vehicles have demonstrated a 73% reduction in injury-causing crashes vs. human baseline. Every headline about an AV accident ignores that human drivers have 6.1M accidents per year in the US alone — roughly 1 every 5 seconds.
+        <strong>Verdict:</strong> Waymo's autonomous vehicles have demonstrated a 73% reduction in injury-causing crashes vs. human baseline. Every headline about an AV accident ignores that human drivers have 6.1M accidents per year in the US alone, roughly 1 every 5 seconds.
       </div>
       <div class="sources-inline">
-        Sources: Waymo Safety Report 2023 · NHTSA Traffic Safety Facts 2022 · Swiss Re "Autonomous Vehicle Liability" 2023
+        Sources: Waymo Safety Report 2023 &middot; NHTSA Traffic Safety Facts 2022 &middot; Swiss Re "Autonomous Vehicle Liability" 2023
       </div>
     </div>
 
@@ -330,10 +338,10 @@
         <canvas id="medicalChart"></canvas>
       </div>
       <div class="chart-verdict">
-        <strong>Verdict:</strong> Human physicians misdiagnose approximately 10–15% of serious conditions. Radiologists miss ~30% of cancers that are visible in retrospect. AI systems consistently match or outperform expert-level human accuracy — and never get tired.
+        <strong>Verdict:</strong> Human physicians misdiagnose approximately 10-15% of serious conditions. Radiologists miss ~30% of cancers that are visible in retrospect. AI systems consistently match or outperform expert-level human accuracy, and never get tired.
       </div>
       <div class="sources-inline">
-        Sources: Singh et al. BMJ Quality &amp; Safety 2014 · McKinney et al. Nature 2020 · Topol "High-performance medicine" Nature 2019
+        Sources: Singh et al. BMJ Quality &amp; Safety 2014 &middot; McKinney et al. Nature 2020 &middot; Topol "High-performance medicine" Nature 2019
       </div>
     </div>
 
@@ -346,29 +354,26 @@
       </div>
       <div class="comparison-cards triple">
         <div class="comp-card">
-          <div class="comp-icon">👤</div>
           <div class="comp-label">Human callbacks: identical CV, different name</div>
           <div class="comp-value negative">50% fewer</div>
           <div class="comp-sub">callbacks for Black-sounding names vs. White-sounding names (US, 2004 study replicated in 2021)</div>
         </div>
         <div class="comp-card">
-          <div class="comp-icon">👩</div>
           <div class="comp-label">Gender bias in academic hiring</div>
           <div class="comp-value negative">~30%</div>
           <div class="comp-sub">lower evaluation scores for identical work attributed to female names in STEM fields</div>
         </div>
         <div class="comp-card highlight">
-          <div class="comp-icon">🤖</div>
           <div class="comp-label">AI hiring tools (audited, post-regulation)</div>
           <div class="comp-value">Documented &amp; fixable</div>
           <div class="comp-sub">AI bias is measurable, auditable, and correctable. Human bias is intuitive, invisible, and deniable.</div>
         </div>
       </div>
       <div class="chart-verdict">
-        <strong>Verdict:</strong> AI bias is real. But human bias is worse, less visible, and harder to correct. The question is never "is this system perfect?" — it's "is it better than what we have now?" The denominator matters.
+        <strong>Verdict:</strong> AI bias is real. But human bias is worse, less visible, and harder to correct. The question is never "is this system perfect?" It's "is it better than what we have now?" The denominator matters.
       </div>
       <div class="sources-inline">
-        Sources: Bertrand &amp; Mullainathan AER 2004 · Kline et al. QJE 2021 · Moss-Racusin et al. PNAS 2012
+        Sources: Bertrand &amp; Mullainathan AER 2004 &middot; Kline et al. QJE 2021 &middot; Moss-Racusin et al. PNAS 2012
       </div>
     </div>
 
@@ -377,23 +382,23 @@
       <div class="linear-content">
         <h3>Why We Get This Wrong</h3>
         <p class="linear-big">People evaluate technology at its <span class="accent">present state</span>, not its <span class="accent">trajectory.</span></p>
-        <p>When nuclear was young, critics judged it by its 1970s limitations — not by where passive safety, SMRs, and thorium would take it. When AI is young, critics judge it by its 2024 limitations — not by what fully mature AI will look like.</p>
+        <p>When nuclear was young, critics judged it by its 1970s limitations, not by where passive safety, SMRs, and thorium would take it. When AI is young, critics judge it by its 2024 limitations, not by what fully mature AI will look like.</p>
         <div class="linear-grid">
           <div class="linear-item">
             <div class="linear-item-num">1</div>
-            <div class="linear-item-text"><strong>Present-state evaluation</strong> — judging the technology only by what it does today</div>
+            <div class="linear-item-text"><strong>Present-state evaluation</strong> &mdash; judging the technology only by what it does today</div>
           </div>
           <div class="linear-item">
             <div class="linear-item-num">2</div>
-            <div class="linear-item-text"><strong>Risk asymmetry</strong> — imagining all the ways the technology can fail, none of the ways it succeeds</div>
+            <div class="linear-item-text"><strong>Risk asymmetry</strong> &mdash; imagining all the ways the technology can fail, none of the ways it succeeds</div>
           </div>
           <div class="linear-item">
             <div class="linear-item-num">3</div>
-            <div class="linear-item-text"><strong>Invisible counterfactual</strong> — forgetting that NOT deploying the technology has costs too</div>
+            <div class="linear-item-text"><strong>Invisible counterfactual</strong> &mdash; forgetting that NOT deploying the technology has costs too</div>
           </div>
           <div class="linear-item">
             <div class="linear-item-num">4</div>
-            <div class="linear-item-text"><strong>Maturity trap</strong> — slowing technology freezes it in its immature, expensive, inefficient phase</div>
+            <div class="linear-item-text"><strong>Maturity trap</strong> &mdash; slowing technology freezes it in its immature, expensive, inefficient phase</div>
           </div>
         </div>
       </div>
@@ -433,20 +438,418 @@
   </div>
 </section>
 
-<!-- CLOSING -->
-<section id="closing">
+<!-- ============================================================
+     SECTION 4: EVERY CRITICISM, ANSWERED
+     ============================================================ -->
+<section id="criticisms">
   <div class="container">
-    <div class="closing-content reveal">
-      <h2>The Question Hasn't Changed</h2>
-      <p class="closing-big">Every time someone makes a claim about AI — whether it's dangerous, wasteful, unreliable, or biased — ask the same question:</p>
-      <div class="ctw-final">Compared to what?</div>
-      <p class="closing-body">Not "compared to a perfect system." Not "compared to an imagined future where we don't need this technology." Compared to what we actually have: human systems, existing infrastructure, the alternatives on the table right now.</p>
-      <p class="closing-body">The data isn't always favorable to AI. Sometimes the criticism holds up. But you can't know that until you've asked the question — and most critics never do.</p>
+    <div class="section-header reveal">
+      <div class="section-label">Section 04</div>
+      <h2>Every Criticism<br /><span class="accent">Answered</span></h2>
+      <p class="section-intro">Fourteen of the most common AI criticisms. Each one answered the same way: with data, context, and the question nobody asks.</p>
+    </div>
+
+    <div class="criticism-grid">
+
+      <div class="criticism-card reveal">
+        <div class="criticism-header">
+          <span class="criticism-num">01</span>
+          <span class="criticism-topic">Job Displacement</span>
+        </div>
+        <p class="criticism-claim">"AI will destroy millions of jobs and cause mass unemployment."</p>
+        <div class="criticism-reframe">
+          <strong>Compared to what?</strong> Every automation panic in history. Bank tellers <em>doubled</em> after ATMs were introduced. 60% of today's jobs didn't exist in 1940. Goldman Sachs estimates AI displaces 6-7% of jobs while creating net new roles. The US Bureau of Labor Statistics projects overall employment growth through 2033 despite AI adoption.
+        </div>
+        <div class="sources-inline">Goldman Sachs 2023 &middot; McKinsey Global Institute 2023 &middot; US BLS 2024 &middot; ITIF 2024</div>
+      </div>
+
+      <div class="criticism-card reveal">
+        <div class="criticism-header">
+          <span class="criticism-num">02</span>
+          <span class="criticism-topic">Existential Risk</span>
+        </div>
+        <p class="criticism-claim">"AI could pose an existential threat to humanity."</p>
+        <div class="criticism-reframe">
+          <strong>Compared to what?</strong> The expert consensus. When 2,778 AI researchers were surveyed, the median probability they assigned to AI causing human extinction was <strong>5%</strong>. That means the people who understand AI best believe there is a 95% chance this works out. Worth managing, not worth panicking.
+        </div>
+        <div class="sources-inline">Grace et al. 2024, AI &amp; Society &middot; Toby Ord, The Precipice 2020</div>
+      </div>
+
+      <div class="criticism-card reveal">
+        <div class="criticism-header">
+          <span class="criticism-num">03</span>
+          <span class="criticism-topic">Deepfakes</span>
+        </div>
+        <p class="criticism-claim">"AI deepfakes will make it impossible to trust anything we see or hear."</p>
+        <div class="criticism-reframe">
+          <strong>Compared to what?</strong> The pre-AI misinformation crisis. False news was 70% more likely to be shared than true news <em>before AI existed</em>. Cambridge Analytica manipulated 50 million profiles with zero deepfakes. And 96% of deepfake content is non-consensual pornography, not political disinformation. Detection systems now achieve 99.9% accuracy.
+        </div>
+        <div class="sources-inline">Vosoughi et al., Science 2018 &middot; Sumsub 2024 &middot; iProov 2025 &middot; Sensity AI 2024</div>
+      </div>
+
+      <div class="criticism-card reveal">
+        <div class="criticism-header">
+          <span class="criticism-num">04</span>
+          <span class="criticism-topic">Privacy &amp; Surveillance</span>
+        </div>
+        <p class="criticism-claim">"AI enables unprecedented mass surveillance."</p>
+        <div class="criticism-reframe">
+          <strong>Compared to what?</strong> The surveillance that already existed. Over 99% of CCTV footage goes completely unwatched. Data broker Acxiom maintained 1,500 data points per person on 700 million consumers, all before AI. AI makes surveillance more capable but also more auditable. Algorithmic decisions can be logged, reviewed, and challenged. A human analyst's judgment calls never could be.
+        </div>
+        <div class="sources-inline">Carnegie Endowment 2019 &middot; FTC 2014 &middot; EU GDPR enforcement data 2018-2025</div>
+      </div>
+
+      <div class="criticism-card reveal">
+        <div class="criticism-header">
+          <span class="criticism-num">05</span>
+          <span class="criticism-topic">E-Waste</span>
+        </div>
+        <p class="criticism-claim">"AI hardware creates massive e-waste and environmental destruction."</p>
+        <div class="criticism-reframe">
+          <strong>Compared to what?</strong> Everything else we throw away. AI-specific e-waste is projected at ~5 million metric tons by 2030, roughly 8% of the global total. The fashion industry produces <strong>92 million metric tons</strong> of textile waste per year, 18 times more. The rare earth mining concern applies equally to every phone, EV battery, and wind turbine.
+        </div>
+        <div class="sources-inline">UN Global E-Waste Monitor 2024 &middot; Ellen MacArthur Foundation 2017 &middot; USGS 2023</div>
+      </div>
+
+      <div class="criticism-card reveal">
+        <div class="criticism-header">
+          <span class="criticism-num">06</span>
+          <span class="criticism-topic">Art &amp; Creativity</span>
+        </div>
+        <p class="criticism-claim">"AI art is just sophisticated theft from human artists."</p>
+        <div class="criticism-reframe">
+          <strong>Compared to what?</strong> Every artistic tradition in history. Picasso studied African masks. Warhol repurposed commercial images. Hip-hop sampling transformed existing recordings. Photography was denied copyright in the 1860s because it was "mere mechanical reproduction." Every new creative medium faces this accusation. Legal frameworks adapt, as they did for photography, VCRs, and sampling.
+        </div>
+        <div class="sources-inline">Burrow-Giles v. Sarony 1884 &middot; Sony v. Universal 1984 &middot; US Copyright Office 2023-2025</div>
+      </div>
+
+      <div class="criticism-card reveal">
+        <div class="criticism-header">
+          <span class="criticism-num">07</span>
+          <span class="criticism-topic">Education &amp; Cheating</span>
+        </div>
+        <p class="criticism-claim">"AI is destroying academic integrity."</p>
+        <div class="criticism-reframe">
+          <strong>Compared to what?</strong> The academic dishonesty that already existed. Stanford research: cheating rates were 60-70% <em>before</em> ChatGPT and remained 60-70% <em>after</em>. Same rate, different tool. Meanwhile, institutions that integrated AI into teaching (rather than banning it) saw up to 45% fewer integrity violations. AI tutoring correlates with ~30% better course completion.
+        </div>
+        <div class="sources-inline">Stanford/McCabe studies 2023-24 &middot; Turnitin Education Research 2024 &middot; Carnegie Learning/Khan Academy 2024</div>
+      </div>
+
+      <div class="criticism-card reveal">
+        <div class="criticism-header">
+          <span class="criticism-num">08</span>
+          <span class="criticism-topic">Wealth Concentration</span>
+        </div>
+        <p class="criticism-claim">"AI will concentrate wealth in the hands of a few billionaires."</p>
+        <div class="criticism-reframe">
+          <strong>Compared to what?</strong> The wealth concentration that happened without AI. RAND Corporation: <strong>$50 trillion</strong> shifted from the bottom 90% to the top 1% between 1975 and 2018, entirely before generative AI. The top 1% went from 32% to 37% of US wealth. This was driven by tax policy, globalization, and financialization, not technology.
+        </div>
+        <div class="sources-inline">RAND Corporation 2020 &middot; Federal Reserve SCF &middot; World Inequality Lab 2022 &middot; IMF Working Paper Jan 2025</div>
+      </div>
+
+      <div class="criticism-card reveal">
+        <div class="criticism-header">
+          <span class="criticism-num">09</span>
+          <span class="criticism-topic">Algorithmic Bias</span>
+        </div>
+        <p class="criticism-claim">"AI systems are biased and perpetuate discrimination."</p>
+        <div class="criticism-reframe">
+          <strong>Compared to what?</strong> The human systems they replace. Judges give <strong>65% harsher sentences</strong> right before lunch. Loan officers systematically redlined entire neighborhoods for decades. AI bias is real, but it is the first decision-making system in history that can be tested for discrimination and corrected at scale. Human bias is intuitive, invisible, and deniable.
+        </div>
+        <div class="sources-inline">Danziger et al., PNAS 2011 &middot; ProPublica/COMPAS 2016 &middot; Obermeyer et al., Science 2019</div>
+      </div>
+
+      <div class="criticism-card reveal">
+        <div class="criticism-header">
+          <span class="criticism-num">10</span>
+          <span class="criticism-topic">Hallucinations</span>
+        </div>
+        <p class="criticism-claim">"AI makes things up. You can't trust anything it says."</p>
+        <div class="criticism-reframe">
+          <strong>Compared to what?</strong> Human professional error rates. AI hallucination rates dropped from ~40% (early 2023) to <strong>under 2%</strong> with retrieval augmentation (2025). Meanwhile: physicians misdiagnose 5-11% of encounters. 61% of newspaper articles contain factual errors. Eyewitnesses give false identifications 30% of the time. Lawyers who were 86% confident won only 70% of cases.
+        </div>
+        <div class="sources-inline">Vectara Hallucination Leaderboard 2025 &middot; Newman-Toker et al. 2023 &middot; Maier et al. 2005 &middot; Liebman et al. 2000</div>
+      </div>
+
+      <div class="criticism-card reveal">
+        <div class="criticism-header">
+          <span class="criticism-num">11</span>
+          <span class="criticism-topic">Dependency &amp; Deskilling</span>
+        </div>
+        <p class="criticism-claim">"Relying on AI will make humans lose essential skills."</p>
+        <div class="criticism-reframe">
+          <strong>Compared to what?</strong> Every cognitive tool in history. Socrates argued writing would destroy memory. Calculators were supposed to destroy math. GPS was supposed to eliminate navigation. In every case, humans developed new, higher-order skills instead. The US math teachers' council reversed its anti-calculator position in 1989 after research showed calculators <em>improved</em> problem-solving.
+        </div>
+        <div class="sources-inline">Plato, Phaedrus c. 370 BCE &middot; Sparrow et al., Science 2011 &middot; NCTM 1989 &middot; OECD Skills Outlook 2025</div>
+      </div>
+
+      <div class="criticism-card reveal">
+        <div class="criticism-header">
+          <span class="criticism-num">12</span>
+          <span class="criticism-topic">Mental Health</span>
+        </div>
+        <p class="criticism-claim">"AI chatbots are dangerous for mental health."</p>
+        <div class="criticism-reframe">
+          <strong>Compared to what?</strong> Getting no help at all. <strong>137 million Americans</strong> live in mental health professional shortage areas. 48% of people with mental illness receive no treatment. Average wait time for an appointment: 48 days. A Dartmouth RCT (published in NEJM AI, 2025) found AI therapy produced a 51% reduction in depression symptoms with zero adverse events.
+        </div>
+        <div class="sources-inline">HRSA 2025 &middot; NAMI/SAMHSA &middot; WHO 2022 &middot; Dartmouth/NEJM AI 2025</div>
+      </div>
+
+      <div class="criticism-card reveal">
+        <div class="criticism-header">
+          <span class="criticism-num">13</span>
+          <span class="criticism-topic">Copyright &amp; IP</span>
+        </div>
+        <p class="criticism-claim">"AI training on copyrighted material is mass-scale theft."</p>
+        <div class="criticism-reframe">
+          <strong>Compared to what?</strong> Every previous media technology. In 2025, a federal court ruled AI training "exceedingly transformative" under fair use. Google Books scanned 20 million copyrighted books and was ruled fair use. VCRs were accused of enabling mass piracy and were ruled legal. Photography, music sampling, collage: all faced identical challenges. All were resolved with new frameworks.
+        </div>
+        <div class="sources-inline">Bartz v. Anthropic 2025 &middot; Authors Guild v. Google 2015 &middot; Sony v. Universal 1984</div>
+      </div>
+
+      <div class="criticism-card reveal">
+        <div class="criticism-header">
+          <span class="criticism-num">14</span>
+          <span class="criticism-topic">Military &amp; Weapons</span>
+        </div>
+        <p class="criticism-claim">"AI weapons will make warfare more deadly and remove accountability."</p>
+        <div class="criticism-reframe">
+          <strong>Compared to what?</strong> Conventional, human-directed weapons. <strong>95% of casualties</strong> from explosive weapons in populated areas are already civilians, using entirely conventional weapons. 61,353 civilian fatalities in 2024 from armed conflict, with minimal accountability. An AI targeting system at least creates an auditable record, something conventional military operations typically do not produce.
+        </div>
+        <div class="sources-inline">ACLED 2024 &middot; AOAV 2024 &middot; ICRC 2024 &middot; UN CCW negotiations since 2014</div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- SOURCES -->
+<!-- ============================================================
+     SECTION 5: THE DATA CENTER REVOLUTION
+     ============================================================ -->
+<section id="datacenters">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">Section 05</div>
+      <h2>The Data Center<br /><span class="accent">Revolution</span></h2>
+      <p class="section-intro">Critics describe data centers as they were five years ago. The industry is engineering its way to zero-water, nuclear-powered, heat-recycling facilities, and even moving to space.</p>
+    </div>
+
+    <!-- NIMBY Context -->
+    <div class="chart-block reveal">
+      <div class="chart-header">
+        <div class="ctw-badge">The NIMBY Problem</div>
+        <h3>$98 Billion in Data Center Projects Blocked or Delayed</h3>
+        <p class="chart-note">142+ activist groups across 24 US states opposing data center construction</p>
+      </div>
+      <div class="comparison-cards">
+        <div class="comp-card">
+          <div class="comp-label">Google, Indianapolis</div>
+          <div class="comp-value negative">$1B withdrawn</div>
+          <div class="comp-sub">Community opposition forced withdrawal of billion-dollar campus</div>
+        </div>
+        <div class="comp-card">
+          <div class="comp-label">Fauquier County, Virginia</div>
+          <div class="comp-value negative">$400M withdrawn</div>
+          <div class="comp-sub">Rural opposition blocked major campus</div>
+        </div>
+        <div class="comp-card">
+          <div class="comp-label">Arizona water concerns</div>
+          <div class="comp-value negative">870% increase</div>
+          <div class="comp-sub">Projected DC water demand increase cited by opponents</div>
+        </div>
+      </div>
+      <div class="chart-verdict">
+        <strong>The concern is understandable.</strong> But it's based on <em>yesterday's</em> data center technology. The industry is already deploying solutions that eliminate the very problems critics are protesting.
+      </div>
+      <div class="sources-inline">
+        Sources: Data Center Dynamics 2025 &middot; Utility Dive 2024 &middot; Arizona Department of Water Resources
+      </div>
+    </div>
+
+    <!-- Water Revolution -->
+    <div class="chart-block reveal">
+      <div class="chart-header">
+        <div class="ctw-badge">The Water Revolution</div>
+        <h3>From Water-Hungry to Water-Free</h3>
+        <p class="chart-note">How modern data centers are eliminating water dependency</p>
+      </div>
+      <div class="chart-wrap chart-wrap-tall">
+        <canvas id="waterTechChart"></canvas>
+      </div>
+      <div class="dc-feature-grid">
+        <div class="dc-feature reveal">
+          <div class="dc-feature-label">Closed-Loop Cooling</div>
+          <div class="dc-feature-stat">Use once, recycle forever</div>
+          <div class="dc-feature-desc">Microsoft's new standard for all builds by 2027. Water circulates in a sealed system. WUE of 0.03 L/kWh in EMEA facilities vs. traditional 1.8 L/kWh.</div>
+        </div>
+        <div class="dc-feature reveal">
+          <div class="dc-feature-label">Immersion Cooling</div>
+          <div class="dc-feature-stat">90-95% water reduction</div>
+          <div class="dc-feature-desc">Servers submerged in non-conductive liquid. ZutaCore has deployed completely waterless systems. Handles the 1,000W+ Blackwell GPUs that air cooling cannot.</div>
+        </div>
+        <div class="dc-feature reveal">
+          <div class="dc-feature-label">Heat Reuse</div>
+          <div class="dc-feature-stat">Waste heat becomes city heating</div>
+          <div class="dc-feature-desc">Microsoft Espoo heats 250,000 people. Meta Odense heats 12,000 homes. Google Hamina serves 80% of local heating demand. Data centers become infrastructure assets.</div>
+        </div>
+        <div class="dc-feature reveal">
+          <div class="dc-feature-label">Chip Efficiency</div>
+          <div class="dc-feature-stat">2.5x per generation</div>
+          <div class="dc-feature-desc">NVIDIA B200: 2.5x more efficient than H100 per watt. Google TPU v6e: 67% more efficient than prior generation. Every chip cycle dramatically cuts energy per computation.</div>
+        </div>
+      </div>
+      <div class="sources-inline">
+        Sources: Microsoft Sustainability Report 2024 &middot; ZutaCore &middot; Meta Sustainability Report &middot; Google Environmental Report 2024 &middot; NVIDIA B200 specs
+      </div>
+    </div>
+
+    <!-- Nuclear Power for DCs -->
+    <div class="callout-block reveal">
+      <div class="callout-left">
+        <div class="ctw-badge large">Nuclear-Powered AI</div>
+        <h3>Tech companies are bringing nuclear back</h3>
+        <p>Over <strong>10 GW</strong> of nuclear capacity has been signed specifically for data centers. The same technology the anti-nuclear movement tried to kill is now being revived to power AI, producing zero-carbon electricity 24/7.</p>
+        <div class="callout-stat-row">
+          <div class="callout-stat">
+            <div class="callout-stat-num">835 MW</div>
+            <div class="callout-stat-label">Three Mile Island restart for Microsoft (the plant the 1979 panic closed)</div>
+          </div>
+          <div class="callout-stat">
+            <div class="callout-stat-num">1.92 GW</div>
+            <div class="callout-stat-label">AWS/Talen Energy nuclear data center deal</div>
+          </div>
+        </div>
+        <div class="sources-inline">Sources: Constellation Energy 2024 &middot; Talen Energy 2024 &middot; Google/Kairos Power SMR announcement 2024</div>
+      </div>
+      <div class="callout-right">
+        <div class="parallel-box">
+          <div class="parallel-label">Power Usage Effectiveness (PUE)</div>
+          <div class="parallel-items">
+            <div class="parallel-item">
+              <div class="parallel-then">Industry average 2020</div>
+              <div class="parallel-arrow">&rarr;</div>
+              <div class="parallel-now"><strong>1.54</strong></div>
+            </div>
+            <div class="parallel-item">
+              <div class="parallel-then">Google (2024)</div>
+              <div class="parallel-arrow">&rarr;</div>
+              <div class="parallel-now"><strong>1.09</strong></div>
+            </div>
+            <div class="parallel-item">
+              <div class="parallel-then">Meta (2024)</div>
+              <div class="parallel-arrow">&rarr;</div>
+              <div class="parallel-now"><strong>1.08</strong></div>
+            </div>
+            <div class="parallel-item">
+              <div class="parallel-then">Perfect efficiency</div>
+              <div class="parallel-arrow">&rarr;</div>
+              <div class="parallel-now"><strong>1.00</strong></div>
+            </div>
+          </div>
+          <div class="parallel-conclusion">The gap between current best-in-class and perfect efficiency is just 8%. Data centers are approaching the physical limit.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── SPACE DATA CENTERS ── -->
+    <div class="space-section reveal">
+      <div class="section-header">
+        <div class="section-label">The Final Frontier</div>
+        <h2>Data Centers<br /><span class="accent">in Space</span></h2>
+        <p class="section-intro">What if data centers didn't need land, water, or terrestrial energy at all? Multiple companies and space agencies are making orbital computing a reality.</p>
+      </div>
+    </div>
+
+    <!-- Space milestones -->
+    <div class="nuclear-timeline reveal">
+      <div class="timeline-item">
+        <div class="timeline-year">Nov 2025</div>
+        <div class="timeline-content">
+          <h4>Starcloud: First GPU in Orbit</h4>
+          <p>Lumen Orbit puts the first NVIDIA H100 GPU in space. Achieves successful computation in zero gravity. $1.1 billion valuation.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">Dec 2025</div>
+        <div class="timeline-content">
+          <h4>First LLM Trained in Space</h4>
+          <p>Starcloud trains the first large language model entirely in orbit, proving AI workloads are viable in space.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">Jan 2026</div>
+        <div class="timeline-content">
+          <h4>SpaceX Files for 1 Million Satellites</h4>
+          <p>FCC application for an orbital data center constellation of one million satellites. The scale of ambition signals this is not a side project.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2030+</div>
+        <div class="timeline-content">
+          <h4>ESA ASCEND Program</h4>
+          <p>European Space Agency's EUR 300M program: 13 blocks at 10 MW each by 2036. Government-backed orbital computing infrastructure.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Space Benefits -->
+    <div class="chart-block reveal">
+      <div class="chart-header">
+        <div class="ctw-badge">Why Space?</div>
+        <h3>Every Problem Solved at Once</h3>
+        <p class="chart-note">Space eliminates the core objections to data center expansion</p>
+      </div>
+      <div class="comparison-cards">
+        <div class="comp-card highlight">
+          <div class="comp-label">Water usage</div>
+          <div class="comp-value">Zero</div>
+          <div class="comp-sub">Passive radiative cooling in the vacuum of space. No water needed. No cooling towers. No aquifer depletion.</div>
+        </div>
+        <div class="comp-card highlight">
+          <div class="comp-label">Solar energy</div>
+          <div class="comp-value">5-7x</div>
+          <div class="comp-sub">more efficient than terrestrial solar. No atmosphere, no clouds, no nighttime. 24/7 uninterrupted power.</div>
+        </div>
+        <div class="comp-card highlight">
+          <div class="comp-label">NIMBY opposition</div>
+          <div class="comp-value">Zero</div>
+          <div class="comp-sub">No land use. No noise. No visual impact. No local resource competition. No community to oppose it.</div>
+        </div>
+        <div class="comp-card highlight">
+          <div class="comp-label">Disaster resilience</div>
+          <div class="comp-value">Total</div>
+          <div class="comp-sub">No floods, earthquakes, fires, or grid failures. Distributed across orbital paths for redundancy.</div>
+        </div>
+      </div>
+      <div class="chart-verdict">
+        <strong>Market projection:</strong> Space-based computing is projected to grow from $500 million in 2025 to <strong>$39 billion by 2035</strong>. An 88,000-satellite constellation filing suggests this is not speculative, it's a race already underway.
+      </div>
+      <div class="sources-inline">
+        Sources: Lumen Orbit/Starcloud 2025 &middot; SpaceX FCC Filing 2026 &middot; ESA ASCEND Program &middot; Google Project Suncatcher &middot; Space Computing Market Analysis 2025
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     CLOSING
+     ============================================================ -->
+<section id="closing">
+  <div class="container">
+    <div class="closing-content reveal">
+      <h2>The Question Hasn't Changed</h2>
+      <p class="closing-big">Every time someone makes a claim about AI, whether it's dangerous, wasteful, unreliable, or biased, ask the same question:</p>
+      <div class="ctw-final">Compared to what?</div>
+      <p class="closing-body">Not "compared to a perfect system." Not "compared to an imagined future where we don't need this technology." Compared to what we actually have: human systems, existing infrastructure, the alternatives on the table right now.</p>
+      <p class="closing-body">The data isn't always favorable to AI. Sometimes the criticism holds up. But you can't know that until you've asked the question, and most critics never do.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SOURCES
+     ============================================================ -->
 <section id="sources">
   <div class="container">
     <div class="section-header reveal">
@@ -465,10 +868,12 @@
           <li>UNESCO, <em>World Water Development Report 2023</em></li>
           <li>Water Footprint Network, <em>Product Water Footprints</em></li>
           <li>FAO AQUASTAT Database</li>
+          <li>UN Global E-Waste Monitor, 2024</li>
+          <li>Ellen MacArthur Foundation, 2017</li>
         </ul>
       </div>
       <div class="source-category">
-        <h4>Nuclear Energy</h4>
+        <h4>Nuclear &amp; Emissions</h4>
         <ul>
           <li>Ritchie, H. &amp; Roser, M., <em>"What are the safest and cleanest sources of energy?"</em> Our World in Data, 2024</li>
           <li>Markandya, A. &amp; Wilkinson, P., <em>Lancet</em>, 2007</li>
@@ -481,20 +886,61 @@
       <div class="source-category">
         <h4>AI Safety &amp; Accuracy</h4>
         <ul>
-          <li>Waymo, <em>Waymo Safety Report 2023</em></li>
+          <li>Waymo, <em>Safety Report 2023</em></li>
           <li>NHTSA, <em>Traffic Safety Facts 2022</em></li>
           <li>Singh, H. et al., <em>BMJ Quality &amp; Safety</em>, 2014</li>
           <li>McKinney, S.M. et al., <em>Nature</em>, 2020</li>
           <li>Topol, E.J., <em>"High-performance medicine"</em>, Nature Medicine, 2019</li>
-          <li>DeepMind, <em>AlphaFold paper</em>, Nature, 2021</li>
+          <li>DeepMind, <em>AlphaFold</em>, Nature, 2021</li>
+          <li>Vectara, <em>Hallucination Leaderboard</em>, 2025</li>
+          <li>Newman-Toker et al., 2023</li>
+          <li>Dartmouth College / <em>NEJM AI</em>, 2025</li>
         </ul>
       </div>
       <div class="source-category">
-        <h4>Bias &amp; Fairness</h4>
+        <h4>Bias, Jobs &amp; Society</h4>
         <ul>
           <li>Bertrand, M. &amp; Mullainathan, S., <em>American Economic Review</em>, 2004</li>
           <li>Kline, P. et al., <em>Quarterly Journal of Economics</em>, 2021</li>
           <li>Moss-Racusin, C.A. et al., <em>PNAS</em>, 2012</li>
+          <li>Danziger, S. et al., <em>PNAS</em>, 2011</li>
+          <li>Goldman Sachs, <em>AI and the Labor Market</em>, 2023</li>
+          <li>McKinsey Global Institute, 2023</li>
+          <li>RAND Corporation, 2020</li>
+          <li>Grace et al., <em>AI &amp; Society</em>, 2024</li>
+          <li>HRSA, 2025 &middot; NAMI/SAMHSA data</li>
+        </ul>
+      </div>
+      <div class="source-category">
+        <h4>Deepfakes, Copyright &amp; Media</h4>
+        <ul>
+          <li>Vosoughi, S. et al., <em>Science</em>, 2018</li>
+          <li>Sumsub, <em>Identity Fraud Report</em>, 2024</li>
+          <li>iProov, 2025</li>
+          <li>Sensity AI, 2024</li>
+          <li><em>Bartz v. Anthropic</em>, 2025</li>
+          <li><em>Authors Guild v. Google</em>, 2015</li>
+          <li><em>Sony Corp. v. Universal City Studios</em>, 1984</li>
+          <li>Stanford/McCabe academic integrity studies, 2023-24</li>
+          <li>Turnitin Education Research, 2024</li>
+        </ul>
+      </div>
+      <div class="source-category">
+        <h4>Data Centers &amp; Space</h4>
+        <ul>
+          <li>Microsoft, <em>Sustainability Report 2024</em></li>
+          <li>Meta, <em>Sustainability Report 2024</em></li>
+          <li>Google, <em>Environmental Report 2024</em></li>
+          <li>ZutaCore, <em>Immersion Cooling</em></li>
+          <li>NVIDIA, <em>B200 Architecture Specifications</em></li>
+          <li>Constellation Energy (TMI restart), 2024</li>
+          <li>Talen Energy (AWS nuclear deal), 2024</li>
+          <li>Lumen Orbit / Starcloud, 2025</li>
+          <li>SpaceX FCC Satellite Filing, 2026</li>
+          <li>ESA ASCEND Program</li>
+          <li>Data Center Dynamics, 2025</li>
+          <li>ACLED, <em>Conflict Data</em>, 2024</li>
+          <li>AOAV, 2024 &middot; ICRC, 2024</li>
         </ul>
       </div>
     </div>
@@ -511,7 +957,7 @@
       </div>
       <div class="footer-right">
         <p>All data sourced and cited. Corrections welcome.</p>
-        <p class="footer-small">Built with Chart.js · Hosted on GitHub Pages · MIT License</p>
+        <p class="footer-small">Built with Chart.js &middot; Hosted on GitHub Pages &middot; MIT License</p>
       </div>
     </div>
   </div>

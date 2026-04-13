@@ -560,6 +560,88 @@ function initMedicalChart() {
 }
 
 /* ============================================================
+   CHART 7: Water Usage by Data Center Technology
+   ============================================================ */
+function initWaterTechChart() {
+  const ctx = document.getElementById('waterTechChart');
+  if (!ctx) return;
+
+  const techs = [
+    'Traditional\n(evaporative)',
+    'Closed-Loop\nCooling',
+    'Immersion\nCooling',
+    'Space\nData Center',
+  ];
+
+  const liters = [1.8, 0.03, 0, 0];
+
+  const colors = techs.map((t, i) =>
+    i === 0 ? NEGATIVE_BG :
+    i >= 2 ? ACCENT_BG :
+    'rgba(68, 204, 136, 0.55)'
+  );
+
+  const borders = techs.map((t, i) =>
+    i === 0 ? NEGATIVE :
+    i >= 2 ? ACCENT :
+    POSITIVE
+  );
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: techs,
+      datasets: [{
+        label: 'Liters per kWh',
+        data: liters,
+        backgroundColor: colors,
+        borderColor: borders,
+        borderWidth: 1.5,
+        borderRadius: 6,
+        borderSkipped: false,
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: CARD_BG,
+          borderColor: 'rgba(255,255,255,0.1)',
+          borderWidth: 1,
+          padding: 12,
+          callbacks: {
+            label: (ctx) => ` ${ctx.parsed.y} L/kWh`
+          }
+        }
+      },
+      scales: {
+        x: {
+          grid: { display: false },
+          ticks: { ...sharedTickOptions, maxRotation: 0, font: { size: 11 } },
+          border: { display: false }
+        },
+        y: {
+          grid: sharedGridOptions,
+          ticks: {
+            ...sharedTickOptions,
+            callback: (v) => `${v} L`
+          },
+          border: { display: false },
+          title: {
+            display: true,
+            text: 'Liters per kWh',
+            color: MUTED,
+            font: { size: 11 }
+          }
+        }
+      }
+    }
+  });
+}
+
+/* ============================================================
    INIT ALL CHARTS
    ============================================================ */
 function initAllCharts() {
@@ -569,6 +651,7 @@ function initAllCharts() {
   initEmissionsChart();
   initDrivingChart();
   initMedicalChart();
+  initWaterTechChart();
 }
 
 // Run when DOM is ready
