@@ -865,80 +865,112 @@ section { padding: 100px 0; }
 /* ============================================================ CRITICISM CARDS */
 .criticism-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
 }
 
 .criticism-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 32px;
+  padding: 32px 28px;
+  text-align: center;
   transition: border-color 0.3s, transform 0.2s;
 }
 
 .criticism-card:hover {
   border-color: rgba(88, 166, 255, 0.2);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
-.criticism-header {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+.criticism-icon {
+  font-size: 2.4rem;
   margin-bottom: 16px;
-}
-
-.criticism-num {
-  font-family: var(--font-display);
-  font-size: 1.6rem;
-  font-weight: 800;
-  color: var(--accent);
-  opacity: 0.5;
   line-height: 1;
-  letter-spacing: -0.03em;
 }
 
 .criticism-topic {
   font-family: var(--font-display);
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   font-weight: 700;
-  color: var(--text);
-  letter-spacing: -0.01em;
-}
-
-.criticism-claim {
-  font-size: 0.9rem;
   color: var(--text-muted);
-  font-style: italic;
-  line-height: 1.6;
-  margin-bottom: 16px;
-  padding-left: 14px;
-  border-left: 2px solid var(--border);
-}
-
-.criticism-reframe {
-  font-size: 0.9rem;
-  color: var(--text);
-  line-height: 1.7;
-  padding: 16px;
-  background: var(--accent-glow);
-  border-left: 3px solid var(--accent);
-  border-radius: 0 8px 8px 0;
-  margin-bottom: 12px;
-}
-
-.criticism-reframe strong {
-  color: var(--accent);
-  display: block;
-  margin-bottom: 6px;
-  font-size: 0.8rem;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
+  margin-bottom: 16px;
 }
 
-.criticism-card .sources-inline {
-  margin-top: 0;
+.criticism-stat {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 4vw, 3.2rem);
+  font-weight: 800;
+  color: var(--accent);
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.criticism-stat-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.criticism-stat-label em {
+  color: var(--text);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.criticism-details {
+  text-align: left;
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+}
+
+.criticism-details summary {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.2s;
+}
+
+.criticism-details summary::-webkit-details-marker { display: none; }
+
+.criticism-details summary::after {
+  content: '+';
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-left: auto;
+  transition: transform 0.2s;
+}
+
+.criticism-details[open] summary::after {
+  content: '-';
+}
+
+.criticism-details summary:hover { color: var(--text); }
+
+.criticism-details p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-top: 14px;
+  margin-bottom: 10px;
+}
+
+.criticism-details p strong { color: var(--text); }
+.criticism-details p em { color: var(--text); font-style: normal; font-weight: 600; }
+
+.criticism-details .sources-inline {
+  margin-top: 8px;
 }
 
 /* ============================================================ DATA CENTER FEATURES */
@@ -1148,7 +1180,7 @@ section { padding: 100px 0; }
     display: none;
   }
   .criticism-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   .dc-feature-grid {
     grid-template-columns: repeat(2, 1fr);
