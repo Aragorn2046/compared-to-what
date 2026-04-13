@@ -17,7 +17,7 @@ const CARD_BG = '#1a1a22';
 // Shared chart defaults
 Chart.defaults.color = MUTED;
 Chart.defaults.font.family = "'Inter', system-ui, sans-serif";
-Chart.defaults.font.size = 12;
+Chart.defaults.font.size = 15;
 
 const sharedGridOptions = {
   color: GRID,
@@ -97,7 +97,7 @@ function initEnergyChart() {
           grid: { display: false },
           ticks: {
             ...sharedTickOptions,
-            font: { size: 12 }
+            font: { size: 15 }
           },
           border: { display: false }
         }
@@ -161,7 +161,7 @@ function initRoiChart() {
           labels: {
             color: MUTED,
             padding: 16,
-            font: { size: 12 },
+            font: { size: 15 },
             usePointStyle: true,
             pointStyle: 'rect',
           }
@@ -176,7 +176,7 @@ function initRoiChart() {
       scales: {
         x: {
           grid: { display: false },
-          ticks: { ...sharedTickOptions, maxRotation: 0, font: { size: 11 } },
+          ticks: { ...sharedTickOptions, maxRotation: 0, font: { size: 14 } },
           border: { display: false }
         },
         y: {
@@ -190,7 +190,7 @@ function initRoiChart() {
             display: true,
             text: 'Energy (MWh)',
             color: MUTED,
-            font: { size: 11 }
+            font: { size: 14 }
           }
         },
         y2: {
@@ -205,7 +205,7 @@ function initRoiChart() {
             display: true,
             text: 'Researcher-Years',
             color: MUTED,
-            font: { size: 11 }
+            font: { size: 14 }
           }
         }
       }
@@ -267,7 +267,7 @@ function initNuclearDeathsChart() {
       scales: {
         x: {
           grid: { display: false },
-          ticks: { ...sharedTickOptions, font: { size: 12 } },
+          ticks: { ...sharedTickOptions, font: { size: 15 } },
           border: { display: false }
         },
         y: {
@@ -284,7 +284,7 @@ function initNuclearDeathsChart() {
             display: true,
             text: 'Deaths per TWh (log scale)',
             color: MUTED,
-            font: { size: 11 }
+            font: { size: 14 }
           }
         }
       }
@@ -362,7 +362,7 @@ function initEmissionsChart() {
             display: true,
             text: 'gCO₂ per kWh (lifecycle)',
             color: MUTED,
-            font: { size: 11 }
+            font: { size: 14 }
           }
         }
       }
@@ -450,7 +450,7 @@ function initDrivingChart() {
       scales: {
         x: {
           grid: { display: false },
-          ticks: { ...sharedTickOptions, maxRotation: 0, font: { size: 11 } },
+          ticks: { ...sharedTickOptions, maxRotation: 0, font: { size: 14 } },
           border: { display: false }
         },
         y: {
@@ -537,7 +537,7 @@ function initMedicalChart() {
       scales: {
         x: {
           grid: { display: false },
-          ticks: { ...sharedTickOptions, maxRotation: 0, font: { size: 11 } },
+          ticks: { ...sharedTickOptions, maxRotation: 0, font: { size: 14 } },
           border: { display: false }
         },
         y: {
@@ -551,7 +551,7 @@ function initMedicalChart() {
             display: true,
             text: 'Error Rate (%)',
             color: MUTED,
-            font: { size: 11 }
+            font: { size: 14 }
           }
         }
       }
@@ -619,7 +619,7 @@ function initWaterTechChart() {
       scales: {
         x: {
           grid: { display: false },
-          ticks: { ...sharedTickOptions, maxRotation: 0, font: { size: 11 } },
+          ticks: { ...sharedTickOptions, maxRotation: 0, font: { size: 14 } },
           border: { display: false }
         },
         y: {
@@ -633,7 +633,7 @@ function initWaterTechChart() {
             display: true,
             text: 'Liters per kWh',
             color: MUTED,
-            font: { size: 11 }
+            font: { size: 14 }
           }
         }
       }
@@ -670,7 +670,7 @@ function initDeepfakeChart() {
           labels: {
             color: MUTED,
             padding: 12,
-            font: { size: 12 },
+            font: { size: 15 },
             usePointStyle: true,
             pointStyle: 'circle',
           }
@@ -737,7 +737,7 @@ function initEwasteChart() {
       scales: {
         x: {
           grid: { display: false },
-          ticks: { ...sharedTickOptions, maxRotation: 0, font: { size: 11 } },
+          ticks: { ...sharedTickOptions, maxRotation: 0, font: { size: 14 } },
           border: { display: false }
         },
         y: {
@@ -751,7 +751,7 @@ function initEwasteChart() {
             display: true,
             text: 'Million Tonnes / Year',
             color: MUTED,
-            font: { size: 11 }
+            font: { size: 14 }
           }
         }
       }
@@ -818,7 +818,7 @@ function initHallucinationChart() {
       scales: {
         x: {
           grid: { display: false },
-          ticks: { ...sharedTickOptions, maxRotation: 0, font: { size: 11 } },
+          ticks: { ...sharedTickOptions, maxRotation: 0, font: { size: 14 } },
           border: { display: false }
         },
         y: {
@@ -832,7 +832,7 @@ function initHallucinationChart() {
             display: true,
             text: 'Error / Inaccuracy Rate (%)',
             color: MUTED,
-            font: { size: 11 }
+            font: { size: 14 }
           }
         }
       }

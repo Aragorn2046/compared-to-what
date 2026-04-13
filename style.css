@@ -97,7 +97,7 @@ section { padding: 100px 0; }
 
 .nav-links a {
   color: var(--text-muted);
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.01em;
   transition: color 0.2s;
@@ -134,7 +134,7 @@ section { padding: 100px 0; }
 }
 
 .hero-eyebrow {
-  font-size: 0.8rem;
+  font-size: 1.05rem;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -167,7 +167,7 @@ section { padding: 100px 0; }
   background: var(--accent);
   color: #000;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   border-radius: 100px;
   letter-spacing: 0.02em;
   transition: transform 0.2s, box-shadow 0.2s;
@@ -190,7 +190,7 @@ section { padding: 100px 0; }
   align-items: center;
   gap: 8px;
   color: var(--text-muted);
-  font-size: 0.7rem;
+  font-size: 1rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -239,7 +239,7 @@ section { padding: 100px 0; }
 }
 
 .framework-text {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: var(--text-muted);
   line-height: 1.6;
 }
@@ -257,7 +257,7 @@ section { padding: 100px 0; }
 }
 
 .section-label {
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -288,7 +288,7 @@ section { padding: 100px 0; }
   background: var(--accent-dim);
   border: 1px solid var(--border-accent);
   border-radius: 100px;
-  font-size: 0.72rem;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -297,7 +297,7 @@ section { padding: 100px 0; }
 }
 
 .ctw-badge.large {
-  font-size: 0.8rem;
+  font-size: 1.05rem;
   padding: 8px 16px;
 }
 
@@ -323,7 +323,7 @@ section { padding: 100px 0; }
 }
 
 .chart-note {
-  font-size: 0.85rem;
+  font-size: 1.05rem;
   color: var(--text-muted);
   margin-bottom: 32px;
 }
@@ -343,14 +343,14 @@ section { padding: 100px 0; }
   background: var(--accent-glow);
   border-left: 3px solid var(--accent);
   border-radius: 0 8px 8px 0;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: var(--text);
   line-height: 1.6;
   margin-bottom: 12px;
 }
 
 .sources-inline {
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: var(--text-muted);
   font-style: italic;
   opacity: 0.7;
@@ -393,7 +393,7 @@ section { padding: 100px 0; }
 }
 
 .comp-label {
-  font-size: 0.8rem;
+  font-size: 1.05rem;
   color: var(--text-muted);
   margin-bottom: 8px;
   line-height: 1.4;
@@ -413,7 +413,7 @@ section { padding: 100px 0; }
 }
 
 .comp-sub {
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: var(--text-muted);
   line-height: 1.4;
 }
@@ -478,7 +478,7 @@ section { padding: 100px 0; }
 }
 
 .timeline-content p {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: var(--text-muted);
   line-height: 1.6;
 }
@@ -499,7 +499,7 @@ section { padding: 100px 0; }
 }
 
 .callout-left p {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   color: var(--text-muted);
   line-height: 1.7;
   margin-bottom: 16px;
@@ -525,7 +525,7 @@ section { padding: 100px 0; }
 }
 
 .callout-stat-label {
-  font-size: 0.8rem;
+  font-size: 1.05rem;
   color: var(--text-muted);
   line-height: 1.5;
 }
@@ -540,7 +540,7 @@ section { padding: 100px 0; }
 }
 
 .parallel-label {
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -566,13 +566,13 @@ section { padding: 100px 0; }
 .parallel-item:last-child { border-bottom: none; }
 
 .parallel-then {
-  font-size: 0.8rem;
+  font-size: 1.05rem;
   color: var(--text-muted);
   line-height: 1.4;
 }
 
 .parallel-now {
-  font-size: 0.8rem;
+  font-size: 1.05rem;
   color: var(--text);
   line-height: 1.4;
 }
@@ -590,7 +590,7 @@ section { padding: 100px 0; }
   background: var(--accent-glow);
   border: 1px solid var(--border-accent);
   border-radius: var(--radius);
-  font-size: 0.85rem;
+  font-size: 1.05rem;
   color: var(--text);
   font-style: italic;
   line-height: 1.6;
@@ -626,7 +626,7 @@ section { padding: 100px 0; }
 }
 
 .linear-callout > .linear-content > p:not(.linear-big) {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   color: var(--text-muted);
   max-width: 600px;
   margin: 0 auto 40px;
@@ -655,7 +655,7 @@ section { padding: 100px 0; }
   background: var(--accent-dim);
   border: 1px solid var(--border-accent);
   color: var(--accent);
-  font-size: 0.8rem;
+  font-size: 1.05rem;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -664,7 +664,7 @@ section { padding: 100px 0; }
 }
 
 .linear-item-text {
-  font-size: 0.88rem;
+  font-size: 1.05rem;
   color: var(--text-muted);
   line-height: 1.6;
 }
@@ -692,7 +692,7 @@ section { padding: 100px 0; }
 }
 
 .allin-text p {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   color: var(--text-muted);
   line-height: 1.75;
   margin-bottom: 16px;
@@ -715,7 +715,7 @@ section { padding: 100px 0; }
 }
 
 .scale-label {
-  font-size: 0.8rem;
+  font-size: 1.05rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -737,7 +737,7 @@ section { padding: 100px 0; }
 .scale-item.good .scale-bar { background: var(--positive); }
 
 .scale-outcome {
-  font-size: 0.8rem;
+  font-size: 1.05rem;
   color: var(--text-muted);
   line-height: 1.4;
 }
@@ -781,7 +781,7 @@ section { padding: 100px 0; }
 }
 
 .closing-body {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   color: var(--text-muted);
   line-height: 1.75;
   margin-bottom: 20px;
@@ -800,7 +800,7 @@ section { padding: 100px 0; }
 }
 
 .source-category h4 {
-  font-size: 0.85rem;
+  font-size: 1.05rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -816,7 +816,7 @@ section { padding: 100px 0; }
 }
 
 .source-category li {
-  font-size: 0.83rem;
+  font-size: 1.05rem;
   color: var(--text-muted);
   line-height: 1.5;
   padding-left: 12px;
@@ -856,11 +856,11 @@ section { padding: 100px 0; }
 }
 
 .footer-left p, .footer-right p {
-  font-size: 0.8rem;
+  font-size: 1.05rem;
   color: var(--text-muted);
 }
 
-.footer-small { opacity: 0.6; font-size: 0.72rem !important; margin-top: 4px; }
+.footer-small { opacity: 0.6; font-size: 1rem !important; margin-top: 4px; }
 
 /* ============================================================ CRITICISM BLOCKS (expandable) */
 .crit-stack {
@@ -924,7 +924,7 @@ section { padding: 100px 0; }
 }
 
 .crit-key-label {
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: 500;
   color: var(--text-muted);
   letter-spacing: 0;
@@ -980,7 +980,7 @@ section { padding: 100px 0; }
 }
 
 .crit-context {
-  font-size: 0.92rem;
+  font-size: 1.1rem;
   color: var(--text-muted);
   line-height: 1.7;
   margin-bottom: 24px;
@@ -1016,7 +1016,7 @@ section { padding: 100px 0; }
 .crit-big-num.negative { color: var(--negative); }
 
 .crit-big-label {
-  font-size: 0.8rem;
+  font-size: 1.05rem;
   color: var(--text-muted);
   line-height: 1.4;
 }
@@ -1081,13 +1081,13 @@ section { padding: 100px 0; }
 }
 
 .mini-timeline-label {
-  font-size: 0.88rem;
+  font-size: 1.05rem;
   font-weight: 600;
   color: var(--text);
 }
 
 .mini-timeline-desc {
-  font-size: 0.8rem;
+  font-size: 1.05rem;
   color: var(--text-muted);
   margin-left: 4px;
 }
@@ -1159,7 +1159,7 @@ section { padding: 100px 0; }
 }
 
 .dc-feature-desc {
-  font-size: 0.85rem;
+  font-size: 1.05rem;
   color: var(--text-muted);
   line-height: 1.6;
 }
@@ -1196,14 +1196,14 @@ section { padding: 100px 0; }
 
 .space-benefit h4 {
   font-family: var(--font-display);
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--text);
   margin-bottom: 6px;
 }
 
 .space-benefit p {
-  font-size: 0.8rem;
+  font-size: 1.05rem;
   color: var(--text-muted);
   line-height: 1.5;
 }
@@ -1226,7 +1226,7 @@ section { padding: 100px 0; }
 }
 
 .nimby-callout p {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: var(--text-muted);
   line-height: 1.7;
   margin-bottom: 12px;
@@ -1252,7 +1252,7 @@ section { padding: 100px 0; }
 }
 
 .nuclear-ai-callout p {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: var(--text-muted);
   line-height: 1.7;
   margin-bottom: 12px;
@@ -1282,7 +1282,7 @@ section { padding: 100px 0; }
 }
 
 .space-timeline-item p {
-  font-size: 0.82rem;
+  font-size: 1.05rem;
   color: var(--text-muted);
   line-height: 1.5;
 }
