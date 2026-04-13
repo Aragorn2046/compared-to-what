@@ -2,9 +2,9 @@
    COMPARED TO WHAT? — Chart Configurations (Chart.js)
    ============================================================ */
 
-const ACCENT = '#ff9500';
-const ACCENT_DIM = 'rgba(255, 149, 0, 0.2)';
-const ACCENT_BG = 'rgba(255, 149, 0, 0.75)';
+const ACCENT = '#58a6ff';
+const ACCENT_DIM = 'rgba(88, 166, 255, 0.2)';
+const ACCENT_BG = 'rgba(88, 166, 255, 0.75)';
 const NEGATIVE = '#ff4444';
 const NEGATIVE_DIM = 'rgba(255, 68, 68, 0.2)';
 const NEGATIVE_BG = 'rgba(255, 68, 68, 0.8)';

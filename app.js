@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinks.forEach(link => {
           link.style.color = '';
           if (link.getAttribute('href') === `#${id}`) {
-            link.style.color = '#ff9500';
+            link.style.color = '#58a6ff';
           }
         });
       }
