@@ -23,6 +23,7 @@
   <div class="nav-inner">
     <div class="nav-logo">Compared to What?</div>
     <ul class="nav-links">
+      <li><a href="#featured-source">Ritchie</a></li>
       <li><a href="#resources">Resources</a></li>
       <li><a href="#nuclear">Nuclear</a></li>
       <li><a href="#denominator">Denominator</a></li>
@@ -78,6 +79,47 @@
 <hr class="section-divider">
 
 <!-- ============================================================
+     FEATURED SOURCE: HANNAH RITCHIE (2026)
+     ============================================================ -->
+<section id="featured-source">
+  <div class="container">
+    <div class="source-card reveal">
+      <div class="source-card-header">
+        <div class="ctw-badge">Featured Source &middot; May 2026</div>
+        <h3>Hannah Ritchie just published the cleanest version of this argument.</h3>
+      </div>
+      <blockquote class="source-quote">
+        "Electricity is just a subset of total energy use, so data centres consume less than 0.5% of final energy, and AI less than 0.2%. That's useful to keep in mind: <strong>the AI debate is an electricity one, not an energy one.</strong>"
+      </blockquote>
+      <div class="source-meta">
+        <div class="source-byline">
+          <strong>Hannah Ritchie</strong> &mdash; Deputy Editor &amp; Lead Researcher at Our World in Data, Oxford. Author of <em>Not the End of the World</em>.
+        </div>
+        <a href="https://hannahritchie.substack.com/p/ai-electricity-2025" target="_blank" rel="noopener" class="source-link">
+          Read the full article &rarr;
+        </a>
+      </div>
+      <div class="source-numbers">
+        <div class="source-num-item">
+          <div class="source-num-value">0.5%</div>
+          <div class="source-num-label">of global electricity used by all data centers (AI + non-AI)</div>
+        </div>
+        <div class="source-num-item highlight">
+          <div class="source-num-value">0.2%</div>
+          <div class="source-num-label">of global <em>final energy</em> consumed by AI specifically</div>
+        </div>
+        <div class="source-num-item">
+          <div class="source-num-value">10s</div>
+          <div class="source-num-label">of microwave use is roughly 10 ChatGPT queries (0.34 Wh each)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- ============================================================
      SECTION 1: RESOURCES
      ============================================================ -->
 <section id="resources">
@@ -85,7 +127,7 @@
     <div class="section-header reveal">
       <div class="section-label">Section 01</div>
       <h2>Resource Criticism<br /><span class="accent">Reframed</span></h2>
-      <p class="section-intro">"AI uses too much energy." Sure. But so does everything else, and most of those things don't accelerate solutions to climate change, disease, or poverty.</p>
+      <p class="section-intro">"AI uses too much energy." Sure. But so does everything else, and most of those things don't accelerate solutions to climate change, disease, or poverty. As Hannah Ritchie put it: the AI debate is an electricity one, not an energy one. And electricity is the smaller of the two.</p>
     </div>
 
     <!-- Energy Chart -->
@@ -99,11 +141,23 @@
         <canvas id="energyChart"></canvas>
       </div>
       <div class="chart-verdict">
-        <strong>Verdict:</strong> Global AI consumes roughly 300-400 TWh/year. Aviation burns 8x more. Cryptocurrency burns 2-3x more for no productivity gain. Air conditioning in the US alone uses 5x.
+        <strong>Verdict:</strong> AI-focused data centers consumed about 155 TWh in 2025, roughly 0.5% of global electricity (Ritchie, 2026). Even the IEA base-case projection of about 450 TWh by 2030 stays well under aviation, US air conditioning, and residential lighting. Aviation already burns 18x more than AI does today. Cryptocurrency burns nearly as much for no productivity gain.
       </div>
       <div class="sources-inline">
-        Sources: IEA World Energy Outlook 2024 &middot; IATA Aviation 2023 &middot; Cambridge Bitcoin Electricity Index 2024 &middot; US EIA Residential Energy 2023
+        Sources: Ritchie, <em>"AI's electricity use in 2025"</em>, 2026 &middot; IEA World Energy Outlook 2024 &middot; IATA Aviation 2023 &middot; Cambridge Bitcoin Electricity Index 2024 &middot; US EIA Residential Energy 2023
       </div>
+
+      <!-- Ritchie figure: IEA scenarios for data center electricity through 2035 -->
+      <figure class="external-figure reveal">
+        <img src="https://substack-post-media.s3.amazonaws.com/public/images/8105c507-ac53-4870-8c02-343ef3e587b0_1334x1080.png"
+             alt="IEA scenarios for global data center electricity demand through 2035: base, lift-off, and efficiency cases"
+             loading="lazy" />
+        <figcaption>
+          <strong>IEA scenarios for data center electricity through 2035.</strong>
+          Even the high "lift-off" case keeps total data centers (AI + non-AI) well under 5% of global electricity.
+          Reproduced for criticism &amp; commentary from <a href="https://hannahritchie.substack.com/p/ai-electricity-2025" target="_blank" rel="noopener">Hannah Ritchie, "AI's electricity use in 2025"</a>, sourced from IEA <em>World Energy Outlook 2024</em>.
+        </figcaption>
+      </figure>
     </div>
 
     <!-- Water Comparison Cards -->
@@ -1256,6 +1310,18 @@
       <div class="sources-inline">
         Sources: Data Center Dynamics 2025 &middot; Utility Dive 2024 &middot; Arizona Department of Water Resources
       </div>
+
+      <!-- Ritchie figure: regional concentration of data center demand growth -->
+      <figure class="external-figure reveal">
+        <img src="https://substack-post-media.s3.amazonaws.com/public/images/27d25a7a-7835-4f86-a171-c2d9f8b1a7c6_1354x666.png"
+             alt="Data center contribution to electricity demand growth by region: about 9% globally, around 50% in the US"
+             loading="lazy" />
+        <figcaption>
+          <strong>Where the load actually concentrates.</strong>
+          Globally, data centers are about 9% of new electricity demand growth. In the US it's roughly half. Virginia 25%+ of state electricity. Ireland 20%+. The legitimate worry isn't global energy budgets, it's local grid investment, and that's a build-supply problem with a build-supply answer (see Section 05).
+          Reproduced for criticism &amp; commentary from <a href="https://hannahritchie.substack.com/p/ai-electricity-2025" target="_blank" rel="noopener">Hannah Ritchie, "AI's electricity use in 2025"</a>, sourced from IEA.
+        </figcaption>
+      </figure>
     </div>
 
     <!-- Water Revolution -->
@@ -1453,6 +1519,13 @@
       <h2>Data &amp; References</h2>
     </div>
     <div class="sources-grid reveal">
+      <div class="source-category">
+        <h4>Featured 2026</h4>
+        <ul>
+          <li>Ritchie, H., <a href="https://hannahritchie.substack.com/p/ai-electricity-2025" target="_blank" rel="noopener"><em>"AI's electricity use in 2025, and what it means for the future"</em></a>, By the Numbers (Substack), May 2026</li>
+          <li>Hannah Ritchie &mdash; Deputy Editor &amp; Lead Researcher, Our World in Data, Oxford</li>
+        </ul>
+      </div>
       <div class="source-category">
         <h4>Energy &amp; Resources</h4>
         <ul>

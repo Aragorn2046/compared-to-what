@@ -40,19 +40,20 @@ function initEnergyChart() {
     'Global Aviation',
     'US Air Conditioning',
     'Cryptocurrency (BTC)',
-    'Global Data Centers\n(Streaming + Video)',
-    'Global AI\n(Training + Inference)',
+    'Global Data Centers\n(non-AI: streaming, cloud)',
+    'Global AI\n(2025 actual)',
+    'Global AI\n(2030 IEA base case)',
     'Global Lighting\n(Residential)',
   ];
 
-  const values = [2800, 2000, 130, 200, 340, 2650];
+  const values = [2800, 2000, 130, 295, 155, 450, 2650];
 
   const colors = values.map((v, i) =>
-    i === 4 ? ACCENT_BG : 'rgba(136, 136, 160, 0.4)'
+    (i === 4 || i === 5) ? ACCENT_BG : 'rgba(136, 136, 160, 0.4)'
   );
 
   const borderColors = values.map((v, i) =>
-    i === 4 ? ACCENT : 'rgba(136, 136, 160, 0.6)'
+    (i === 4 || i === 5) ? ACCENT : 'rgba(136, 136, 160, 0.6)'
   );
 
   new Chart(ctx, {

@@ -1424,3 +1424,179 @@ section { padding: 100px 0; }
     margin-left: 0;
   }
 }
+
+/* ============================================================ FEATURED SOURCE (Ritchie) */
+#featured-source {
+  padding: 80px 0 80px;
+}
+
+.source-card {
+  background: linear-gradient(135deg, rgba(212, 160, 86, 0.06), rgba(212, 160, 86, 0.02));
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius-lg);
+  padding: 56px 48px;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  box-shadow: var(--shadow);
+}
+
+.source-card-header h3 {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 2.4vw, 32px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 28px;
+  line-height: 1.25;
+  color: var(--text);
+}
+
+.source-quote {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2vw, 26px);
+  line-height: 1.5;
+  color: var(--text);
+  border-left: 3px solid var(--accent);
+  padding: 14px 0 14px 28px;
+  margin: 0 0 32px 0;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.source-quote strong {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.source-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 36px;
+}
+
+.source-byline {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  flex: 1 1 380px;
+}
+
+.source-byline strong { color: var(--text); }
+.source-byline em { color: var(--text); font-style: italic; }
+
+.source-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 28px;
+  background: rgba(212, 160, 86, 0.1);
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+  border-radius: 100px;
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: background 0.3s, box-shadow 0.3s, opacity 0.3s;
+}
+
+.source-link:hover {
+  background: rgba(212, 160, 86, 0.2);
+  box-shadow: 0 0 30px rgba(212, 160, 86, 0.2);
+  opacity: 1;
+  color: var(--accent);
+}
+
+.source-numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.source-num-item {
+  text-align: center;
+  padding: 28px 20px;
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.source-num-item.highlight {
+  border-color: var(--border-accent);
+  background: rgba(212, 160, 86, 0.04);
+}
+
+.source-num-value {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 800;
+  background: linear-gradient(135deg, #d4a056, #f0d8b0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin-bottom: 14px;
+}
+
+.source-num-label {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.source-num-label em {
+  color: var(--text);
+  font-style: italic;
+}
+
+@media (max-width: 720px) {
+  .source-card { padding: 32px 24px; }
+  .source-numbers { grid-template-columns: 1fr; gap: 14px; }
+  .source-meta { flex-direction: column; align-items: flex-start; }
+  .source-link { width: 100%; justify-content: center; }
+}
+
+/* ============================================================ EXTERNAL FIGURE (Ritchie chart embeds) */
+.external-figure {
+  margin: 36px 0 0 0;
+  padding: 28px;
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.external-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.external-figure figcaption {
+  margin-top: 18px;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+.external-figure figcaption strong { color: var(--text); }
+
+.external-figure figcaption a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(212, 160, 86, 0.4);
+  transition: border-color 0.2s;
+}
+
+.external-figure figcaption a:hover {
+  border-bottom-color: var(--accent);
+  opacity: 1;
+}
