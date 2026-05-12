@@ -1,0 +1,14 @@
+# Compared To What
+
+> Every common AI criticism answered with data and context — interactive companion to the 'compared to what?' framing for evaluating AI's impact in context, not in isolation. This site is one of several maintained by Aragorn Meulendijks (MrMetaverse) — futurist, keynote speaker, AI explorer.
+
+## About this site
+
+- [https://compared-to-what.itsmrmetaverse.com](https://compared-to-what.itsmrmetaverse.com): The interactive site itself.
+
+## About the author
+
+- [Aragorn Meulendijks — main site](https://www.itsmrmetaverse.com/): Profile, keynote topics, contact.
+- [Parallax — Deep Research Articles](https://parallax.itsmrmetaverse.com/): Long-form research on AI, exponential change, business strategy.
+- [LinkedIn](https://www.linkedin.com/in/itsmrmetaverse/)
+- [YouTube — @ItsMrMetaverse](https://www.youtube.com/@ItsMrMetaverse)
