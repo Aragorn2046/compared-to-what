@@ -5,3 +5,5 @@ config.json
 *secret*
 *token*.json
 node_modules/
+.backups/
+.wrangler/
