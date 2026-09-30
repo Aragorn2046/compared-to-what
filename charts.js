@@ -36,24 +36,30 @@ function initEnergyChart() {
   const ctx = document.getElementById('energyChart');
   if (!ctx) return;
 
+  // 2026-09-30 refresh: "US Air Conditioning 2,000" was mislabelled — ~2,100 TWh is
+  // GLOBAL space cooling (IEA via OWID, 2022); US residential AC is 254 TWh (EIA).
+  // BTC 130 -> 138 (Cambridge CCAF survey, Apr 2025). All-data-centre bars added (IEA 2026).
   const labels = [
     'Global Aviation',
-    'US Air Conditioning',
+    'Global Space Cooling\n(air conditioning, 2022)',
     'Cryptocurrency (BTC)',
     'Global Data Centers\n(non-AI: streaming, cloud)',
-    'Global AI\n(2025 actual)',
-    'Global AI\n(2030 IEA base case)',
+    'AI-focused Data Centers\n(2025 actual)',
+    'AI-focused Data Centers\n(2030 IEA base case)',
+    'ALL Data Centers\n(2025, IEA 2026)',
+    'ALL Data Centers\n(2030, IEA 2026 base)',
     'Global Lighting\n(Residential)',
   ];
 
-  const values = [2800, 2000, 130, 295, 155, 450, 2650];
+  const values = [2800, 2100, 138, 295, 155, 450, 485, 950, 2650];
 
+  const HIGHLIGHT = [4, 5, 6, 7];
   const colors = values.map((v, i) =>
-    (i === 4 || i === 5) ? ACCENT_BG : 'rgba(136, 136, 160, 0.4)'
+    HIGHLIGHT.includes(i) ? ACCENT_BG : 'rgba(136, 136, 160, 0.4)'
   );
 
   const borderColors = values.map((v, i) =>
-    (i === 4 || i === 5) ? ACCENT : 'rgba(136, 136, 160, 0.6)'
+    HIGHLIGHT.includes(i) ? ACCENT : 'rgba(136, 136, 160, 0.6)'
   );
 
   new Chart(ctx, {
