@@ -52,7 +52,7 @@ function initEnergyChart() {
 
   const values = [2100, 138, 295, 155, 450, 485, 950];
 
-  const HIGHLIGHT = [3, 4, 5, 6];
+  const HIGHLIGHT = [3, 5, 6]; // 4 = unverified 2030 projection, left grey
   const colors = values.map((v, i) =>
     HIGHLIGHT.includes(i) ? ACCENT_BG : 'rgba(136, 136, 160, 0.4)'
   );
@@ -103,7 +103,7 @@ function initEnergyChart() {
           grid: { display: false },
           ticks: {
             ...sharedTickOptions,
-            font: { size: window.innerWidth < 640 ? 10 : 15 }
+            font: () => ({ size: window.innerWidth < 640 ? 10 : 15 })
           },
           border: { display: false }
         }
