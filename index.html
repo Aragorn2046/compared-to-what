@@ -453,17 +453,17 @@
       <div class="chart-header">
         <div class="ctw-badge">Compared to What?</div>
         <h3>Annual Energy Consumption by Industry</h3>
-        <p class="chart-note">AI-focused and all data centres vs. other electricity uses we rarely question. Data-centre split bars (non-AI 295, AI 155 and 450 TWh) are 2025-edition estimates; the all-data-centre bars are the IEA's April 2026 figures.</p>
+        <p class="chart-note">AI-focused and all data centres vs. other electricity uses we rarely question. Data-centre split bars (non-AI 295, AI 155 and 450 TWh) are 2025-edition estimates, not re-verified in Sep 2026; the all-data-centre bars are the IEA's April 2026 figures.</p>
       </div>
       <div class="chart-wrap chart-wrap-tall">
         <canvas id="energyChart"></canvas>
       </div>
       <div class="chart-verdict">
-        <strong>Verdict:</strong> AI-focused data centers consumed about 155 TWh in 2025, roughly 0.5% of global electricity (Ritchie, 2026). Even the IEA base-case projection of about 450 TWh by 2030 stays well under [corrected 30 Sep 2026: global] air conditioning. <span class="changed-note" style="display:inline">[Withdrawn 30 Sep 2026 pending re-verification: "&hellip; well under aviation &hellip; and residential lighting. Aviation already burns 18x more than AI does today." The aviation (2,800 TWh, fuel energy rather than electricity) and residential-lighting (2,650 TWh) bars could not be matched to a primary source and have been removed from the chart; see changelog.]</span> Cryptocurrency burns nearly as much for no productivity gain.
+        <strong>Verdict:</strong> AI-focused data centers consumed about 155 TWh in 2025, roughly 0.5% of global electricity (Ritchie, 2026). Even the IEA base-case projection of about 450 TWh by 2030 <em>[2025-edition figure, not re-verified Sep 2026]</em> stays well under [corrected 30 Sep 2026: global] air conditioning. <span class="changed-note" style="display:inline">[Withdrawn 30 Sep 2026 pending re-verification: "&hellip; well under aviation &hellip; and residential lighting. Aviation already burns 18x more than AI does today." The aviation (2,800 TWh, fuel energy rather than electricity) and residential-lighting (2,650 TWh) bars could not be matched to a primary source and have been removed from the chart; see changelog.]</span> Cryptocurrency burns nearly as much for no productivity gain.
         <br /><br /><strong>2026 update:</strong> the IEA now puts <em>all</em> data centres (AI plus cloud, streaming, storage) at about 485 TWh in 2025, up 17%, heading to about 950 TWh by 2030, around 3% of world electricity (IEA, April 2026). Global air conditioning alone used about 2,100 TWh in 2022, more than four times all data centres combined. <span class="changed-note">Corrected 30 Sep 2026: the bar previously labelled "US Air Conditioning, 2,000 TWh" was global space cooling; US residential AC is 254 TWh (EIA). Bitcoin updated 130 &rarr; 138 TWh (Cambridge, April 2025). The aviation and residential-lighting bars are removed pending re-verification. The non-AI (295 TWh) and AI-focused (155 TWh) bars come from the 2025 edition and add up to 450 TWh; the IEA's 2026 figure for all data centres is higher (485 TWh), so the bars mix two estimates and are shown side by side rather than reconciled.</span>
       </div>
       <div class="sources-inline">
-        Sources: Ritchie, <em>"AI's electricity use in 2025"</em>, 2026 &middot; IEA World Energy Outlook 2024 &middot; IATA Aviation 2023 &middot; Cambridge Bitcoin Electricity Index 2024 &middot; US EIA Residential Energy 2023 &middot; <a href="https://www.iea.org/reports/key-questions-on-energy-and-ai" target="_blank" rel="noopener">IEA, Key Questions on Energy and AI, Apr 2026</a> &middot; <a href="https://ourworldindata.org/air-conditioning-causes-around-greenhouse-gas-emissions-will-change-future" target="_blank" rel="noopener">Our World in Data / IEA, space cooling 2022</a> &middot; <a href="https://www.jbs.cam.ac.uk/2025/cambridge-study-sustainable-energy-rising-in-bitcoin-mining/" target="_blank" rel="noopener">Cambridge CCAF, Apr 2025</a> &middot; IATA and residential-lighting sources: bars withdrawn 30 Sep 2026 pending re-verification
+        Sources: Ritchie, <em>"AI's electricity use in 2025"</em>, 2026 &middot; IEA World Energy Outlook 2024 (2025 edition) &middot; IATA Aviation 2023 (bar withdrawn) &middot; Cambridge Bitcoin Electricity Index 2024 (superseded by CCAF Apr 2025) &middot; US EIA Residential Energy 2023 &middot; <a href="https://www.iea.org/reports/key-questions-on-energy-and-ai" target="_blank" rel="noopener">IEA, Key Questions on Energy and AI, Apr 2026</a> &middot; <a href="https://ourworldindata.org/air-conditioning-causes-around-greenhouse-gas-emissions-will-change-future" target="_blank" rel="noopener">Our World in Data / IEA, space cooling 2022</a> &middot; <a href="https://www.jbs.cam.ac.uk/2025/cambridge-study-sustainable-energy-rising-in-bitcoin-mining/" target="_blank" rel="noopener">Cambridge CCAF, Apr 2025</a> &middot; IATA and residential-lighting sources: bars withdrawn 30 Sep 2026 pending re-verification
       </div>
 
       <!-- Ritchie figure: IEA scenarios for data center electricity through 2035 -->
@@ -491,7 +491,7 @@
           <div class="comp-icon">&nbsp;</div>
           <div class="comp-label">1 AI prompt (2025 disclosures)</div>
           <div class="comp-value">0.26 mL</div>
-          <div class="comp-sub">on-site cooling water, median Gemini prompt (Google, 2025). ChatGPT: ~0.32 mL (OpenAI)</div>
+          <div class="comp-sub">on-site cooling water, median Gemini prompt (Google, 2025). ChatGPT: ~0.32 mL per average query (reported by OpenAI's CEO; method and boundary not published)</div>
           <div class="comp-was">Was: "~0.5 L per ChatGPT conversation" (2023 estimate that also counted power-plant water, per 10&ndash;50 responses)</div>
         </div>
         <div class="comp-card">
@@ -499,7 +499,7 @@
           <div class="comp-label">1 hamburger</div>
           <div class="comp-value">~2,400L</div>
           <div class="comp-sub">from farm to plate; for beef, 93.5% of the footprint is rainwater on pasture and feed</div>
-          <div class="comp-was">Was: ~2,500 L (rounded). "Blue" water only (rivers and aquifers): ~80 L</div>
+          <div class="comp-was">Was: ~2,500 L (2025 edition; source figure is 2,400 L, Hoekstra &amp; Chapagain 2006). "Blue" water only (rivers and aquifers): ~80 L</div>
         </div>
         <div class="comp-card">
           <div class="comp-icon">&nbsp;</div>
@@ -1867,6 +1867,12 @@
           <li>Pacific Institute, <a href="https://pacinst.org/wp-content/uploads/2026/09/Issue-Brief_AI-Data-Centers-2026_Final.pdf" target="_blank" rel="noopener"><em>AI Data Centers issue brief</em></a>, Sep 2026</li>
           <li>CSO Ireland, <a href="https://www.cso.ie/en/releasesandpublications/ep/p-dcmec/datacentresmeteredelectricityconsumption2025/keyfindings/" target="_blank" rel="noopener"><em>Data Centres Metered Electricity Consumption 2025</em></a></li>
           <li>Luccioni, S., Strubell, E. &amp; Crawford, K., <a href="https://arxiv.org/abs/2501.16548" target="_blank" rel="noopener"><em>From Efficiency Gains to Rebound Effects</em></a>, FAccT 2025</li>
+          <li>PJM Inside Lines, <a href="https://insidelines.pjm.com/pjm-auction-procures-134311-mw-of-generation-resources-supply-responds-to-price-signal/" target="_blank" rel="noopener"><em>2026/2027 Base Residual Auction results</em></a>, Jul 2025</li>
+          <li>Cambridge CCAF, <a href="https://www.jbs.cam.ac.uk/2025/cambridge-study-sustainable-energy-rising-in-bitcoin-mining/" target="_blank" rel="noopener"><em>Bitcoin mining industry study</em></a>, Apr 2025</li>
+          <li>Carbon Brief, <a href="https://www.carbonbrief.org/factcheck-what-is-the-carbon-footprint-of-streaming-video-on-netflix/" target="_blank" rel="noopener"><em>Factcheck: carbon footprint of streaming video</em></a>, 2020 &middot; US EPA, <a href="https://www.epa.gov/energy/greenhouse-gases-equivalencies-calculator-calculations-and-references" target="_blank" rel="noopener"><em>GHG Equivalencies references</em></a></li>
+          <li>Our World in Data / IEA, <a href="https://ourworldindata.org/air-conditioning-causes-around-greenhouse-gas-emissions-will-change-future" target="_blank" rel="noopener"><em>Air conditioning and emissions</em></a>, 2024 &middot; World Bank / FAO, <a href="https://data.worldbank.org/indicator/ER.H2O.FWAG.ZS" target="_blank" rel="noopener"><em>Agricultural water withdrawals</em></a></li>
+          <li>Mekonnen, M.M. &amp; Hoekstra, A.Y., <a href="https://www.waterfootprint.org/resources/Report-48-WaterFootprint-AnimalProducts-Vol1.pdf" target="_blank" rel="noopener"><em>Water footprint of farm animals</em></a>, 2010 &middot; Ellen MacArthur Foundation, <a href="https://www.ellenmacarthurfoundation.org/articles/the-power-of-water" target="_blank" rel="noopener"><em>The power of water</em></a>, 2020</li>
+          <li>SELC, <a href="https://www.selc.org/press-release/memphis-health-leaders-grant-air-permit-for-xai-data-center/" target="_blank" rel="noopener"><em>xAI Memphis air permit</em></a>, Jul 2025 &middot; Population Reference Bureau, <a href="https://www.prb.org/articles/how-many-people-have-ever-lived-on-earth/" target="_blank" rel="noopener"><em>How many people have ever lived on Earth?</em></a></li>
           <li>Full research notes with method and boundary for every figure: available on request</li>
         </ul>
       </div>
