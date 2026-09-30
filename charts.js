@@ -41,13 +41,13 @@ function initEnergyChart() {
   // BTC 130 -> 138 (Cambridge CCAF survey, Apr 2025). All-data-centre bars added (IEA 2026).
   // Aviation (2800) and residential lighting (2650) withdrawn pending re-verification.
   const labels = [
-    'Global Space Cooling\n(air conditioning, 2022)',
-    'Cryptocurrency (BTC)',
-    'Global Data Centers, non-AI\n(launch-edition estimate, unverified)',
-    'AI-focused Data Centers\n(2025, Ritchie 2026)',
-    'AI-focused Data Centers\n(2030, launch-edition projection, unverified)',
-    'ALL Data Centers\n(2025, IEA 2026)',
-    'ALL Data Centers\n(2030, IEA 2026 base)',
+    ['Global space cooling', '(air conditioning, 2022)'],
+    ['Cryptocurrency (BTC)'],
+    ['Data centers, non-AI', '(launch est., unverified)'],
+    ['AI-focused data centers', '(2025, Ritchie 2026)'],
+    ['AI-focused data centers', '(2030 proj., unverified)'],
+    ['ALL data centers', '(2025, IEA 2026)'],
+    ['ALL data centers', '(2030, IEA 2026 base)'],
   ];
 
   const values = [2100, 138, 295, 155, 450, 485, 950];
@@ -103,7 +103,7 @@ function initEnergyChart() {
           grid: { display: false },
           ticks: {
             ...sharedTickOptions,
-            font: { size: 15 }
+            font: { size: window.innerWidth < 640 ? 10 : 15 }
           },
           border: { display: false }
         }
