@@ -1873,7 +1873,7 @@ section { padding: 100px 0; }
   .pair-num { font-size: 1.6rem; }
   .footer-avatar { width: 80px; height: 80px; }
   .changelog-table { min-width: 0; }
-  .changelog-table thead { display: none; }
+  .changelog-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   .changelog-table tr { display: block; padding: 10px 0; border-bottom: 1px solid var(--border); }
   .changelog-table td { display: block; border: 0; padding: 3px 0; }
   .changelog-table td:nth-child(3):not([colspan])::before { content: "Before: "; color: var(--text-dim); }

@@ -10,7 +10,7 @@
 
 - Measured per-prompt footprint: a median Gemini text prompt uses 0.24 Wh and 0.26 mL of on-site cooling water (Google, Aug 2025); OpenAI reports ~0.34 Wh and ~0.32 mL per average ChatGPT query (Jun 2025).
 - All data centres: ~485 TWh in 2025 (+17%), ~950 TWh by 2030, about 3% of world electricity (IEA, Apr 2026). Global space cooling: ~2,100 TWh (2022).
-- One hamburger (2,400 L) equals roughly 53,000 to 300,000 AI replies in water, depending on which like-for-like boundary is used.
+- One hamburger's river and groundwater (~80 L) equals roughly 1,800 to 24,000 AI replies, depending on the boundary (Mistral full life cycle vs. Google on-site plus estimated power-plant water).
 - Changelog on the page lists every superseded number (old to new, with dates).
 
 ## About the author
