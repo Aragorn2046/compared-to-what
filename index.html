@@ -243,15 +243,15 @@
     <div class="section-header reveal">
       <div class="section-label">2026 Update &middot; 30 September 2026</div>
       <h2>One Year Later:<br /><span class="accent">What the New Numbers Say</span></h2>
-      <p class="section-intro">In 2025 the AI resource debate ran on estimates. Since then the companies themselves have started measuring, and the IEA has updated its totals. Short version: <strong>each prompt costs far less than critics assumed, while total use keeps growing.</strong> The question has moved from "how much?" to "where, and for what?"</p>
+      <p class="section-intro">In 2025 the AI resource debate ran on estimates. Since then the companies themselves have started measuring, and the IEA has updated its totals. Short version: <strong>a text prompt, as reported by the companies that now disclose it, costs far less than the 2023 estimates critics still quote, while total use keeps growing.</strong> The question has moved from "how much?" to "where, and for what?"</p>
     </div>
 
     <!-- Per-prompt, measured -->
     <div class="chart-block reveal">
       <div class="chart-header">
-        <div class="ctw-badge">Measured, Not Guessed</div>
+        <div class="ctw-badge">What the Companies Now Report</div>
         <h3>What One AI Prompt Actually Costs</h3>
-        <p class="chart-note">Company disclosures, 2025&ndash;2026. Each figure states what it counts.</p>
+        <p class="chart-note">Company disclosures, 2025&ndash;2026, for text prompts. Google's figures are measured medians; the others are reported averages or ranges. Each figure states what it counts.</p>
       </div>
       <div class="comparison-cards">
         <div class="comp-card highlight">
@@ -276,7 +276,7 @@
         </div>
       </div>
       <div class="chart-verdict">
-        <strong>Why the old numbers were so much higher:</strong> the widely quoted "3 Wh per query" (2023) is about 10&times; too high by Epoch AI's estimate, and the "half a litre per conversation" water figure was really 500 mL per 10&ndash;50 responses on 2023 hardware, <em>including</em> the water used by power plants. Counting everything, including manufacturing, Mistral's third-party-reviewed life-cycle study finds 45 mL per reply. That is higher, and still small: see the hamburger below.
+        <strong>Why the old numbers were so much higher:</strong> the widely quoted "3 Wh per query" (2023) is about 10&times; too high by Epoch AI's estimate, and the "half a litre per conversation" water figure was really 500 mL per 10&ndash;50 responses on 2023 hardware, <em>including</em> the water used by power plants. Counting its full life cycle, including training and hardware manufacturing (but not user devices), Mistral's third-party-reviewed life-cycle study finds 45 mL per reply. That is higher, and still small: see the hamburger below.
       </div>
       <div class="sources-inline">
         Sources: <a href="https://arxiv.org/abs/2508.15734" target="_blank" rel="noopener">Google, Elsworth et al., Aug 2025</a> &middot; <a href="https://blog.samaltman.com/the-gentle-singularity" target="_blank" rel="noopener">Altman, Jun 2025</a> &middot; <a href="https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/06/15/scaling-ai-with-8-to-20x-energy-efficiency/" target="_blank" rel="noopener">Microsoft, Jun 2026</a> &middot; <a href="https://epoch.ai/gradient-updates/how-much-energy-does-chatgpt-use" target="_blank" rel="noopener">Epoch AI, Feb 2025</a> &middot; <a href="https://mistral.ai/news/our-contribution-to-a-global-environmental-standard-for-ai" target="_blank" rel="noopener">Mistral LCA, Jul 2025</a> &middot; <a href="https://arxiv.org/abs/2304.03271" target="_blank" rel="noopener">Li et al., "Making AI Less Thirsty"</a>
@@ -293,7 +293,7 @@
       <div class="pairs-list">
         <div class="pair-row">
           <div class="pair-num">1</div>
-          <div class="pair-body"><strong>One hamburger's river and groundwater = roughly 1,800 to 24,000 AI replies.</strong> A 150 g beef patty uses ~80 L of "blue" water, drawn from rivers and aquifers (550 L per kg of beef, mostly for irrigating feed). An AI reply uses 0.26 mL on-site at Google; adding the power plants' water at the US average ratio (LBNL: ~12&times; the on-site figure) gives ~3.4 mL &rarr; <strong>~24,000 replies per burger</strong> (our estimate). Mistral's full life-cycle figure, which also counts chip and server manufacturing, is 45 mL per 400-token reply &rarr; <strong>~1,800</strong>. Count the rain on pasture too (2,400 L per burger, 93.5% of beef's footprint is rainwater) and it is ~53,000.</div>
+          <div class="pair-body"><strong>One hamburger's river and groundwater = roughly 1,800 AI replies, or tens of thousands.</strong> A 150 g beef patty (our assumption) uses ~80 L of "blue" water drawn from rivers and aquifers (550 L per kg of beef, mostly for irrigating feed). Two separate scenarios for the AI side: <em>Mistral's full life cycle</em>, which also counts training and chip and server manufacturing, is 45 mL per 400-token reply &rarr; <strong>~1,800 replies per burger</strong>. <em>A Gemini text prompt on an average US grid</em>: 0.26 mL on-site plus ~1.1 mL at the power plants (0.24 Wh &times; ~4.5 L per kWh, the US data-centre average implied by LBNL's 2023 figures) &asymp; 1.35 mL &rarr; <strong>~59,000</strong>. The second is our estimate, not a measured footprint.</div>
         </div>
         <div class="pair-row">
           <div class="pair-num">2</div>
@@ -378,7 +378,7 @@
           <div class="comp-sub">new US data centres built or in development since 2022 are in high water-stress areas (Bloomberg via Pacific Institute)</div>
         </div>
         <div class="comp-card">
-          <div class="comp-label">Memphis</div>
+          <div class="comp-label">Memphis (SELC)</div>
           <div class="comp-value negative">35 turbines</div>
           <div class="comp-sub">gas turbines were installed at xAI's site without permits; 15 were later permitted</div>
         </div>
@@ -395,12 +395,12 @@
     <div class="chart-block reveal">
       <div class="chart-header">
         <div class="ctw-badge">The Data Centre of 2030</div>
-        <h3>Closed-Loop Cooling, Water Given Back, Heat for Homes</h3>
+        <h3>Closed-Loop Cooling and Water Replenishment</h3>
       </div>
       <div class="chart-verdict">
-        <p>Microsoft's data-centre designs since August 2024 use closed-loop chip cooling with no evaporative cooling water; the first of these sites come online from late 2027. Google replenished about 64% of the freshwater it consumed in 2024, up from 18% a year earlier, and targets replenishing 120% by 2030 through watershed projects (a credit on top of its footprint, not a reduction of it). Meta's Odense data centre already exports its waste heat to the city's district heating, and Microsoft's heat recovery for Espoo starts from 2027. The same infrastructure that critics measure in teaspoons is the one that will make desalination, precision agriculture and new medicines cheap. Every one of the roughly 117 billion people who have ever lived (Population Reference Bureau estimate) did without it. The billions still to be born will inherit it.</p>
+        <p>Microsoft's data-centre designs since August 2024 use closed-loop chip cooling with no evaporative cooling water; the first of these sites come online from late 2027. Google replenished about 64% of the freshwater it consumed in 2024, up from 18% a year earlier, and targets replenishing 120% by 2030 through watershed projects (a credit on top of its footprint, not a reduction of it). The same infrastructure that critics measure in teaspoons could make desalination, precision agriculture and new medicines far cheaper. Every one of the roughly <a href="https://www.prb.org/articles/how-many-people-have-ever-lived-on-earth/" target="_blank" rel="noopener">117 billion people who have ever been born</a> (Population Reference Bureau estimate) did without it. The billions still to be born will inherit it.</p>
       </div>
-      <div class="sources-inline">Sources: <a href="https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/" target="_blank" rel="noopener">Microsoft, Dec 2024</a> &middot; <a href="https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf" target="_blank" rel="noopener">Google Environmental Report 2025 (64%, 120% target)</a> &middot; <a href="https://blog.google/company-news/outreach-and-initiatives/sustainability/new-water-stewardship-commitments/" target="_blank" rel="noopener">Google, Jun 2026 (7+ bn gallons replenished in 2025)</a> &middot; Fortum / Microsoft Espoo heat-recovery announcements &middot; Population Reference Bureau, "How Many People Have Ever Lived on Earth?"
+      <div class="sources-inline">Sources: <a href="https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/" target="_blank" rel="noopener">Microsoft, Dec 2024</a> &middot; <a href="https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf" target="_blank" rel="noopener">Google Environmental Report 2025 (64%, 120% target)</a> &middot; <a href="https://blog.google/company-news/outreach-and-initiatives/sustainability/new-water-stewardship-commitments/" target="_blank" rel="noopener">Google, Jun 2026 (7+ bn gallons replenished in 2025)</a> &middot; <a href="https://www.prb.org/articles/how-many-people-have-ever-lived-on-earth/" target="_blank" rel="noopener">Population Reference Bureau</a>
       </div>
     </div>
 
@@ -416,13 +416,14 @@
         <thead><tr><th>Date</th><th>Item</th><th>Before</th><th>Now</th></tr></thead>
         <tbody>
           <tr><td>2026-09-30</td><td>Water per AI use</td><td>~0.5 L per ChatGPT conversation (2023 estimate incl. power-plant water)</td><td>0.26 mL per median prompt, on-site (Google 2025); ~0.32 mL (OpenAI); 45 mL full life cycle (Mistral)</td></tr>
-          <tr><td>2026-09-30</td><td>Hamburger comparison</td><td>1 hamburger &asymp; 5,000 conversations; 2,500 L</td><td>1 hamburger&rsquo;s blue water &asymp; 1,800&ndash;24,000 replies (range across boundaries); 2,400 L total footprint</td></tr>
+          <tr><td>2026-09-30</td><td>Hamburger comparison</td><td>1 hamburger &asymp; 5,000 conversations; 2,500 L</td><td>1 hamburger&rsquo;s blue water &asymp; 1,800 replies (Mistral life cycle) to ~59,000 (Gemini prompt + estimated US power-plant water); 2,400 L total footprint</td></tr>
           <tr><td>2026-09-30</td><td>Energy chart: air conditioning bar</td><td>"US Air Conditioning", 2,000 TWh</td><td>"Global space cooling (2022)", ~2,100 TWh (the bar was mislabelled; US residential AC is 254 TWh)</td></tr>
           <tr><td>2026-09-30</td><td>Energy chart: Bitcoin</td><td>130 TWh</td><td>138 TWh (Cambridge survey, Apr 2025)</td></tr>
           <tr><td>2026-09-30</td><td>Energy chart: all data centres</td><td>not shown</td><td>485 TWh (2025) &rarr; ~950 TWh (2030), IEA Apr 2026. The AI-only bars (155 / 450 TWh) are relabelled "AI-focused data centers"</td></tr>
           <tr><td>2026-09-30</td><td>Water verdict</td><td>"Agriculture represents 70% &hellip; AI data centers are under 1%"</td><td>71% (World Bank/FAO 2022); AI 2027 withdrawal projection &asymp; 0.2% of agriculture's</td></tr>
           <tr><td>2026-09-30</td><td>Jeans card</td><td>~10,000 L</td><td>~7,500 L (Ellen MacArthur Foundation, 2020)</td></tr>
-          <tr><td>2026-09-30</td><td>Not re-verified</td><td colspan="2">Aviation (2,800 TWh, and the "18x" in the energy verdict), residential lighting (2,650 TWh) and smartphone (12,760 L) are carried over from the 2025 edition and flagged pending re-verification</td></tr>
+          <tr><td>2026-09-30</td><td>Energy chart: aviation, residential lighting</td><td>Global Aviation 2,800 TWh; Global Lighting (Residential) 2,650 TWh; verdict "Aviation already burns 18x more than AI"</td><td>Withdrawn pending re-verification (no primary source matched; aviation figure is fuel energy, not electricity)</td></tr>
+          <tr><td>2026-09-30</td><td>Not re-verified</td><td colspan="2">Smartphone (12,760 L) and the older data-centre features (Odense, Hamina heat reuse) are carried over from the 2025 edition and flagged pending re-verification</td></tr>
           <tr><td>2026-09-30</td><td>Corrections</td><td colspan="2">"Making AI Less Thirsty" is by Li, Yang, Islam &amp; Ren, not "Goldman et al."; the Microsoft Espoo heat-recovery claim is planned from 2027, not yet operating (annotated in place); "US air conditioning" in the energy verdict corrected to global</td></tr>
           <tr><td>2026-09-30</td><td>Added</td><td colspan="2">This 2026 Update section, the per-prompt measurements, the Jevons loop, the local-impact counter-arguments, author details and a disclaimer</td></tr>
           <tr><td>2026-05</td><td>Featured source</td><td colspan="2">Hannah Ritchie's "AI's electricity use in 2025" added</td></tr>
@@ -458,11 +459,11 @@
         <canvas id="energyChart"></canvas>
       </div>
       <div class="chart-verdict">
-        <strong>Verdict:</strong> AI-focused data centers consumed about 155 TWh in 2025, roughly 0.5% of global electricity (Ritchie, 2026). Even the IEA base-case projection of about 450 TWh by 2030 stays well under aviation, [corrected 30 Sep 2026: global] air conditioning, and residential lighting. Aviation already burns 18x more than AI does today. Cryptocurrency burns nearly as much for no productivity gain.
-        <br /><br /><strong>2026 update:</strong> the IEA now puts <em>all</em> data centres (AI plus cloud, streaming, storage) at about 485 TWh in 2025, up 17%, heading to about 950 TWh by 2030, around 3% of world electricity (IEA, April 2026). Global air conditioning alone used about 2,100 TWh in 2022, more than four times all data centres combined. <span class="changed-note">Corrected 30 Sep 2026: the bar previously labelled "US Air Conditioning, 2,000 TWh" was global space cooling; US residential AC is 254 TWh (EIA). Bitcoin updated 130 &rarr; 138 TWh (Cambridge, April 2025). The non-AI (295 TWh) and AI-focused (155 TWh) bars come from the 2025 edition and add up to 450 TWh; the IEA's 2026 figure for all data centres is higher (485 TWh), so the bars mix two estimates and are shown side by side rather than reconciled.</span>
+        <strong>Verdict:</strong> AI-focused data centers consumed about 155 TWh in 2025, roughly 0.5% of global electricity (Ritchie, 2026). Even the IEA base-case projection of about 450 TWh by 2030 stays well under [corrected 30 Sep 2026: global] air conditioning. <span class="changed-note" style="display:inline">[Withdrawn 30 Sep 2026 pending re-verification: "&hellip; well under aviation &hellip; and residential lighting. Aviation already burns 18x more than AI does today." The aviation (2,800 TWh, fuel energy rather than electricity) and residential-lighting (2,650 TWh) bars could not be matched to a primary source and have been removed from the chart; see changelog.]</span> Cryptocurrency burns nearly as much for no productivity gain.
+        <br /><br /><strong>2026 update:</strong> the IEA now puts <em>all</em> data centres (AI plus cloud, streaming, storage) at about 485 TWh in 2025, up 17%, heading to about 950 TWh by 2030, around 3% of world electricity (IEA, April 2026). Global air conditioning alone used about 2,100 TWh in 2022, more than four times all data centres combined. <span class="changed-note">Corrected 30 Sep 2026: the bar previously labelled "US Air Conditioning, 2,000 TWh" was global space cooling; US residential AC is 254 TWh (EIA). Bitcoin updated 130 &rarr; 138 TWh (Cambridge, April 2025). The aviation and residential-lighting bars are removed pending re-verification. The non-AI (295 TWh) and AI-focused (155 TWh) bars come from the 2025 edition and add up to 450 TWh; the IEA's 2026 figure for all data centres is higher (485 TWh), so the bars mix two estimates and are shown side by side rather than reconciled.</span>
       </div>
       <div class="sources-inline">
-        Sources: Ritchie, <em>"AI's electricity use in 2025"</em>, 2026 &middot; IEA World Energy Outlook 2024 &middot; IATA Aviation 2023 &middot; Cambridge Bitcoin Electricity Index 2024 &middot; US EIA Residential Energy 2023 &middot; <a href="https://www.iea.org/reports/key-questions-on-energy-and-ai" target="_blank" rel="noopener">IEA, Key Questions on Energy and AI, Apr 2026</a> &middot; <a href="https://ourworldindata.org/air-conditioning-causes-around-greenhouse-gas-emissions-will-change-future" target="_blank" rel="noopener">Our World in Data / IEA, space cooling 2022</a> &middot; <a href="https://www.jbs.cam.ac.uk/2025/cambridge-study-sustainable-energy-rising-in-bitcoin-mining/" target="_blank" rel="noopener">Cambridge CCAF, Apr 2025</a> &middot; Aviation and residential-lighting bars carried over from 2025, not re-verified in Sep 2026
+        Sources: Ritchie, <em>"AI's electricity use in 2025"</em>, 2026 &middot; IEA World Energy Outlook 2024 &middot; IATA Aviation 2023 &middot; Cambridge Bitcoin Electricity Index 2024 &middot; US EIA Residential Energy 2023 &middot; <a href="https://www.iea.org/reports/key-questions-on-energy-and-ai" target="_blank" rel="noopener">IEA, Key Questions on Energy and AI, Apr 2026</a> &middot; <a href="https://ourworldindata.org/air-conditioning-causes-around-greenhouse-gas-emissions-will-change-future" target="_blank" rel="noopener">Our World in Data / IEA, space cooling 2022</a> &middot; <a href="https://www.jbs.cam.ac.uk/2025/cambridge-study-sustainable-energy-rising-in-bitcoin-mining/" target="_blank" rel="noopener">Cambridge CCAF, Apr 2025</a> &middot; IATA and residential-lighting sources: bars withdrawn 30 Sep 2026 pending re-verification
       </div>
 
       <!-- Ritchie figure: IEA scenarios for data center electricity through 2035 -->
@@ -518,11 +519,11 @@
           <div class="comp-label">1 smartphone</div>
           <div class="comp-value">~12,760L</div>
           <div class="comp-sub">manufacturing process</div>
-          <div class="comp-was">2025 edition figure, not re-verified in Sep 2026</div>
+          <div class="comp-was">2025 edition figure; no primary source found in Sep 2026, treat as unverified</div>
         </div>
       </div>
       <div class="chart-verdict">
-        <strong>Verdict (2026):</strong> One hamburger's river and groundwater (~80 L) equals roughly <strong>1,800 to 24,000 AI replies</strong>: the low end uses Mistral's full life-cycle water including manufacturing (45 mL per reply), the high end Google's on-site 0.26 mL plus an estimate for power-plant water (~3.4 mL). The boundaries are close but never identical, which is why we give a range. Agriculture is 71% of global freshwater withdrawals; even the high projection for all AI water withdrawal in 2027 (Li et al.) is about 0.2% of agriculture's.
+        <strong>Verdict (2026):</strong> One hamburger's river and groundwater (~80 L) equals roughly <strong>1,800 AI replies</strong> on Mistral's full life-cycle count (45 mL per reply, including manufacturing), or <strong>~59,000</strong> for a Gemini text prompt once estimated power-plant water is added (~1.35 mL, our estimate on US-average figures). The boundaries are close but never identical, which is why we show both. Agriculture is 71% of global freshwater withdrawals; even the high projection for all AI water withdrawal in 2027 (Li et al.) is about 0.2% of agriculture's.
         <span class="changed-note">Updated 30 Sep 2026. The 2025 version read: "One hamburger uses the same water as approximately 5,000 ChatGPT conversations. Agriculture represents 70% of global freshwater withdrawals. AI data centers are under 1%." The 5,000 was based on the 2023 "500 mL per conversation" estimate; Google has since measured 0.26 mL of on-site water per median prompt, and OpenAI reports ~0.32 mL per average query (method not published). 70% is now 71% (World Bank/FAO, 2022 data). "Under 1%" (of withdrawals, year unstated) is replaced by the 2027 projection above.</span>
       </div>
       <div class="sources-inline">

@@ -39,8 +39,8 @@ function initEnergyChart() {
   // 2026-09-30 refresh: "US Air Conditioning 2,000" was mislabelled — ~2,100 TWh is
   // GLOBAL space cooling (IEA via OWID, 2022); US residential AC is 254 TWh (EIA).
   // BTC 130 -> 138 (Cambridge CCAF survey, Apr 2025). All-data-centre bars added (IEA 2026).
+  // Aviation (2800) and residential lighting (2650) withdrawn pending re-verification.
   const labels = [
-    'Global Aviation',
     'Global Space Cooling\n(air conditioning, 2022)',
     'Cryptocurrency (BTC)',
     'Global Data Centers, non-AI\n(2025 edition estimate)',
@@ -48,12 +48,11 @@ function initEnergyChart() {
     'AI-focused Data Centers\n(2030 IEA base case)',
     'ALL Data Centers\n(2025, IEA 2026)',
     'ALL Data Centers\n(2030, IEA 2026 base)',
-    'Global Lighting\n(Residential)',
   ];
 
-  const values = [2800, 2100, 138, 295, 155, 450, 485, 950, 2650];
+  const values = [2100, 138, 295, 155, 450, 485, 950];
 
-  const HIGHLIGHT = [4, 5, 6, 7];
+  const HIGHLIGHT = [3, 4, 5, 6];
   const colors = values.map((v, i) =>
     HIGHLIGHT.includes(i) ? ACCENT_BG : 'rgba(136, 136, 160, 0.4)'
   );
