@@ -276,7 +276,7 @@
         </div>
       </div>
       <div class="chart-verdict">
-        <strong>Why the old numbers were so much higher:</strong> the widely quoted "3 Wh per query" (2023) is about 10&times; too high by Epoch AI's estimate, and the "half a litre per conversation" water figure was really 500 mL per 10&ndash;50 responses on 2023 hardware, <em>including</em> the water used by power plants. Counting its full life cycle, including training and hardware manufacturing (but not user devices), Mistral's third-party-reviewed life-cycle study finds 45 mL per reply. That is higher, and still small: see the hamburger below.
+        <strong>Why the old numbers were so much higher:</strong> the widely quoted "3 Wh per query" (2023) is about 10&times; too high by Epoch AI's estimate, and the "half a litre per conversation" water figure was really 500 mL per 10&ndash;50 responses on 2023 hardware, <em>including</em> the water used by power plants. Counting the full life cycle of answering a request (the electricity plus a share of chip and server manufacturing, but not user devices), Mistral's third-party-reviewed life-cycle study finds 45 mL per reply. That is higher, and still small: see the hamburger below.
       </div>
       <div class="sources-inline">
         Sources: <a href="https://arxiv.org/abs/2508.15734" target="_blank" rel="noopener">Google, Elsworth et al., Aug 2025</a> &middot; <a href="https://blog.samaltman.com/the-gentle-singularity" target="_blank" rel="noopener">Altman, Jun 2025</a> &middot; <a href="https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/06/15/scaling-ai-with-8-to-20x-energy-efficiency/" target="_blank" rel="noopener">Microsoft, Jun 2026</a> &middot; <a href="https://epoch.ai/gradient-updates/how-much-energy-does-chatgpt-use" target="_blank" rel="noopener">Epoch AI, Feb 2025</a> &middot; <a href="https://mistral.ai/news/our-contribution-to-a-global-environmental-standard-for-ai" target="_blank" rel="noopener">Mistral LCA, Jul 2025</a> &middot; <a href="https://arxiv.org/abs/2304.03271" target="_blank" rel="noopener">Li et al., "Making AI Less Thirsty"</a>
@@ -293,7 +293,7 @@
       <div class="pairs-list">
         <div class="pair-row">
           <div class="pair-num">1</div>
-          <div class="pair-body"><strong>One hamburger's river and groundwater = roughly 1,800 AI replies, or tens of thousands.</strong> A 150 g beef patty (our assumption) uses ~80 L of "blue" water drawn from rivers and aquifers (550 L per kg of beef, mostly for irrigating feed). Two separate scenarios for the AI side: <em>Mistral's full life cycle</em>, which also counts training and chip and server manufacturing, is 45 mL per 400-token reply &rarr; <strong>~1,800 replies per burger</strong>. <em>A Gemini text prompt on an average US grid</em>: 0.26 mL on-site plus ~1.1 mL at the power plants (0.24 Wh &times; ~4.5 L per kWh, the US data-centre average implied by LBNL's 2023 figures) &asymp; 1.35 mL &rarr; <strong>~59,000</strong>. The second is our estimate, not a measured footprint.</div>
+          <div class="pair-body"><strong>One hamburger's river and groundwater = roughly 1,800 AI replies, or tens of thousands.</strong> A 150 g beef patty (our assumption) uses ~80 L of "blue" water drawn from rivers and aquifers (550 L per kg of beef, mostly for irrigating feed). Two separate scenarios for the AI side: <em>Mistral's full life-cycle figure for a reply</em>, which also counts the power plants and a share of chip and server manufacturing, is 45 mL per 400-token reply &rarr; <strong>~1,800 replies per burger</strong>. <em>A Gemini text prompt on an average US grid</em>: 0.26 mL on-site plus ~1.1 mL at the power plants (0.24 Wh &times; ~4.5 L per kWh, the US data-centre average implied by LBNL's 2023 figures) &asymp; 1.35 mL &rarr; <strong>~59,000</strong>. The second is our estimate, not a measured footprint.</div>
         </div>
         <div class="pair-row">
           <div class="pair-num">2</div>
@@ -347,7 +347,7 @@
         </div>
       </div>
       <div class="chart-verdict">
-        <strong>This looks like Jevons' paradox, which William Stanley Jevons described for coal in 1865:</strong> efficiency makes a resource cheap enough to use everywhere, so total use rises. These figures cover different periods and scopes, so they are consistent with a rebound rather than proof of one. It has been observed again and again since. Global energy use has fallen only briefly, in wars, deep recessions and the 2020 pandemic, and then resumed its climb. So the useful question is not whether AI will use energy. It will. The question is what we get for it: protein structures, tutoring, diagnostics and materials science, or speculative ledgers and chilled empty offices.
+        <strong>This looks like Jevons' paradox, which William Stanley Jevons described for coal in 1865:</strong> efficiency makes a resource cheap enough to use everywhere, so total use rises. These figures cover different periods and scopes, so they are consistent with a rebound rather than proof of one. So the useful question is not whether AI will use energy. It will. The question is what we get for it: protein structures, tutoring, diagnostics and materials science, or speculative ledgers and chilled empty offices.
       </div>
       <div class="sources-inline">
         Sources: <a href="https://arxiv.org/abs/2508.15734" target="_blank" rel="noopener">Google, Aug 2025</a> &middot; <a href="https://blog.google/innovation-and-ai/sundar-pichai-io-2026/" target="_blank" rel="noopener">Pichai, Google I/O 2026</a> &middot; <a href="https://www.iea.org/reports/key-questions-on-energy-and-ai" target="_blank" rel="noopener">IEA, Apr 2026</a> &middot; <a href="https://huggingface.co/blog/sasha/ai-energy-score-v2" target="_blank" rel="noopener">Hugging Face AI Energy Score v2</a> &middot; <a href="https://arxiv.org/abs/2501.16548" target="_blank" rel="noopener">Luccioni, Strubell &amp; Crawford, FAccT 2025</a>
@@ -398,7 +398,7 @@
         <h3>Closed-Loop Cooling and Water Replenishment</h3>
       </div>
       <div class="chart-verdict">
-        <p>Microsoft's data-centre designs since August 2024 use closed-loop chip cooling with no evaporative cooling water; the first of these sites come online from late 2027. Google replenished about 64% of the freshwater it consumed in 2024, up from 18% a year earlier, and targets replenishing 120% by 2030 through watershed projects (a credit on top of its footprint, not a reduction of it). The same infrastructure that critics measure in teaspoons could make desalination, precision agriculture and new medicines far cheaper. Every one of the roughly <a href="https://www.prb.org/articles/how-many-people-have-ever-lived-on-earth/" target="_blank" rel="noopener">117 billion people who have ever been born</a> (Population Reference Bureau estimate) did without it. The billions still to be born will inherit it.</p>
+        <p>Microsoft's data-centre designs since August 2024 use closed-loop chip cooling with no evaporative cooling water; the first of these sites come online from late 2027. Google replenished about 64% of the freshwater it consumed in 2024, up from 18% a year earlier, and targets replenishing 120% by 2030 through watershed projects (a credit on top of its footprint, not a reduction of it). Infrastructure whose per-prompt water is now measured in drops could make desalination, precision agriculture and new medicines far cheaper. Most of the roughly <a href="https://www.prb.org/articles/how-many-people-have-ever-lived-on-earth/" target="_blank" rel="noopener">117 billion people who have ever been born</a> (Population Reference Bureau estimate) lived and died without it. The billions still to be born will inherit it.</p>
       </div>
       <div class="sources-inline">Sources: <a href="https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/" target="_blank" rel="noopener">Microsoft, Dec 2024</a> &middot; <a href="https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf" target="_blank" rel="noopener">Google Environmental Report 2025 (64%, 120% target)</a> &middot; <a href="https://blog.google/company-news/outreach-and-initiatives/sustainability/new-water-stewardship-commitments/" target="_blank" rel="noopener">Google, Jun 2026 (7+ bn gallons replenished in 2025)</a> &middot; <a href="https://www.prb.org/articles/how-many-people-have-ever-lived-on-earth/" target="_blank" rel="noopener">Population Reference Bureau</a>
       </div>
@@ -453,7 +453,7 @@
       <div class="chart-header">
         <div class="ctw-badge">Compared to What?</div>
         <h3>Annual Energy Consumption by Industry</h3>
-        <p class="chart-note">Global AI training + inference vs. industries we don't question</p>
+        <p class="chart-note">AI-focused and all data centres vs. other electricity uses we rarely question. Data-centre split bars (non-AI 295, AI 155 and 450 TWh) are 2025-edition estimates; the all-data-centre bars are the IEA's April 2026 figures.</p>
       </div>
       <div class="chart-wrap chart-wrap-tall">
         <canvas id="energyChart"></canvas>
@@ -506,7 +506,7 @@
           <div class="comp-label">1 pair of jeans</div>
           <div class="comp-value">~7,500L</div>
           <div class="comp-sub">cotton to finished product (Ellen MacArthur Foundation, 2020)</div>
-          <div class="comp-was">Was: ~10,000 L (2025 edition). Levi's own life-cycle study reports less; estimates vary with where the cotton is grown</div>
+          <div class="comp-was">Was: ~10,000 L (2025 edition). Estimates vary with where the cotton is grown</div>
         </div>
         <div class="comp-card">
           <div class="comp-icon">&nbsp;</div>
@@ -1672,7 +1672,7 @@
         <div class="dc-feature reveal">
           <div class="dc-feature-label">Heat Reuse</div>
           <div class="dc-feature-stat">Waste heat becomes city heating</div>
-          <div class="dc-feature-desc">Microsoft Espoo heats 250,000 people <em>[correction 30 Sep 2026: planned, with heat recovery starting step by step from 2027, not yet operating]</em>. Meta Odense heats 12,000 homes. Google Hamina serves 80% of local heating demand. Data centers become infrastructure assets.</div>
+          <div class="dc-feature-desc">Microsoft Espoo heats 250,000 people <em>[correction 30 Sep 2026: planned, with heat recovery starting step by step from 2027, not yet operating]</em>. Meta Odense heats 12,000 homes <em>[2025 figure, not re-verified Sep 2026]</em>. Google Hamina serves 80% of local heating demand <em>[2025 figure, not re-verified Sep 2026]</em>. Data centers become infrastructure assets.</div>
         </div>
         <div class="dc-feature reveal">
           <div class="dc-feature-label">Chip Efficiency</div>
@@ -1874,9 +1874,9 @@
         <h4>Energy &amp; Resources</h4>
         <ul>
           <li>IEA, <em>World Energy Outlook 2024</em></li>
-          <li>IATA, <em>Aviation Climate Action Report 2023</em></li>
+          <li>IATA, <em>Aviation Climate Action Report 2023</em> (aviation bar withdrawn 30 Sep 2026)</li>
           <li>Cambridge Centre for Alternative Finance, <em>Bitcoin Electricity Consumption Index 2024</em></li>
-          <li>US Energy Information Administration, <em>Residential Energy Consumption Survey 2023</em></li>
+          <li>US Energy Information Administration, <em>Residential Energy Consumption Survey 2023</em> (residential-lighting bar withdrawn 30 Sep 2026)</li>
           <li>Li, P., Yang, J., Islam, M.A. &amp; Ren, S., <em>"Making AI Less Thirsty"</em>, 2023 (attribution corrected 30 Sep 2026; previously listed as Goldman, S. et al.)</li>
           <li>UNESCO, <em>World Water Development Report 2023</em></li>
           <li>Water Footprint Network, <em>Product Water Footprints</em></li>

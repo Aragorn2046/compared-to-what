@@ -43,9 +43,9 @@ function initEnergyChart() {
   const labels = [
     'Global Space Cooling\n(air conditioning, 2022)',
     'Cryptocurrency (BTC)',
-    'Global Data Centers, non-AI\n(2025 edition estimate)',
-    'AI-focused Data Centers\n(2025 actual)',
-    'AI-focused Data Centers\n(2030 IEA base case)',
+    'Global Data Centers, non-AI\n(2025-edition estimate)',
+    'AI-focused Data Centers\n(2025, Ritchie estimate)',
+    'AI-focused Data Centers\n(2030, 2025-edition projection)',
     'ALL Data Centers\n(2025, IEA 2026)',
     'ALL Data Centers\n(2030, IEA 2026 base)',
   ];
