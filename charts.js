@@ -43,7 +43,7 @@ function initEnergyChart() {
     'Global Aviation',
     'Global Space Cooling\n(air conditioning, 2022)',
     'Cryptocurrency (BTC)',
-    'Global Data Centers\n(non-AI: streaming, cloud)',
+    'Global Data Centers, non-AI\n(2025 edition estimate)',
     'AI-focused Data Centers\n(2025 actual)',
     'AI-focused Data Centers\n(2030 IEA base case)',
     'ALL Data Centers\n(2025, IEA 2026)',
