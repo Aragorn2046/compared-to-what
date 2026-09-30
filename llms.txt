@@ -6,6 +6,13 @@
 
 - [https://compared-to-what.itsmrmetaverse.com](https://compared-to-what.itsmrmetaverse.com): The interactive site itself.
 
+## 2026 update (30 September 2026)
+
+- Measured per-prompt footprint: a median Gemini text prompt uses 0.24 Wh and 0.26 mL of on-site cooling water (Google, Aug 2025); OpenAI's CEO reports ~0.34 Wh and ~0.32 mL per average ChatGPT query (Jun 2025; method and boundary not published).
+- All data centres: ~485 TWh in 2025 (+17%), ~950 TWh by 2030, about 3% of world electricity (IEA, Apr 2026). Global space cooling: ~2,100 TWh (2022).
+- One hamburger's river and groundwater (~80 L) equals roughly 1,800 AI replies on Mistral's full life-cycle count, or ~59,000 Gemini text prompts including estimated US power-plant water (our estimate).
+- Changelog on the page lists every superseded number (old to new, with dates).
+
 ## About the author
 
 - [Aragorn Meulendijks — main site](https://www.itsmrmetaverse.com/): Profile, keynote topics, contact.

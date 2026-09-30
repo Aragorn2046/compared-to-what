@@ -36,24 +36,29 @@ function initEnergyChart() {
   const ctx = document.getElementById('energyChart');
   if (!ctx) return;
 
+  // 2026-09-30 refresh: "US Air Conditioning 2,000" was mislabelled — ~2,100 TWh is
+  // GLOBAL space cooling (IEA via OWID, 2022); US residential AC is 254 TWh (EIA).
+  // BTC 130 -> 138 (Cambridge CCAF survey, Apr 2025). All-data-centre bars added (IEA 2026).
+  // Aviation (2800) and residential lighting (2650) withdrawn pending re-verification.
   const labels = [
-    'Global Aviation',
-    'US Air Conditioning',
-    'Cryptocurrency (BTC)',
-    'Global Data Centers\n(non-AI: streaming, cloud)',
-    'Global AI\n(2025 actual)',
-    'Global AI\n(2030 IEA base case)',
-    'Global Lighting\n(Residential)',
+    ['Global space cooling', '(air conditioning, 2022)'],
+    ['Cryptocurrency (BTC)'],
+    ['Data centers, non-AI', '(launch est., unverified)'],
+    ['AI-focused data centers', '(2025, Ritchie 2026)'],
+    ['AI-focused data centers', '(2030 proj., unverified)'],
+    ['ALL data centers', '(2025, IEA 2026)'],
+    ['ALL data centers', '(2030, IEA 2026 base)'],
   ];
 
-  const values = [2800, 2000, 130, 295, 155, 450, 2650];
+  const values = [2100, 138, 295, 155, 450, 485, 950];
 
+  const HIGHLIGHT = [3, 5, 6]; // 4 = unverified 2030 projection, left grey
   const colors = values.map((v, i) =>
-    (i === 4 || i === 5) ? ACCENT_BG : 'rgba(136, 136, 160, 0.4)'
+    HIGHLIGHT.includes(i) ? ACCENT_BG : 'rgba(136, 136, 160, 0.4)'
   );
 
   const borderColors = values.map((v, i) =>
-    (i === 4 || i === 5) ? ACCENT : 'rgba(136, 136, 160, 0.6)'
+    HIGHLIGHT.includes(i) ? ACCENT : 'rgba(136, 136, 160, 0.6)'
   );
 
   new Chart(ctx, {
@@ -98,7 +103,7 @@ function initEnergyChart() {
           grid: { display: false },
           ticks: {
             ...sharedTickOptions,
-            font: { size: 15 }
+            font: () => ({ size: window.innerWidth < 640 ? 10 : 15 })
           },
           border: { display: false }
         }
